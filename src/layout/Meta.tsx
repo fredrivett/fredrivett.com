@@ -11,7 +11,7 @@ type IMetaProps = {
   description: string;
   canonical?: string;
   post?: {
-    image: string;
+    image: string | null;
     date: string;
     modified_date: string;
   };
@@ -19,6 +19,11 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
+
+  const fallbackImage = '/assets/images/posts/random-img.jpg';
+  const imagePath =
+    props.post &&
+    `${AppConfig.url}${router.basePath}${props.post.image ?? fallbackImage}`;
 
   return (
     <>
@@ -86,11 +91,7 @@ const Meta = (props: IMetaProps) => {
         {props.post && (
           <>
             <meta property="og:type" content="article" key="og:type" />
-            <meta
-              property="og:image"
-              content={`${AppConfig.url}${router.basePath}${props.post.image}`}
-              key="og:image"
-            />
+            <meta property="og:image" content={imagePath} key="og:image" />
             <meta
               name="twitter:card"
               content="summary_large_image"
@@ -134,7 +135,7 @@ const Meta = (props: IMetaProps) => {
               "name": "${AppConfig.author}"
             },
             "headline": "${props.title} | ${AppConfig.site_name}",
-            "image": ["${AppConfig.url}${router.basePath}${props.post.image}"],
+            "image": ["${imagePath}"],
             "datePublished": "${new Date(props.post.date).toISOString()}",
             "dateModified": "${new Date(
               props.post.modified_date

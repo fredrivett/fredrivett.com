@@ -18,7 +18,7 @@ type IPostProps = {
   description: string;
   date: string;
   modified_date: string;
-  image: string;
+  image: string | null;
   content: string;
 };
 
@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       description: post.description,
       date: post.date,
       modified_date: post.modified_date,
-      image: post.image,
+      image: post.image ?? null,
       content,
     },
   };
