@@ -9,13 +9,13 @@ It’s been said that to achieve great work you must kill your darlings.
 
 So that’s what we’re doing.
 
------------
+---
 
 The past few months we’ve spent a _lot_ of time on our new podcast, [Hit Reply](http://hitreply.co/).
 
 We’d spend a few hours prepping each episode, often more, and then a couple of hours each recording it.
 
-Podcasting is new for us. It’s different to our previous projects.  It’s taken time to get going.
+Podcasting is new for us. It’s different to our previous projects. It’s taken time to get going.
 
 The challenge has been how can we create as much value for our listeners in as little time for them? Could we provide the same amount of value in a compact 20 minute episode as a longer 45 minute episode?
 

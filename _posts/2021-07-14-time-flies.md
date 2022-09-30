@@ -7,7 +7,7 @@ tags:
 
 They say time flies when you're having fun, and it's true.
 
-When you're having fun you're *in* the moment, not upon it. You're experiencing
+When you're having fun you're _in_ the moment, not upon it. You're experiencing
 the experience, not wishing you weren't, as is so often the case when life
 feels like a drag.
 

@@ -44,4 +44,3 @@ Your life is moving forwards. You’re making progress. You’re taking steps, e
 Months pass. Years. You look back. Who was that person? They look familiar, yet, strange. Similar, yet different. They look like you, but they’re not you.
 
 You’ve changed.
-

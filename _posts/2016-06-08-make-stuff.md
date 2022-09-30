@@ -14,8 +14,7 @@ The twist here? The more you pay, the higher you’ll be featured on the leaderb
 
 If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/).
 
-> If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/)
-> <cite>[@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge?ref_src=twsrc%5Etfw)</cite>
+> If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/) > <cite>[@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge?ref_src=twsrc%5Etfw)</cite>
 
 And by the end of the day Marc had done [pretty well](https://medium.com/@marckohlbrugge/how-i-made-2-251-in-1-day-with-highscore-money-dd56b35b2681#.i58k99t77):
 
@@ -50,9 +49,9 @@ Partially inspired by Marc’s leaderboard, we’ve included [one of our own](ht
 
 I’m proud of it, proud because, having discussed it a few times during the week, we only really got to work on it this past weekend, and by Sunday evening we were pretty much ready to go.
 
-On a walk with Mike the other night I asked him, how long would it have taken us to launch Real Time Users pre-SixBySix? His answer: *we’d have never shipped it.*
+On a walk with Mike the other night I asked him, how long would it have taken us to launch Real Time Users pre-SixBySix? His answer: _we’d have never shipped it._
 
-He’s right *(don’t tell him that)*. We wouldn’t have. We would have added feature after feature, built with needless shiny technology, and delayed launching month by month as we strived to build the next Google Analytics.
+He’s right _(don’t tell him that)_. We wouldn’t have. We would have added feature after feature, built with needless shiny technology, and delayed launching month by month as we strived to build the next Google Analytics.
 
 Since SixBySix, we’re much quicker to launch, and the quality has improved too. Our first project, [HowsItGoin](http://howsitgo.in/) took 250 hours to ship. Real Time Users took under 15.
 

@@ -21,7 +21,7 @@ But selling doesn't just happen when we're doing "sales". Sales permeates every 
 
 Every relationship we have involves sales, whether it's selling a vision of a life together with your significant other, selling a friend on meeting in the middle rather than traipsing across the city to their neighbourhood, or selling your colleagues on the best way to spend their lunchtime is watching you try and fail for the hundredth time to eat a burrito with any form of dignity.
 
-But what's often overlooked is that not only are you selling when you're "doing sales", or selling in relationships, you're also constantly selling *to yourself*.
+But what's often overlooked is that not only are you selling when you're "doing sales", or selling in relationships, you're also constantly selling _to yourself_.
 
 Every action you take has passed through a sales process. Your internal monologue is a well oiled sales machine.
 
@@ -59,7 +59,7 @@ But the real clincher, has been quietening the subtle, anxiety-inducing backgrou
 
 Having a device next to my bed that continually reminded me of the time, and focussed me on exactly how close I was to my alarm going off. It made me delegate the question of "should I wake up now?" to the machine. I would wake up when I had to, when the alarm told me it was time, and in reality many snoozes later.
 
-By removing this digital dictator from my bedside, I now have the freedom to choose when to wake up. I'm now free to differentiate between feeling _sleepy_ and feeling _tired_. 
+By removing this digital dictator from my bedside, I now have the freedom to choose when to wake up. I'm now free to differentiate between feeling _sleepy_ and feeling _tired_.
 
 Naturally I feel sleepy when I wake up, _I've just been asleep_. But most of the time I don't feel tired, and there's just enough joy in deciding to wake up without checking the time, with the possibility that I might actually be waking up crazy early and have gained 2 hours on my normal day, that the unknown is motivating.
 

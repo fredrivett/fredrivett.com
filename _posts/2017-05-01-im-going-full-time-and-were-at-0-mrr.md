@@ -5,7 +5,6 @@ date: 2017-05-01 20:35 UTC
 tags:
 ---
 
-
 Six weeks ago I found out that my current contract was coming to an end. Naturally a part of me was sad hearing this, the project's budget was being cut and the product team would be leaving. I'd been working in a small, capable team and enjoyed my work environment. But a big part of me was excited. Excited that I'd finally get some time to dig in and work on building a business of my own.
 
 [Mike](http://twitter.com/mikeaag) and I have been working together for over 8 years now, on and off. We started out together back in College (that's school for 16-18 year olds here in the UK) and have worked on a lot of projects together. We started a business straight out of College along with another friend, and we dreamt of supporting ourselves from it. That dream never materialised as we had little clue what we were doing. But through it all we learnt a lot that we took into our next stages in life.
@@ -14,7 +13,7 @@ When the business ended we parted ways, Mike started at Essex Uni whilst I heade
 
 Fast forward to two years ago, and I'd left my previous job of three years and was ready to make a change in life. I wanted to focus on two of my passions, front-end development and making things. Mike and I finally got serious about our ambitions, and made a drastic change. Rather than working on whatever we felt like until we felt like it no more, we'd work on[ six projects in six months](https://blog.wearecontrast.com/introducing-sixbysix-217d608362), looking to launch them all within that month timespan.
 
-Strangely enough, it worked. We went from zero launches to six in *(ahem: just over)* six months. We'd invested a tonne of time (over 1200 hours that year) but we grew a lot. Those projects also led me to land my first job as a front-end developer.
+Strangely enough, it worked. We went from zero launches to six in _(ahem: just over)_ six months. We'd invested a tonne of time (over 1200 hours that year) but we grew a lot. Those projects also led me to land my first job as a front-end developer.
 
 9 months before, I'd left a job and a life in West Sussex, moving back home to start[ SixBySix](https://blog.wearecontrast.com/introducing-sixbysix-217d608362) and we pushed ourselves to the next level. Now, two years on, it's happening again.
 
@@ -28,7 +27,7 @@ Earlier this year, after a serious dressing down from[ Michael Buckbee](https://
 
 Coming back to the title of this post, I'm confronted with a big fat ZERO. ZERO dollars coming into our bank account each month. ZERO customers paying us money. ZERO experience building a B2B SaaS. There's a lot of zero's here, and they aren't preceded by a dollar sign and a one. We're starting from scratch. Or are we?
 
-We're confronted by the raw facts of the situation. We know that for us this is uncharted ground. We stand here looking up at the blank space we hope our building will one day take up. The potential of *what can be*, what I believe *will be*, excites me to the core.
+We're confronted by the raw facts of the situation. We know that for us this is uncharted ground. We stand here looking up at the blank space we hope our building will one day take up. The potential of _what can be_, what I believe _will be_, excites me to the core.
 
 That excitement, mixed in with a healthy dose of nerves, is my fuel for this mission. We're building on what we've learnt[ shipping 11 projects the past 2 years](https://wearecontrast.com/).
 

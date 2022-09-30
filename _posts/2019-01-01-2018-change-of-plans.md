@@ -48,14 +48,17 @@ The past 6 months have been a real learning opportunity and I've enjoyed living 
 ## My goals for 2018 were:
 
 #### ✅ Run 10k
+
 This I achieved, and it was actually quite a bit easier than I expected. [I started running in early March](https://www.strava.com/activities/1453090541), and although [progress wasn't noticeable early on](https://twitter.com/fredrivett/status/975683244116074497), things didn't take long to pick up. 57 days after I started training, [I ran my first 10k](https://twitter.com/fredrivett/status/993094110516039682).
 
 This timeframe isn't recommended, I went from running 5k to 10k in one swoop of excitement at hitting my goal, and later in the year paid the price with an achilles injury. But this is to say that we humans are far more capable than we think, running a 10k felt almost impossible for me after years of physical issues, but was actually far more within my grasp than I realised. For years I placed a ceiling above what I could do, this year I smashed through that.
 
 #### ❌ 10k MRR
+
 This goal I didn't hit, having stepped away from any personal business projects when I had the hit-the-reset-button moment at the start of the year.
 
 #### ❌ Travel (visit 5 new countries)
+
 This one was a fail too, when my plans changed from travelling to settling down I left this one behind. That said I still visited four new cities (Melbourne, Madrid, Honolulu and Edinburgh) as well as heading back to Sydney, Vancouver and Berlin.
 
 ## My goals for 2019:
@@ -66,10 +69,10 @@ I've read others online who have gone through therapy, and at times earlier in t
 
 Secondarily I want to take my fitness goals to the next level. Running 10k was about getting my legs moving again after a years of physical issues and feeling limited by them. This year I want to be playing football again regularly, as well as get in better physical shape (stronger, leaner, more flexible). To do this I'm going to put my money where my mouth is and work with some professionals who can help guide me in how best to achieve the outcomes I'm going after. Some of these specific goals will probably change after discussing with professionals, but for now:
 
-* To have at least one month (4 sessions) therapy
-* To be playing football regularly again
-* To be able to touch my toes
-* To be able to see my abs
-* Gain 5kg in muscle
+- To have at least one month (4 sessions) therapy
+- To be playing football regularly again
+- To be able to touch my toes
+- To be able to see my abs
+- Gain 5kg in muscle
 
 Well that's a wrap, folks. Here's hoping 2019 is the best year yet for you, that you live life like never before and come out of it with no regrets. Let's do this 💪

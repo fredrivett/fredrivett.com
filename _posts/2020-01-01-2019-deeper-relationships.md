@@ -129,7 +129,7 @@ I'm aware of my limited energy for this though, so will be looking to work on so
 
 Most of all, I want to continue on the path I've been on. To continue to love, to risk, to be vulnerable. To continue to optimise for the least regret, to optimise for experiences, for learning.
 
-With 2020 bringing up the big 30 for me this year, it's a good opportunity to take stock and make the most of the time I have on this planet we call home. 
+With 2020 bringing up the big 30 for me this year, it's a good opportunity to take stock and make the most of the time I have on this planet we call home.
 
 None of us know how long we have, and as George Bernard Shaw once put it, "youth is wasted on the young". I want to do my best not to waste the blessings I've been given.
 

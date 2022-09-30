@@ -28,7 +28,7 @@ Having the ability to take an idea, build it and launch it in the least time pos
 
 Due to the fact we’re _solving our own problem_, customer research here can be minimal at best. We built [FlashTabs](http://flashtabs.co/) in a weekend, fixed the bugs in the evenings of the week following, then shipped it. We knew the problem, so quickly built a solution and put it in front of people.
 
-* * *
+---
 
 > In reality, this part is where most of us fall down. We have this grand vision, start building it, but then somewhere down the line, with no end in sight, we give up. Mike and I know this intimately having lived there for many years. As a result of that, and our progress since, we’ve spent the last few months writing a book on this topic.
 
@@ -38,7 +38,7 @@ Due to the fact we’re _solving our own problem_, customer research here can be
 
 > Read: [learningtolaunch.co/read](https://learningtolaunch.co/read)
 
-* * *
+---
 
 #### 3\. Launch it
 
@@ -116,6 +116,6 @@ For me, I want to create a great product, that helps people live better lives, a
 
 That might come in the form of running a large organisation, or it might come running a small, two person business for the rest of my life. Both (and everything in between) are viable options.
 
-* * *
+---
 
 > _Want to learn to launch? Tired of never shipping your side projects? This book is for you. [Head over and read it, for free](https://learningtolaunch.co/read)_

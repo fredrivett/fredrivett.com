@@ -39,7 +39,7 @@ In a sense, the Pomodoro technique is a systemised way of procrastinating your p
 
 Similar to time tracking, seeing the count of Pomodoro’s achieved each day gamifies this, I aim to achieve 10 Pomodoro’s on the days I employ this method. That’s only 4 hours 10 minutes of actual work time, but is about the peak of output I can manage in any given day.
 
-Often, the issue isn’t that we need to spend more time on important tasks, we just need to spend more *focused time.*
+Often, the issue isn’t that we need to spend more time on important tasks, we just need to spend more _focused time._
 
 ### Go Deep
 
@@ -53,11 +53,11 @@ This flies directly in the face of the startup hustle culture we hear about so o
 
 Steve Blank shared a story about this recently, about a CEO who was proud at how long his employees stayed in the office.
 
-This glorification of the ‘hustle’ is had its time. It’s outdated. *It’s not productive.* You might force more through the funnel, but it will be of a lesser, diluted quality. You’d produce a better output (and therefore outcome) by spending around 4 hours of productive, focused time in Deep Work each day.
+This glorification of the ‘hustle’ is had its time. It’s outdated. _It’s not productive._ You might force more through the funnel, but it will be of a lesser, diluted quality. You’d produce a better output (and therefore outcome) by spending around 4 hours of productive, focused time in Deep Work each day.
 
-Sure, you need to do the work, and it can be scrappy at the start, but working long hours only says one thing: you don’t know how to prioritise and focus on the tasks that matter. You’re *inefficient.*
+Sure, you need to do the work, and it can be scrappy at the start, but working long hours only says one thing: you don’t know how to prioritise and focus on the tasks that matter. You’re _inefficient._
 
-If you disagree with this statement and feel like you *do* need to work those long hours, I’d challenge you to track how much of your time is spent in true, deep, productive work, and how much is actually fluff that can be cut.
+If you disagree with this statement and feel like you _do_ need to work those long hours, I’d challenge you to track how much of your time is spent in true, deep, productive work, and how much is actually fluff that can be cut.
 
 ### What’s Your Output?
 
@@ -71,9 +71,9 @@ The first is the most important: did we achieve our one key goal this week?
 
 Mike and I have both recently joined a mastermind. A mastermind is simply a group of likeminded business people who get together each week and update each other on how the past week has gone for their business. Did we achieved our goal(s), what our goal(s) are for this week, and chat through any issues we may be having.
 
-Joining a mastermind a few months back was one of the best decisions I made this year. The accountability it brings to have to boil down all the ideas spinning around in my head to one key task to focus on each week is super important. Each week knowing I have to report back on whether I achieved this goal, and if not, why not, helps me stay on track. *It forces me to prioritise output over input, value over movement.*
+Joining a mastermind a few months back was one of the best decisions I made this year. The accountability it brings to have to boil down all the ideas spinning around in my head to one key task to focus on each week is super important. Each week knowing I have to report back on whether I achieved this goal, and if not, why not, helps me stay on track. _It forces me to prioritise output over input, value over movement._
 
-The second metric we track is less important than our *one key goal*, but gives a nice overview of our week’s achievements. It’s simply a list of all the tasks we did that week.
+The second metric we track is less important than our _one key goal_, but gives a nice overview of our week’s achievements. It’s simply a list of all the tasks we did that week.
 
 Our setup is simple: we have a Backburner where we capture the thoughts that occur to us in the shower, This Week for tasks we aim to complete this week, In Progress, and a weekly Done column.
 
@@ -99,9 +99,9 @@ For each of these examples, the inputs will be different. Starting a self-sustai
 
 Here’s where we often get this mixed up. We place too much focus on the input, little on the output, and nowhere near enough on the outcome. Rarely do we stop and weigh up whether what we’re doing is helping achieve the outcomes we desire.
 
-Simon Sinek puts this well, in his [talk](https://www.youtube.com/watch?v=sioZd3AxmnE) (and [book](https://www.startwithwhy.com/)), Start With Why. In this talk, Simon shares how most of businesses are *what* focussed, selling customers on the specifics of *what they do*. The best companies, however, talk about *why* *they’re doing it*. Customers of Apple buy into the philosophy that Apple cares about everything they do.
+Simon Sinek puts this well, in his [talk](https://www.youtube.com/watch?v=sioZd3AxmnE) (and [book](https://www.startwithwhy.com/)), Start With Why. In this talk, Simon shares how most of businesses are _what_ focussed, selling customers on the specifics of _what they do_. The best companies, however, talk about _why_ _they’re doing it_. Customers of Apple buy into the philosophy that Apple cares about everything they do.
 
-Similarly for us, we need to frame every *what* around our key *why’s*. Every action we take should be initiated by the core *why’s* of our life.
+Similarly for us, we need to frame every _what_ around our key _why’s_. Every action we take should be initiated by the core _why’s_ of our life.
 
 Once we come to this place, the next step is really nailing, what are my why’s? What do I want from life? It’s here that a very simple exercise, The 5 Why’s, can help.
 
@@ -111,7 +111,7 @@ For us, we can ask, why do we want this outcome? Is the outcome really what we w
 
 For our example of desiring more control over how we spend our time, why is this? Is it because we hate our day job? Is it because we have desires to use our time in ways we can’t right now? To travel? If so, there may well be ways to achieve these higher outcomes without having full control over our time. We could take a sabbatical, saving frugally for years at a time, then spending six months travelling the world.
 
-The important point here isn’t the specifics of the example, but that knowing what we *really want* is vital if we’re ever going to get it. If we’re truly honest with our desires and goals, we can start tweaking the machine to produce the life we desire.
+The important point here isn’t the specifics of the example, but that knowing what we _really want_ is vital if we’re ever going to get it. If we’re truly honest with our desires and goals, we can start tweaking the machine to produce the life we desire.
 
 I read a quote a couple years back from [Nathan Bashaw](http://twitter.com/nbashaw) that’s continually stuck with me in the back of my mind since.
 
@@ -120,10 +120,10 @@ I read a quote a couple years back from [Nathan Bashaw](http://twitter.com/nbash
 
 [https://twitter.com/rrhoover/status/550308425972740096](https://twitter.com/rrhoover/status/550308425972740096)
 
-It doesn’t matter where you’re at right now. You can’t affect where you stand, or the circumstances around you. What matters is *whether you’re making progress towards where you want to be.*
+It doesn’t matter where you’re at right now. You can’t affect where you stand, or the circumstances around you. What matters is _whether you’re making progress towards where you want to be._
 
 So take stock of your inputs, where you’re spending your time, but don’t glamourise how long you spend at the office, or even what you’re creating. Focus on the impact your work is having, on others, on yourself, and whether it’s moving you close to where you really want to be. That’s what really matters.
 
 ---
 
-Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [*Yes please*](https://wearecontrast.com/signup)
+Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [_Yes please_](https://wearecontrast.com/signup)

@@ -66,4 +66,4 @@ Often the path ahead is unclear. Knowing what’s ‘right’ is no scientific e
 
 ---
 
-Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [*Yes please*](https://wearecontrast.com/signup)
+Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [_Yes please_](https://wearecontrast.com/signup)

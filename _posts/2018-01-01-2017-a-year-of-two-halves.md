@@ -67,24 +67,24 @@ Another area I've been experimenting with is [daily tweetlogging, or twogging fo
 
 ####Places:
 
-* Greece: Earlier in the year I was fortunate to spend 2 weeks on a small Greek island. I loved how relaxed it was, being able to get to know the locals was a nice change from most holidays. It's here I decided I'd set off for Asia.
-* Japan (Tokyo + Kyoto especially): This is a mysterious place to me, with great food and a unique culture. To sum it up in one line: The ATMs are from the 80's and the toilets are from the future.
-* Hong Kong and Taipei: Two cities with a mix of amazing food and beautiful landscapes. I hope to return to both.
+- Greece: Earlier in the year I was fortunate to spend 2 weeks on a small Greek island. I loved how relaxed it was, being able to get to know the locals was a nice change from most holidays. It's here I decided I'd set off for Asia.
+- Japan (Tokyo + Kyoto especially): This is a mysterious place to me, with great food and a unique culture. To sum it up in one line: The ATMs are from the 80's and the toilets are from the future.
+- Hong Kong and Taipei: Two cities with a mix of amazing food and beautiful landscapes. I hope to return to both.
 
 ####Books:
 
-* [Shoe Dog by Phil Knight](https://www.audible.com/pd/Bios-Memoirs/Shoe-Dog-Audiobook/B01CRM17MS): A great insight into the reality of starting a global brand and the luck required along the way.
-* [Ghost in the Wires by Kevin Mitnick](https://www.audible.com/pd/Nonfiction/Ghost-in-the-Wires-Audiobook/B005H3FYR4): A thrilling insight into the life of one of the worlds most wanted hackers in the 1980's.
-* [Principles by Ray Dalio](https://www.audible.com/pd/Business/Principles-Audiobook/B074B29GQJ): A thought-provoking handbook that challenges long held ideas about how to run a successful company.
-* [Masters of Doom](https://www.audible.com/pd/Business/Principles-Audiobook/B074B29GQJ): A topsy-turvy true story of how two John's revolutionised the gaming industry.
+- [Shoe Dog by Phil Knight](https://www.audible.com/pd/Bios-Memoirs/Shoe-Dog-Audiobook/B01CRM17MS): A great insight into the reality of starting a global brand and the luck required along the way.
+- [Ghost in the Wires by Kevin Mitnick](https://www.audible.com/pd/Nonfiction/Ghost-in-the-Wires-Audiobook/B005H3FYR4): A thrilling insight into the life of one of the worlds most wanted hackers in the 1980's.
+- [Principles by Ray Dalio](https://www.audible.com/pd/Business/Principles-Audiobook/B074B29GQJ): A thought-provoking handbook that challenges long held ideas about how to run a successful company.
+- [Masters of Doom](https://www.audible.com/pd/Business/Principles-Audiobook/B074B29GQJ): A topsy-turvy true story of how two John's revolutionised the gaming industry.
 
 ## 2017 goals recap & 2018 goals
 
 ####[My goals for 2017](http://fredrivett.com/2017/01/01/2016-a-year-of-learning/) were:
 
-* Sort out my legs to get running and playing football again.
-* Get a stranger on the internet to pay us a monthly fee for a product we make.
-* Visit a new continent.
+- Sort out my legs to get running and playing football again.
+- Get a stranger on the internet to pay us a monthly fee for a product we make.
+- Visit a new continent.
 
 I achieved 2/3, but again neglected and procrastinated on sorting out my health. It was a high level goal that I never took seriously with day to day actions. This year I'm determined to do what I can to get my legs sorted.
 
@@ -92,6 +92,6 @@ Mike mentioned to me his desire to get running in 2018, and we've both decided t
 
 ####My three goals for 2018:
 
-* Get my legs sorted so they're strong and healthy (run a 10k)
-* Support ourselves from product work (napkin maths says around $8k+ MRR)
-* Travel as much as I can (visit at least 5 new countries)
+- Get my legs sorted so they're strong and healthy (run a 10k)
+- Support ourselves from product work (napkin maths says around $8k+ MRR)
+- Travel as much as I can (visit at least 5 new countries)

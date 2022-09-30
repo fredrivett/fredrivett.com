@@ -30,5 +30,3 @@ Not all pressure is healthy. Sometimes it can weigh us down rather than spur us 
 What pressure are you under right now? Is it weighing you down, or pushing you on?
 
 Throw off the heavy weights, but use some of that healthy pressure to push you forwards. Your future will be better as a result.
-
-

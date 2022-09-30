@@ -43,6 +43,6 @@ But most of all, don’t be ashamed of where you’re at, or what you’re doing
 
 **Are you struggling to keep on top of your startups monthly recurring expenses? We were, that’s why we’re building [prodigo](https://prodigo.co/).**
 
-*Prodigo is a simple app that gives you actionable insights into the tools and services you’re paying for.*
+_Prodigo is a simple app that gives you actionable insights into the tools and services you’re paying for._
 
-We’re early stage and would love to shape this with you. If you’re interested you can sign up at [prodigo.co](https://prodigo.co/) ✍️  or [say hi and we can chat](https://twitter.com/FredRivett) 👋
+We’re early stage and would love to shape this with you. If you’re interested you can sign up at [prodigo.co](https://prodigo.co/) ✍️ or [say hi and we can chat](https://twitter.com/FredRivett) 👋

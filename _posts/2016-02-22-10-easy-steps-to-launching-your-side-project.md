@@ -54,7 +54,7 @@ Now you’ve been doing this a while, you may be thinking, _should I launch?_ Th
 
 How could you launch now? You’ve not added that vital feature that everybody will use. Every time you near launch, remind yourself of the high standards of the unicorn elite. You’ve only got one shot at this launch, so it better be _perfect_.
 
-* * *
+---
 
 You may have realised by now, the tips above are a little _tongue-in-cheek._ But you know what? That’s how a lot of us work, or at least how we start out.
 
@@ -64,6 +64,6 @@ We learnt that there were a few simple rules could turn an endless never ending 
 
 **Want to learn to launch? Tired of never shipping your side projects? This book is for you.** [**Sign up at learningtolaunch.co**](https://learningtolaunch.co/?utm_source=medium&utm_medium=blog&utm_campaign=14-steps-never-launch) **to be the first to hear when we’re ready.**
 
-* * *
+---
 
 _FYI: This post took a combined total of 3h 16m to write, review & edit._
