@@ -1,5 +1,6 @@
 ---
 title: 2017&#58; A year of two halves
+description: 2017 has been the hardest year of my life. It started with an overhang that had been building up in the final moments of 2016, which finally exploded in spectacular style.
 date: 2018-01-01 00:00 UTC
 tags:
 ---

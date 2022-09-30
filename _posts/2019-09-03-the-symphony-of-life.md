@@ -1,5 +1,6 @@
 ---
 title: The Symphony of Life
+description: A diversity of focus is a contradiction of terms. No-one can focus on multiple things at once.
 date: 2019-09-03 10:30 UTC
 tags:
 ---

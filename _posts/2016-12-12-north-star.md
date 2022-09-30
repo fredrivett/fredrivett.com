@@ -1,5 +1,6 @@
 ---
 title: North star
+description: Knowing where you’d like to go is important. It helps us frame the decisions we make now that move us towards where we want to be.
 date: 2016-12-12 00:00 UTC
 tags: startup, goals
 ---

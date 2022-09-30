@@ -1,5 +1,6 @@
 ---
 title: Am I Doing It Right?
+description: Am I on the right path? Am I making the right decisions? I wonder about this a lot.
 date: 2016-10-03 00:00 UTC
 tags: life
 medium: https://blog.wearecontrast.com/am-i-doing-it-right-dac87a4a8191

@@ -1,5 +1,6 @@
 ---
 title: Fumbling Forwards
+description: The other week Justin Jackson shared a quote, one that I desperately needed to hear.
 date: 2016-08-03 23:29 UTC
 tags: startups
 canonical: https://medium.com/@fredrivett/fumbling-forwards-5716c52e090#.n8lzfptpa

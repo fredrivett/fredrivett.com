@@ -1,5 +1,6 @@
 ---
 title: Super Powerful
+description: It had happened again. We had failed, again.
 date: 2016-08-11 00:00 UTC
 tags: startups, launching
 ---

@@ -1,5 +1,6 @@
 ---
 title: Make Stuff
+description: A week ago Marc Köhlbrugge released a neat little side project. The premise was simple, pay to get featured on the site. We’ve seen this before, right?
 date: 2016-06-08 00:00 UTC
 tags: startups
 canonical: https://blog.wearecontrast.com/make-stuff-ff82f78cf5a9#.hot1riz4n

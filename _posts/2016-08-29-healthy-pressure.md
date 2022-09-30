@@ -1,5 +1,6 @@
 ---
 title: Healthy Pressure
+description: Pressure is healthy. Healthy pressure is, at least.
 date: 2016-08-29 00:00 UTC
 tags: startups
 ---

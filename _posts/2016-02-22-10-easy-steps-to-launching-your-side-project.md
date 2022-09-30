@@ -1,5 +1,6 @@
 ---
 title: 10 Easy Steps To Launching Your Side Project
+description: How *not* to launch a side project
 date: 2016-02-22 00:00 UTC
 tags:
 canonical: https://blog.wearecontrast.com/10-easy-steps-to-launching-your-side-project-bbff783b08a8

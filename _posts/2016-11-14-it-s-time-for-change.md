@@ -1,5 +1,6 @@
 ---
 title: It's time for change
+description: The past few months we’ve spent a lot of time on our new podcast.
 date: 2016-11-14 09:16 UTC
 tags: startup
 ---

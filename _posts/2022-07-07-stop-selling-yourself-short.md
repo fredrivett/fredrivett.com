@@ -1,9 +1,8 @@
 ---
-
 title: Stop selling yourself short
+description: What do you think of when you hear the term sales? If you're like most people, the feeling is negative.
 date: 2022-07-07 15:43 UTC
 tags:
-
 ---
 
 What do you think of when you hear the term sales? If you're like most people, the feeling is negative, evoking the sense of searching for a metaphorical door as you scan for your exit route.

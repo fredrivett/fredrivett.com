@@ -1,5 +1,6 @@
 ---
 title: How To Start Out When You're Just Starting Out By Someone Just Starting Out
+description: A short guide on how to launch a startup, by someone launching a startup.
 date: 2016-05-17 00:00 UTC
 tags:
 canonical: https://medium.com/makers-gonna-make/how-to-start-out-when-youre-just-starting-out-by-someone-just-starting-out-35014c26811c#.blfwzn4ns

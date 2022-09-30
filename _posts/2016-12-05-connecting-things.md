@@ -1,5 +1,6 @@
 ---
 title: Connecting Things
+description: Solving problems is at the heart of any great product or business. Behind every shiny product or lightbulb idea is a real problem being solved.
 date: 2016-12-05 00:00 UTC
 tags: startup, ideas
 ---
