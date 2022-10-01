@@ -2,8 +2,8 @@ import React from "react";
 
 import { AppProps } from "next/app";
 
-import "../styles/main.css";
-import "../styles/prism-a11y-dark.css";
+import "../styles/main.scss";
+import "../styles/prism-a11y-dark.scss";
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <Component {...pageProps} />

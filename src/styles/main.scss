@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --default-margin-bottom: 20px;
+}
+
+@mixin headers() {
+  margin-top: 0;
+  margin-bottom: var(--default-margin-bottom);
+  font-weight: bold;
+  line-height: 1.2;
+  transition: font-size ease 0.25s;
+}
+
+@mixin fs1() {
+  font-size: 1.802rem;
+  @screen md { font-size: 2.488rem; }
+}
+
+@mixin fs2() {
+  font-size: 1.424rem;
+  @screen md { font-size: 1.728rem; }
+}
+
+@mixin fs3() {
+  font-size: 1.266rem;
+  @screen md { font-size: 1.44rem; }
+}
+
+@mixin fs4() {
+  font-size: 1.125rem;
+  @screen md { font-size: 1.2rem; }
+}
+
+@mixin fs5() {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: theme("colors.gray.700");
+  text-align: left;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, sans-serif;
+}
+
+.fs-1 { @include fs1(); }
+.fs-2 { @include fs2(); }
+.fs-3 { @include fs3(); }
+.fs-4 { @include fs4(); }
+.fs-5 { @include fs5(); }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  @include headers();
+}
+
+h1,
+.h1 {
+  @include fs1();
+}
+h2,
+.h2 {
+  @include fs2();
+}
+h3,
+.h3 {
+  @include fs3();
+}
+h4,
+.h4 {
+  @include fs4();
+}
+h5,
+.h5 {
+  @include fs4();
+}
+h6,
+.h6 {
+  @include fs5();
+}
+
+p,
+ol,
+ul,
+.mb-default {
+  margin-bottom: var(--default-margin-bottom);
+}
+
+p
+li {
+  @include fs5();
+
+  & .c_blog-content {
+    @include fs4();
+  }
+}
+
+.c_blog-content {
+  ul {
+    list-style-type: disc;
+    @apply ml-8;
+  }
+}
+
+ol {
+  @apply pl-8;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+/**
+ * Default link styling
+ *
+ * http://codepen.io/poopsplat/pen/MaedPx
+ *
+ * 1) Change the second value to adjust how far from the top the underline
+ *  should be.
+ * 2) Change the second value to the desired height of the underline.
+ */
+
+a {
+  @apply text-sky-500;
+  text-decoration: none;
+
+  background-image: linear-gradient(to right, theme("colors.gray.300") 0%, theme("colors.gray.300") 100%);
+  background-repeat: repeat-x;
+  background-position: 0px 100%; /* [1] */
+  background-size: 100% 0.18em; /* [2] */
+
+  &:hover {
+    background-image: linear-gradient(to right, theme("colors.sky.300") 0%, theme("colors.sky.300") 100%);
+  }
+}
+
+blockquote {
+  @include fs2();
+  @apply ml-4;
+
+  cite {
+    display: block;
+    font-style: italic;
+
+    &::before {
+      content: "\2013";
+      margin-right: 0.5em;
+    }
+  }
+}
+
+@import "components/pseudo-icon";

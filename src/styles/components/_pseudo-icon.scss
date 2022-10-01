@@ -1,0 +1,22 @@
+.c_pseudo-icon {
+  &::after {
+    color: theme("colors.gray.400");
+  }
+}
+
+.c_pseudo-icon--arrow {
+  &::after {
+    content: "\21B4";
+    position: relative;
+    top: 0.3em;
+    right: 0em;
+    font-size: 0.7em;
+  }
+}
+
+.c_pseudo-icon--happy {
+  &::after {
+    content: "( ¨̮ )";
+    @apply ml-2;
+  }
+}
