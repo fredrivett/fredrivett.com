@@ -1,5 +1,5 @@
 ---
-title: 2019&#58; Deeper relationships
+title: "2019: Deeper relationships"
 description: 2019 has been a year of highs and lows.
 date: 2020-01-01 22:43 UTC
 tags:

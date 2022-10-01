@@ -1,5 +1,5 @@
 ---
-title: I'm going full time and we're at $0&nbsp;MRR
+title: I'm going full time and we're at $0 MRR
 description: Six weeks ago I found out that my current contract was coming to an end.
 date: 2017-05-01 20:35 UTC
 tags:

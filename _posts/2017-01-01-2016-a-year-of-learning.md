@@ -1,5 +1,5 @@
 ---
-title: 2016&#58; A year of learning
+title: "2016: A year of learning"
 description: 2016 has been a year with good moments and bad moments. Overall, it wasn't my favourite year, but despite some sadness in how it's gone, there's been a lot to be thankful for.
 date: 2017-01-01 21:26 UTC
 tags:

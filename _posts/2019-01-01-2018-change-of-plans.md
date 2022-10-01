@@ -1,5 +1,5 @@
 ---
-title: 2018&#58; A change of plans
+title: "2018: A change of plans"
 description: 2018 reiterated to me the feeling that life isn't always predictable as we sometimes think.
 date: 2019-01-01 12:44 UTC
 tags:
