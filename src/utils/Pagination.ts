@@ -13,9 +13,9 @@ export function convertTo2D<T>(arr: T[], size: number) {
 }
 
 export function convertUrlToLinkHref(url: string) {
-  if (url === '/') {
-    return '/';
+  if (url === "/") {
+    return "/";
   }
 
-  return '/[page]';
+  return "/[page]";
 }

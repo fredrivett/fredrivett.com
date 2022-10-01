@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { format } from 'date-fns';
-import Link from 'next/link';
+import { format } from "date-fns";
+import Link from "next/link";
 
-import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { PostItems } from '../utils/Content';
+import { Pagination, IPaginationProps } from "../pagination/Pagination";
+import { PostItems } from "../utils/Content";
 
 export type IBlogGalleryProps = {
   posts: PostItems[];
@@ -23,7 +23,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
           </Link>
 
           <div className="text-right">
-            {format(new Date(elt.date), 'LLL d, yyyy')}
+            {format(new Date(elt.date), "LLL d, yyyy")}
           </div>
         </li>
       ))}

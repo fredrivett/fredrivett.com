@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import { AppConfig } from '../utils/AppConfig';
-import { addTrailingSlash } from '../utils/Url';
+import { AppConfig } from "../utils/AppConfig";
+import { addTrailingSlash } from "../utils/Url";
 
 type IMetaProps = {
   title: string;
@@ -20,7 +20,7 @@ type IMetaProps = {
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
 
-  const fallbackImage = '/assets/images/posts/random-img.jpg';
+  const fallbackImage = "/assets/images/posts/random-img.jpg";
   const imagePath =
     props.post &&
     `${AppConfig.url}${router.basePath}${props.post.image ?? fallbackImage}`;
