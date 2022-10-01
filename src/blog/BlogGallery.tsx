@@ -18,7 +18,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
         <li key={elt.slug} className="mb-3 flex justify-between">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
             <a>
-              <h2>{elt.title}</h2>
+              <h2 dangerouslySetInnerHTML={{ __html: elt.title }}></h2>
             </a>
           </Link>
 
