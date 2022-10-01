@@ -1,10 +1,10 @@
 import React from "react";
 
-import { format } from "date-fns";
 import { GetStaticPaths, GetStaticProps } from "next";
 
-import { Content } from "../../content/Content";
+import { BlogDate } from "../../blog/BlogDate";
 import { Meta } from "../../layout/Meta";
+import { Nav } from "../../navigation/Nav";
 import { Main } from "../../templates/Main";
 import { getAllPosts, getPostBySlug } from "../../utils/Content";
 import { markdownToHtml } from "../../utils/Markdown";
@@ -23,33 +23,32 @@ type IPostProps = {
 };
 
 const DisplayPost = (props: IPostProps) => (
-  <Main
-    meta={
-      <Meta
-        title={props.title}
-        description={props.description}
-        post={{
-          image: props.image,
-          date: props.date,
-          modified_date: props.modified_date,
-        }}
-      />
-    }
-  >
-    <h1 className="text-center font-bold text-3xl text-gray-900">
-      {props.title}
-    </h1>
-    <div className="text-center text-sm mb-8">
-      {format(new Date(props.date), "LLLL d, yyyy")}
-    </div>
+  <>
+    <Nav />
+    <Main
+      className="py-4 md:py-8 lg:py-16 max-w-prose"
+      meta={
+        <Meta
+          title={props.title}
+          description={props.description}
+          post={{
+            image: props.image,
+            date: props.date,
+            modified_date: props.modified_date,
+          }}
+        />
+      }
+    >
+      <BlogDate date={props.date} />
+      <h1>{props.title}</h1>
 
-    <Content>
       <div
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: props.content }}
+        className="c_blog-content"
       />
-    </Content>
-  </Main>
+    </Main>
+  </>
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {

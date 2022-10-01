@@ -1,10 +1,10 @@
 export const AppConfig = {
-  site_name: "Starter",
-  title: "Next.js Boilerplate",
+  site_name: "fredrivett.com",
+  title: "@fredrivett",
   description:
-    "Starter code for your Next.js blog Boilerplate with Tailwind CSS",
-  url: "https://example.com",
+    "I'm Fred and I like to make stuff. I also code, write and take photos.",
+  url: "https://fredrivett.com",
   locale: "en",
-  author: "Anonymous",
-  pagination_size: 25,
+  author: "Fred Rivett",
+  pagination_size: 1000, // remove pagination for now
 };

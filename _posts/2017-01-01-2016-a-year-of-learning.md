@@ -41,7 +41,7 @@ Here's the books I read and listened to in 2016, and my brief thoughts on each:
 [Intercom on Customer Engagement](https://www.intercom.com/books/customer-engagement) by Intercom  
 ★★½☆☆ — _A decent book on an important topic for any product person, but a little premature read for me so it didn't quite stick._
 
-### Books I listened to (24)
+### Books I've listened to (24)
 
 In 2016 I listened to 24 audio books, with a total listening time of over 202 hours.
 

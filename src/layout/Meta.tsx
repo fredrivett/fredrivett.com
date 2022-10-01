@@ -24,6 +24,7 @@ const Meta = (props: IMetaProps) => {
   const imagePath =
     props.post &&
     `${AppConfig.url}${router.basePath}${props.post.image ?? fallbackImage}`;
+  const title = `${props.title} | ${AppConfig.title}`;
 
   return (
     <>
@@ -58,7 +59,7 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
-        <title>{`${props.title} | ${AppConfig.site_name}`}</title>
+        <title>{title}</title>
         <meta
           name="description"
           content={
@@ -70,11 +71,7 @@ const Meta = (props: IMetaProps) => {
         {props.canonical && (
           <link rel="canonical" href={props.canonical} key="canonical" />
         )}
-        <meta
-          property="og:title"
-          content={`${props.title} | ${AppConfig.site_name}`}
-          key="og:title"
-        />
+        <meta property="og:title" content={title} key="og:title" />
         <meta
           property="og:description"
           content={
@@ -134,7 +131,7 @@ const Meta = (props: IMetaProps) => {
               },
               "name": "${AppConfig.author}"
             },
-            "headline": "${props.title} | ${AppConfig.site_name}",
+            "headline": "${title}",
             "image": ["${imagePath}"],
             "datePublished": "${new Date(props.post.date).toISOString()}",
             "dateModified": "${new Date(

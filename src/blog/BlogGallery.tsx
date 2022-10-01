@@ -1,10 +1,10 @@
 import React from "react";
 
-import { format } from "date-fns";
 import Link from "next/link";
 
 import { Pagination, IPaginationProps } from "../pagination/Pagination";
 import { PostItems } from "../utils/Content";
+import { BlogDate } from "./BlogDate";
 
 export type IBlogGalleryProps = {
   posts: PostItems[];
@@ -13,18 +13,29 @@ export type IBlogGalleryProps = {
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
+    <h2 className="fs-2 lg:ml-40 lg:pl-2 c_pseudo-icon c_pseudo-icon--arrow">
+      Latest
+    </h2>
+
     <ul>
       {props.posts.map((elt) => (
-        <li key={elt.slug} className="mb-3 flex justify-between">
-          <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a>
-              <h2 dangerouslySetInnerHTML={{ __html: elt.title }}></h2>
-            </a>
-          </Link>
+        <li
+          key={elt.slug}
+          className="c_article-head c_article-head--list-view mb-3 flex"
+        >
+          <h2 className="fs-2 mb-2 lg:order-1">
+            <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
+              <a
+                className="c_article-head__title"
+                dangerouslySetInnerHTML={{ __html: elt.title }}
+              ></a>
+            </Link>
+          </h2>
 
-          <div className="text-right">
-            {format(new Date(elt.date), "LLL d, yyyy")}
-          </div>
+          <BlogDate
+            date={elt.date}
+            className="flex-shrink-0 fs-3 mr-2 lg:w-40 lg:text-right ml-auto lg:ml-0"
+          />
         </li>
       ))}
     </ul>
