@@ -2,15 +2,22 @@ import React from "react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 
-import { BlogDate } from "../../blog/BlogDate";
-import { Meta } from "../../layout/Meta";
-import { Nav } from "../../navigation/Nav";
-import { Main } from "../../templates/Main";
-import { getAllPosts, getPostBySlug } from "../../utils/Content";
-import { markdownToHtml } from "../../utils/Markdown";
+import { BlogDate } from "../../../../blog/BlogDate";
+import { Meta } from "../../../../layout/Meta";
+import { Nav } from "../../../../navigation/Nav";
+import { Main } from "../../../../templates/Main";
+import {
+  getAllPosts,
+  getPostSlug,
+  getPostBySlug,
+} from "../../../../utils/Content";
+import { markdownToHtml } from "../../../../utils/Markdown";
 
 type IPostUrl = {
-  slug: string;
+  titleSlug: string;
+  year: string;
+  month: string;
+  day: string;
 };
 
 type IPostProps = {
@@ -52,12 +59,15 @@ const DisplayPost = (props: IPostProps) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPosts(["year", "month", "day", "titleSlug"]);
 
   return {
     paths: posts.map((post) => ({
       params: {
-        slug: post.slug,
+        year: post.year,
+        month: post.month,
+        day: post.day,
+        titleSlug: post.titleSlug,
       },
     })),
     fallback: false,
@@ -67,7 +77,9 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
 export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
   params,
 }) => {
-  const post = getPostBySlug(params!.slug, [
+  const { year, month, day, titleSlug } = params!;
+  const slug = getPostSlug({ year, month, day, titleSlug });
+  const post = getPostBySlug(slug, [
     "title",
     "description",
     "date",
