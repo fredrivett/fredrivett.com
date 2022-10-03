@@ -2,8 +2,8 @@ import React from "react";
 
 import Link from "next/link";
 
-import { PostItems } from "../utils/Content";
-import { BlogDate } from "./BlogDate";
+import { BlogDate } from "blog/BlogDate";
+import { PostItems } from "utils/Content";
 
 export type IBlogGalleryProps = {
   posts: PostItems[];

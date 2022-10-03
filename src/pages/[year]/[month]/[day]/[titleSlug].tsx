@@ -2,16 +2,12 @@ import React from "react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 
-import { BlogDate } from "../../../../blog/BlogDate";
-import { Meta } from "../../../../layout/Meta";
-import { Nav } from "../../../../navigation/Nav";
-import { Main } from "../../../../templates/Main";
-import {
-  getAllPosts,
-  getPostSlug,
-  getPostBySlug,
-} from "../../../../utils/Content";
-import { markdownToHtml } from "../../../../utils/Markdown";
+import { BlogDate } from "blog/BlogDate";
+import { Meta } from "layout/Meta";
+import { Nav } from "navigation/Nav";
+import { Main } from "templates/Main";
+import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
+import { markdownToHtml } from "utils/Markdown";
 
 type IPostUrl = {
   titleSlug: string;

@@ -3,11 +3,11 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 
-import { BlogGallery, IBlogGalleryProps } from "../blog/BlogGallery";
-import { Meta } from "../layout/Meta";
-import { Main } from "../templates/Main";
-import { AppConfig } from "../utils/AppConfig";
-import { getAllPosts } from "../utils/Content";
+import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
+import { Meta } from "layout/Meta";
+import { Main } from "templates/Main";
+import { AppConfig } from "utils/AppConfig";
+import { getAllPosts } from "utils/Content";
 
 const Index = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Hey there" description={AppConfig.description} />}>

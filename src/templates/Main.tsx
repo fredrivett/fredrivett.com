@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-import { RealTimeUsers } from "../components/RealTimeUsers";
+import { RealTimeUsers } from "components/RealTimeUsers";
 
 type IMainProps = {
   meta: ReactNode;
