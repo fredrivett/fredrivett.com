@@ -12,7 +12,7 @@ const Main = ({ children, className, meta }: IMainProps) => (
   >
     {meta}
 
-    <div className="text-xl py-5">{children}</div>
+    <div className="py-5">{children}</div>
   </div>
 );
 

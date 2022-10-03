@@ -29,7 +29,7 @@ const DisplayPost = (props: IPostProps) => (
   <>
     <Nav />
     <Main
-      className="py-4 md:py-8 lg:py-16 max-w-prose"
+      className="text-lg py-4 md:py-8 lg:py-16 max-w-prose"
       meta={
         <Meta
           title={props.title}
