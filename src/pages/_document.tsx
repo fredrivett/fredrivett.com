@@ -9,7 +9,7 @@ class MyDocument extends Document {
       <Html lang={AppConfig.locale}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto+Mono:400,400i,700"
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto+Mono:400,400i,700&display=swap"
             rel="stylesheet"
           />
         </Head>
