@@ -12,7 +12,7 @@ const Main = ({ children, className, meta }: IMainProps) => (
   >
     {meta}
 
-    <div className="py-5">{children}</div>
+    <div className="px-4 py-6">{children}</div>
   </div>
 );
 
