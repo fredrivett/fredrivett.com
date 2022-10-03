@@ -170,5 +170,15 @@ blockquote {
   }
 }
 
+hr {
+  @apply my-6;
+
+  @screen md {
+    @apply my-8;
+  }
+}
+
+@import "objects/bordered-list";
+
 @import "components/main-nav";
 @import "components/pseudo-icon";
