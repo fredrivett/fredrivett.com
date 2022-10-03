@@ -4,7 +4,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 
 import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
-import { Nav } from "navigation/Nav";
 import { Main } from "templates/Main";
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
 import { markdownToHtml } from "utils/Markdown";
@@ -26,32 +25,29 @@ type IPostProps = {
 };
 
 const DisplayPost = (props: IPostProps) => (
-  <>
-    <Nav />
-    <Main
-      className="text-lg py-4 md:py-8 lg:py-16 max-w-prose"
-      meta={
-        <Meta
-          title={props.title}
-          description={props.description}
-          post={{
-            image: props.image,
-            date: props.date,
-            modified_date: props.modified_date,
-          }}
-        />
-      }
-    >
-      <BlogDate date={props.date} />
-      <h1>{props.title}</h1>
-
-      <div
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: props.content }}
-        className="c_blog-content"
+  <Main
+    className="text-lg py-4 md:py-8 lg:py-16 max-w-prose"
+    meta={
+      <Meta
+        title={props.title}
+        description={props.description}
+        post={{
+          image: props.image,
+          date: props.date,
+          modified_date: props.modified_date,
+        }}
       />
-    </Main>
-  </>
+    }
+  >
+    <BlogDate date={props.date} />
+    <h1>{props.title}</h1>
+
+    <div
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: props.content }}
+      className="c_blog-content"
+    />
+  </Main>
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {

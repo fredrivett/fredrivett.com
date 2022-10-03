@@ -2,12 +2,10 @@ import React from "react";
 
 import { CvRole } from "components/CvRole";
 import { Meta } from "layout/Meta";
-import { Nav } from "navigation/Nav";
 import { Main } from "templates/Main";
 
 const Cv = () => (
   <>
-    <Nav />
     <Main
       className="max-w-prose"
       meta={
