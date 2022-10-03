@@ -20,7 +20,7 @@ type IMetaProps = {
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
 
-  const fallbackImage = "/assets/images/posts/random-img.jpg";
+  const fallbackImage = "/assets/images/posts/fallback.jpg";
   const imagePath =
     props.post &&
     `${AppConfig.url}${router.basePath}${props.post.image ?? fallbackImage}`;
