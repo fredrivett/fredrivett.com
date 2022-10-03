@@ -2,13 +2,11 @@ import React from "react";
 
 import Link from "next/link";
 
-import { Pagination, IPaginationProps } from "../pagination/Pagination";
 import { PostItems } from "../utils/Content";
 import { BlogDate } from "./BlogDate";
 
 export type IBlogGalleryProps = {
   posts: PostItems[];
-  pagination: IPaginationProps;
 };
 
 const BlogGallery = (props: IBlogGalleryProps) => (
@@ -39,11 +37,6 @@ const BlogGallery = (props: IBlogGalleryProps) => (
         </li>
       ))}
     </ul>
-
-    <Pagination
-      previous={props.pagination.previous}
-      next={props.pagination.next}
-    />
   </>
 );
 

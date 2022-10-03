@@ -6,5 +6,4 @@ export const AppConfig = {
   url: "https://fredrivett.com",
   locale: "en",
   author: "Fred Rivett",
-  pagination_size: 1000, // remove pagination for now
 };
