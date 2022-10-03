@@ -1,7 +1,5 @@
 import React, { ReactNode } from "react";
 
-import { RealTimeUsers } from "components/RealTimeUsers";
-
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -15,8 +13,6 @@ const Main = ({ children, className, meta }: IMainProps) => (
     {meta}
 
     <div className="text-xl py-5">{children}</div>
-
-    <RealTimeUsers />
   </div>
 );
 
