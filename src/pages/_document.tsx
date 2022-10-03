@@ -7,7 +7,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto+Mono:400,400i,700"
+            rel="stylesheet"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
