@@ -17,10 +17,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
 
     <ul>
       {props.posts.map((post) => (
-        <li
-          key={post.slug}
-          className="c_article-head c_article-head--list-view mb-3 flex"
-        >
+        <li key={post.slug} className="flex mb-3">
           <h2 className="fs-2 mb-2 lg:order-1">
             <Link
               href="/[year]/[month]/[day]/[titleSlug]"
@@ -35,7 +32,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
 
           <BlogDate
             date={post.date}
-            className="flex-shrink-0 fs-3 mr-2 lg:w-40 lg:text-right ml-auto lg:ml-0"
+            className="flex-shrink-0 fs-4 mr-2 lg:w-40 lg:text-right ml-auto lg:ml-0"
           />
         </li>
       ))}
