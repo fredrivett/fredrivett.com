@@ -57,7 +57,7 @@ const DisplayPost = (props: IPostProps) => (
       className="inline-flex items-center"
     >
       &mdash;
-      <div className="flex mx-1.5">
+      <span className="flex mx-1.5">
         <Image
           src="/assets/images/fredrivett.jpg"
           alt="Fred Rivett's face"
@@ -65,7 +65,7 @@ const DisplayPost = (props: IPostProps) => (
           height={32}
           className="rounded-full"
         />
-      </div>
+      </span>
       @fredrivett
     </a>
   </Main>
