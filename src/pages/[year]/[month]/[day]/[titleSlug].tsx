@@ -1,6 +1,7 @@
 import React from "react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
+import Image from "next/image";
 
 import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
@@ -45,8 +46,28 @@ const DisplayPost = (props: IPostProps) => (
     <div
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: props.content }}
-      className="c_blog-content"
     />
+
+    <hr />
+
+    <a
+      href="https://twitter.com/fredrivett"
+      rel="norefferer noreferrer"
+      target="_blank"
+      className="inline-flex items-center"
+    >
+      &mdash;
+      <div className="flex mx-1.5">
+        <Image
+          src="/assets/images/fredrivett.jpg"
+          alt="Fred Rivett's face"
+          width={32}
+          height={32}
+          className="rounded-full"
+        />
+      </div>
+      @fredrivett
+    </a>
   </Main>
 );
 
