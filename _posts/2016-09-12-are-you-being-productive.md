@@ -1,7 +1,7 @@
 ---
 title: Are you being productive?
 description: Many of us desire control over how we spend our time. What output would produce this outcome?
-date: 2016-09-12 21:06 UTC
+date: "2016-09-12"
 tags: startups, life
 ---
 

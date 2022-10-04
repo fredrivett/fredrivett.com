@@ -1,8 +1,7 @@
 ---
 title: I'm going full time and we're at $0 MRR
 description: Six weeks ago I found out that my current contract was coming to an end.
-date: 2017-05-01 20:35 UTC
-tags:
+date: "2017-05-01"
 ---
 
 Six weeks ago I found out that my current contract was coming to an end. Naturally a part of me was sad hearing this, the project's budget was being cut and the product team would be leaving. I'd been working in a small, capable team and enjoyed my work environment. But a big part of me was excited. Excited that I'd finally get some time to dig in and work on building a business of my own.

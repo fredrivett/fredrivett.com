@@ -1,7 +1,7 @@
 ---
 title: That's the problem
 description: I was looking through our problem/idea list recently, and a few ideas jumped out.
-date: 2016-11-28 00:00 UTC
+date: "2016-11-28"
 tags: startup, ideas
 ---
 

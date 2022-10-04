@@ -1,7 +1,7 @@
 ---
 title: Discomfort
 description: Discomfort. The lack of comfort. Not always as bad as it seems?
-date: 2016-09-26 00:00 UTC
+date: "2016-09-26"
 tags: startups
 medium: https://medium.com/the-mission/discomfort-9aa87200fbf6
 ---

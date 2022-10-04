@@ -1,8 +1,7 @@
 ---
 title: Digging in the Dirt
 description: If you've ever tried to build a business, you'll know what I'm talking about.
-date: 2019-04-18 17:40 UTC
-tags:
+date: "2019-04-18"
 ---
 
 If you've ever tried to build a business, you'll know what I'm talking about.

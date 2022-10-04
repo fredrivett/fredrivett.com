@@ -1,8 +1,7 @@
 ---
 title: "2018: A change of plans"
 description: 2018 reiterated to me the feeling that life isn't always predictable as we sometimes think.
-date: 2019-01-01 12:44 UTC
-tags:
+date: "2019-01-01"
 ---
 
 2018 reiterated to me the feeling that life isn't always predictable as we sometimes think. The path I've taken isn't quite what [I planned on this time last year](http://fredrivett.com/2018/01/01/2017-a-year-of-two-halves/), with different challenges and opportunities than expected, but I'm thankful for it as I've grown as a person through the process.

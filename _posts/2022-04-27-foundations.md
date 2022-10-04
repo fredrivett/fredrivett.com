@@ -1,8 +1,7 @@
 ---
 title: Foundations
 description: Where you’re standing is important, it provides you with possibilities, limitations, potential. But more important is precisely what you’re standing on.
-date: 2022-04-27 00:00 UTC
-tags:
+date: "2022-04-27"
 ---
 
 Where you’re standing is important, it provides you with possibilities, limitations, potential. But more important is precisely what you’re standing on.

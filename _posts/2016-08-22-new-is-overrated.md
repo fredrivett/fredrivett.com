@@ -1,7 +1,7 @@
 ---
 title: New Is Overrated
 description: We'll always remember our first real lightbulb idea. For me it was late 2009, I was sitting at my desk, on a course that I soon realised wasn't really going to teach me anything that useful.
-date: 2016-08-22 00:00 UTC
+date: "2016-08-22"
 tags: startups
 ---
 

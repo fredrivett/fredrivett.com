@@ -1,7 +1,7 @@
 ---
 title: Consistency
 description: Consistency is one of the hardest things to achieve. Especially at the beginning. Creating a new habit, starting a new routine.
-date: 2016-10-17 00:00 UTC
+date: "2016-10-17"
 tags: life
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: "2017: A year of two halves"
 description: 2017 has been the hardest year of my life. It started with an overhang that had been building up in the final moments of 2016, which finally exploded in spectacular style.
-date: 2018-01-01 00:00 UTC
-tags:
+date: "2018-01-01"
 ---
 
 2017 has been the hardest year of my life. It started with an overhang that had been building up in the final moments of 2016, which finally exploded in spectacular style. Most of why this year has been the hardest of my (comparatively easy) life so far is personal and involves others, so I won't go into much detail, but suffice it to say, it's been challenging.
