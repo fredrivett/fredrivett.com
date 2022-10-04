@@ -119,7 +119,7 @@ const Cv = () => (
 
         <hr />
 
-        <h2>Experience</h2>
+        <h2 id="experience">Experience</h2>
 
         <CvRole
           title="Senior Front-end Engineer (Contract)"
@@ -254,7 +254,9 @@ const Cv = () => (
 
         <hr />
 
-        <h2 className="h4">Side projects</h2>
+        <h2 id="side-projects" className="h4">
+          Side projects
+        </h2>
         <p>
           Side projects are how I got into tech in the first place, hacking away
           in my spare time. Here&apos;s a selection of some of the projects
