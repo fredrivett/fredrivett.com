@@ -15,23 +15,43 @@ const Index = (props: IBlogGalleryProps) => (
       <h2 className="c_pseudo-icon c_pseudo-icon--happy">Hey there</h2>
       <p>
         I&rsquo;m{" "}
-        <a href="https://twitter.com/fredrivett" rel="nofollow">
+        <a
+          href="https://twitter.com/fredrivett"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
           Fred
         </a>{" "}
         and I like to{" "}
-        <a href="https://www.producthunt.com/@fredrivett/made" rel="nofollow">
+        <a
+          href="https://www.producthunt.com/@fredrivett"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
           make stuff
         </a>
         . I also{" "}
-        <a href="https://github.com/fredrivett" rel="nofollow">
+        <a
+          href="https://github.com/fredrivett"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
           code
         </a>
         ,{" "}
-        <a href="https://medium.com/@fredrivett" rel="nofollow">
+        <a
+          href="https://medium.com/@fredrivett"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
           write
         </a>{" "}
         and{" "}
-        <a href="https://unsplash.com/@fredrivett" rel="nofollow">
+        <a
+          href="https://unsplash.com/@fredrivett"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
           take photos
         </a>
         .
