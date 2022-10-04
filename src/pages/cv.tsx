@@ -31,7 +31,7 @@ const Cv = () => (
         </p>
         <p>
           <a
-            href="https://www.producthunt.com/@fredrivett/made"
+            href="https://www.producthunt.com/@fredrivett"
             rel="nofollow noreferrer"
             target="_blank"
           >
