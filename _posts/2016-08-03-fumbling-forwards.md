@@ -1,15 +1,15 @@
 ---
 title: Fumbling Forwards
 description: The other week Justin Jackson shared a quote, one that I desperately needed to hear.
-date: 2016-08-03 23:29 UTC
+date: 2016-08-03 UTC
 tags: startups
 canonical: https://medium.com/@fredrivett/fumbling-forwards-5716c52e090#.n8lzfptpa
 ---
 
 The other week [Justin Jackson](https://medium.com/@mijustin) shared a quote, one that I desperately needed to hear. It was from a [Paul Jarvis](https://medium.com/@pjrvs) post, with the basic premise that [success is no scientific endeavour](https://medium.pjrvs.com/success-is-for-the-lucky-579e30576eb2#---0-112.sqaw038a0).
 
-> This is the only common thread with successful entrepreneurs: they keep trying different ideas until one sticks.
-> <cite>[@mijustin on twitter](https://twitter.com/mijustin/status/756736947926827010)</cite>
+> This is the only common thread with successful entrepreneurs: they keep trying different ideas until one sticks.  
+> — [@mijustin on twitter](https://twitter.com/mijustin/status/756736947926827010)
 
 No-one likes to feel like they don’t have a clue what they’re doing. But that’s pretty much what starting a startup is like 24/7. Every day you wake up, and work on a bunch of tasks you were never trained to do. You attempt to solve a bunch of questions that you’ve never answered before. None of us really know what we’re doing, but it never looks like that. You look up at those who’ve experienced success, and wonder, do they have something I don’t?
 
@@ -38,11 +38,3 @@ Progress is incremental, remember that.
 If you’re struggling with your startup, understand you’re not alone. Be sure to get accountable with where you’re at. I highly recommend joining a mastermind group that meets weekly to discuss current successes, failures and issues. If you’re not in one already, having this accountability, support, and outside perspective will be huge for you and your business. Reach out to a few like minded people on a similar path to you and see if they’re up for it too.
 
 But most of all, don’t be ashamed of where you’re at, or what you’re doing. Be like us, just skeletons with flesh doing laps around the sun, desperately trying to work out what on earth we’re doing.
-
----
-
-**Are you struggling to keep on top of your startups monthly recurring expenses? We were, that’s why we’re building [prodigo](https://prodigo.co/).**
-
-_Prodigo is a simple app that gives you actionable insights into the tools and services you’re paying for._
-
-We’re early stage and would love to shape this with you. If you’re interested you can sign up at [prodigo.co](https://prodigo.co/) ✍️ or [say hi and we can chat](https://twitter.com/FredRivett) 👋

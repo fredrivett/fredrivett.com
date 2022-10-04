@@ -8,7 +8,7 @@ canonical: https://medium.com/makers-gonna-make/how-to-start-out-when-youre-just
 
 > _Disclaimer: This post consists of a brain dump of my current thoughts about how to best start a startup when doing it for the first time (which I currently am). I do not expect there to be only one way of doing this, this post is intended to spark discussion, so I would love to hear others opinions on this to see similarities / differences._
 
-#### 1\. Find interesting problems (whether fun/serious) and try to solve them
+## 1\. Find interesting problems (whether fun/serious) and try to solve them
 
 From my experience, it’s a fair whack easier to try and solve problems _you’re intimately aware of_, than to try and observe and fix problems _other people_ are experiencing.
 
@@ -18,7 +18,7 @@ Therefore, it makes sense to me to keep things as simple as possible, all the wh
 
 There’s a lot of similarities between the two, but solving your own problems trims away the burden of observing other users and learning what their problems look like. Keep it simple. Start now.
 
-#### 2\. Build quick and dirty MVP
+## 2\. Build quick and dirty MVP
 
 This is what I’ve spent 90% of my spare time doing for the past year, along with my _partner-in-crime_, [Mike](https://medium.com/u/67a4475456c). We realised our problem was trying to make a fully-featured perfect product from day one. We’ve learnt the hard way, spending years before learning this lesson. _It doesn’t work like that._
 
@@ -40,7 +40,7 @@ Due to the fact we’re _solving our own problem_, customer research here can be
 
 ---
 
-#### 3\. Launch it
+## 3\. Launch it
 
 Put it out there. Push it out to people who might find it useful. Find communities where they hang out and share it there.
 
@@ -50,7 +50,7 @@ Is it something the early adopter tech community might be interested in? Look at
 
 Is it more niche? Think of a few places they hang out and go there. Just be sure to get some of your potential target market to get their eyeballs on it.
 
-#### 4\. See who gravitates towards it
+## 4\. See who gravitates towards it
 
 Once you’ve built and launched your product, you should hope to see some users start to gravitate towards it. This might be a handful, or it might be hundreds, depending on what you’re building and how easily you can reach that market.
 
@@ -66,7 +66,7 @@ On the other hand, it makes sense that if what you’ve built is clearly aimed a
 
 Either way, take stock of the crowd that you draw, and look at the different groups that form.
 
-#### 5\. Gather feedback
+## 5\. Gather feedback
 
 Once you’ve launched, and you’ve got a bunch of people using your product, you should be actively looking to gather feedback on how it’s being used.
 
@@ -78,7 +78,7 @@ If users were prompted to enter their email address in the registration process 
 
 Talking to your users and hearing how they describe their problems and their thoughts on how well your product solves this (and vitally where it’s lacking) is invaluable.
 
-#### 6\. Consider whether this is a market you want to address
+## 6\. Consider whether this is a market you want to address
 
 It might sound obvious, but just because a bunch of people are using your thing, you still need to work out if that’s a market you want to address.
 
@@ -90,9 +90,9 @@ For us these are questions we’ve mulled over a lot. We could spin off a differ
 
 At this stage you must decide, should I pivot or persevere?
 
-> For more on this, be sure to read the staple twenty-first century entrepreneurs handbook, [The Lean Startup](http://theleanstartup.com/).
+> For more on this, be sure to read the staple twenty-first century entrepreneurs handbook: [The Lean Startup](http://theleanstartup.com/).
 
-#### 7\. Niche down, hone in on their problems
+## 7\. Niche down, hone in on their problems
 
 Once you’ve got your product out in the wild, you’ve found a market that resonates with it, it’s time to hone in on the problems your users are facing and solve these as best you can.
 
@@ -102,7 +102,7 @@ Be sure to solve a specific problems before considering whether to expand or not
 
 If at any stage you seriously consider whether this product and this niche can ever achieve your goals (which you probably will), it’s time to revisit point 6 above.
 
-#### 8. …Grow?
+## 8. …Grow?
 
 Once you’ve found that all elusive product/market fit, the real question is, what’s next? 99% of the time, in the startup world, that answer is grow grow grow. Take off. Shoot for the stars. And that’s a perfectly valid answer.
 

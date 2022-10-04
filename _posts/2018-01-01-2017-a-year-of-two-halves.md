@@ -65,13 +65,13 @@ Another area I've been experimenting with is [daily tweetlogging, or twogging fo
 
 ## A few highlights from 2017
 
-####Places:
+#### Places:
 
 - Greece: Earlier in the year I was fortunate to spend 2 weeks on a small Greek island. I loved how relaxed it was, being able to get to know the locals was a nice change from most holidays. It's here I decided I'd set off for Asia.
 - Japan (Tokyo + Kyoto especially): This is a mysterious place to me, with great food and a unique culture. To sum it up in one line: The ATMs are from the 80's and the toilets are from the future.
 - Hong Kong and Taipei: Two cities with a mix of amazing food and beautiful landscapes. I hope to return to both.
 
-####Books:
+#### Books:
 
 - [Shoe Dog by Phil Knight](https://www.audible.com/pd/Bios-Memoirs/Shoe-Dog-Audiobook/B01CRM17MS): A great insight into the reality of starting a global brand and the luck required along the way.
 - [Ghost in the Wires by Kevin Mitnick](https://www.audible.com/pd/Nonfiction/Ghost-in-the-Wires-Audiobook/B005H3FYR4): A thrilling insight into the life of one of the worlds most wanted hackers in the 1980's.
@@ -80,7 +80,7 @@ Another area I've been experimenting with is [daily tweetlogging, or twogging fo
 
 ## 2017 goals recap & 2018 goals
 
-####[My goals for 2017](http://fredrivett.com/2017/01/01/2016-a-year-of-learning/) were:
+#### [My goals for 2017](http://fredrivett.com/2017/01/01/2016-a-year-of-learning/) were:
 
 - Sort out my legs to get running and playing football again.
 - Get a stranger on the internet to pay us a monthly fee for a product we make.
@@ -90,7 +90,7 @@ I achieved 2/3, but again neglected and procrastinated on sorting out my health.
 
 Mike mentioned to me his desire to get running in 2018, and we've both decided to commit to running a 10k in 2018. 10,000 metres isn't far, but for two guys who have hardly ran the past 10 years, it's a goal that's hopefully achievable yet will still be a huge change for us. Whatever it takes, I need to get myself out there and redeem my health. Life's too short to procrastinate on something so important.
 
-####My three goals for 2018:
+#### My three goals for 2018:
 
 - Get my legs sorted so they're strong and healthy (run a 10k)
 - Support ourselves from product work (napkin maths says around $8k+ MRR)

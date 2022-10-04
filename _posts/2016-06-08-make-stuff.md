@@ -14,7 +14,8 @@ The twist here? The more you pay, the higher you’ll be featured on the leaderb
 
 If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/).
 
-> If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/) > <cite>[@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge?ref_src=twsrc%5Etfw)</cite>
+> If you want some traffic to your site now would be a good time to participate: [http://highscore.money](https://highscore.money/)  
+> — [@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge?ref_src=twsrc%5Etfw)
 
 And by the end of the day Marc had done [pretty well](https://medium.com/@marckohlbrugge/how-i-made-2-251-in-1-day-with-highscore-money-dd56b35b2681#.i58k99t77):
 
@@ -24,8 +25,8 @@ As makers, quick side projects like this help flex our creative muscles. I don�
 
 Whilst following Marc’s launch day progress, one tweet from Marc struck me, and got me thinking.
 
-> What's a good, privacy-friendly real-time website counter?
-> <cite>[@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge/status/737388891246891008?ref_src=twsrc%5Etfw)</cite>
+> What's a good, privacy-friendly real-time website counter?  
+> — [@marckohlbrugge on twitter](https://twitter.com/marckohlbrugge/status/737388891246891008?ref_src=twsrc%5Etfw)
 
 This was the second time I’d seen a request for some form of user facing site stats. A few weeks before, [Justin Jackson](https://twitter.com/mijustin) had written [I’m a fucking webmaster](https://justinjackson.ca/webmaster/), and wrote [this comment on his Hacker News post](https://news.ycombinator.com/item?id=11685868):
 
@@ -62,9 +63,3 @@ That’s what we’ve learnt, these past eighteen months. Ship stuff. Keep movin
 Spending the past month or so thinking through what we want to be focussing on, the business we want to build, has been an essential step. But sometimes we need to [step away from the magic whiteboards](https://twitter.com/FredRivett/status/737384708024238084) and get back to making stuff.
 
 Who knows what’ll come of it.
-
----
-
-This broadcast was brought to you by We Are CONTRAST Ltd. If you enjoyed this show, you may enjoy similar offerings, such as [Why You Don’t Have to Quit Your Job to Get Started (But Not Having a Life Helps)](https://blog.wearecontrast.com/why-you-don-t-have-to-quit-your-job-to-get-started-but-not-having-a-life-helps-ea9bdb230bcd#.tyo5zi1wt), [How a Tweet Inspired a Christmas Hackathon](https://blog.wearecontrast.com/how-a-tweet-inspired-a-christmas-hackathon-ed2973ff0689#.55f0z9q63) and [10 Easy Steps to Launching Your Side Project](https://blog.wearecontrast.com/10-easy-steps-to-launching-your-side-project-bbff783b08a8#.d5lsoac46).
-
-> [Did we mention we wrote a book. It’s free. Like, totally free. You should read it 👀 📖](https://learningtolaunch.co/)

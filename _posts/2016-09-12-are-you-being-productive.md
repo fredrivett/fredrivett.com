@@ -115,15 +115,11 @@ The important point here isn’t the specifics of the example, but that knowing 
 
 I read a quote a couple years back from [Nathan Bashaw](http://twitter.com/nbashaw) that’s continually stuck with me in the back of my mind since.
 
-> "When you look back 6 months from today and don’t feel embarrassed by your naiveté, there’s a problem."
-> <cite>[Nathan Bashaw](https://twitter.com/nbashaw)</cite>
+> "When you look back 6 months from today and don’t feel embarrassed by your naiveté, there’s a problem."  
+> — Nathan Bashaw
 
 [https://twitter.com/rrhoover/status/550308425972740096](https://twitter.com/rrhoover/status/550308425972740096)
 
 It doesn’t matter where you’re at right now. You can’t affect where you stand, or the circumstances around you. What matters is _whether you’re making progress towards where you want to be._
 
 So take stock of your inputs, where you’re spending your time, but don’t glamourise how long you spend at the office, or even what you’re creating. Focus on the impact your work is having, on others, on yourself, and whether it’s moving you close to where you really want to be. That’s what really matters.
-
----
-
-Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [_Yes please_](https://wearecontrast.com/signup)

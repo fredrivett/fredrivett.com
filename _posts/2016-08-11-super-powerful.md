@@ -23,8 +23,8 @@ Sharing your goal with others is powerful. As soon as you tell someone you're go
 
 The science backs this up:
 
-> "Prompting people to monitor their progress can help them to achieve their goals, but some methods of monitoring are better than others. Specifically, we would recommend that people be encouraged to record, report or make public what they find out as they assess their progress."
-> <cite>Psychological Bulletin, Vol 142(2), Feb 2016, 198-229.</cite>
+> "Prompting people to monitor their progress can help them to achieve their goals, but some methods of monitoring are better than others. Specifically, we would recommend that people be encouraged to record, report or make public what they find out as they assess their progress."  
+> — Psychological Bulletin, Vol 142(2), Feb 2016, 198-229.
 
 ### Regular public goals are super powerful
 

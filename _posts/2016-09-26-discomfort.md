@@ -63,7 +63,3 @@ That said, we aren’t made to do the same thing over and over and over and over
 It can be hard to know when that time comes. Hard to decide between sticking it out and pushing through, and moving onto something new.
 
 Often the path ahead is unclear. Knowing what’s ‘right’ is no scientific endeavour. But often our discomfort can lead us, whispering to us over and over, “have you looked over here? It’s time now.”
-
----
-
-Each week I write a post and record a podcast episode. Get both in your inbox every Tuesday, free of charge. Sign up, no spam, I promise. [_Yes please_](https://wearecontrast.com/signup)
