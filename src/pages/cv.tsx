@@ -254,9 +254,7 @@ const Cv = () => (
 
         <hr />
 
-        <h2 id="side-projects" className="h4">
-          Side projects
-        </h2>
+        <h2 id="side-projects">Side projects</h2>
         <p>
           Side projects are how I got into tech in the first place, hacking away
           in my spare time. Here&apos;s a selection of some of the projects
