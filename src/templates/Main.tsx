@@ -8,11 +8,12 @@ type IMainProps = {
 
 const Main = ({ children, className, meta }: IMainProps) => (
   <div
-    className={`max-w-screen-md mx-auto antialiased w-full text-gray-700 px-3 mb-8 md:mb-16 md:px-0 ${className}`}
+    className={`mx-auto antialiased w-full text-gray-700 mb-8 md:mb-16 py-8 md:py-14 lg:py-20 ${
+      className || ``
+    }`}
   >
     {meta}
-
-    <div className="px-4 py-6">{children}</div>
+    {children}
   </div>
 );
 

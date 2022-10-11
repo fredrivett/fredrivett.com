@@ -6,20 +6,20 @@
   display: flex;
   flex-wrap: wrap;
   @apply -mr-2;
-  @apply -mb-2;
+  @apply -mb-1;
 
   @screen md {
     @apply -mr-4;
-    @apply -mb-4;
+    @apply -mb-2;
   }
 
   & > * {
     @apply mr-2;
-    @apply mb-2;
+    @apply mb-1;
 
     @screen md {
       @apply mr-4;
-      @apply mb-4;
+      @apply mb-2;
     }
 
     &:nth-last-child(n+2) {

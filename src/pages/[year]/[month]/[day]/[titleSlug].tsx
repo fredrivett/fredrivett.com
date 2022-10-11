@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 
 import { BlogDate } from "blog/BlogDate";
+import Container from "components/Container";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
@@ -27,7 +28,7 @@ type IPostProps = {
 
 const DisplayPost = (props: IPostProps) => (
   <Main
-    className="text-lg py-4 md:py-8 lg:py-16 max-w-prose"
+    className="text-lg py-4 md:py-8 lg:py-16"
     meta={
       <Meta
         title={props.title}
@@ -40,34 +41,36 @@ const DisplayPost = (props: IPostProps) => (
       />
     }
   >
-    <BlogDate date={props.date} />
-    <h1>{props.title}</h1>
+    <Container maxWidth="prose">
+      <BlogDate date={props.date} />
+      <h1>{props.title}</h1>
 
-    <div
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: props.content }}
-    />
+      <div
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: props.content }}
+      />
 
-    <hr />
+      <hr />
 
-    <a
-      href="https://twitter.com/fredrivett"
-      rel="norefferer noreferrer"
-      target="_blank"
-      className="inline-flex items-center"
-    >
-      &mdash;
-      <span className="flex mx-1.5">
-        <Image
-          src="/assets/images/fredrivett.jpg"
-          alt="Fred Rivett's face"
-          width={32}
-          height={32}
-          className="rounded-full"
-        />
-      </span>
-      @fredrivett
-    </a>
+      <a
+        href="https://twitter.com/fredrivett"
+        rel="norefferer noreferrer"
+        target="_blank"
+        className="inline-flex items-center self-start"
+      >
+        &mdash;
+        <span className="flex mx-1.5">
+          <Image
+            src="/assets/images/fredrivett.jpg"
+            alt="Fred Rivett's face"
+            width={32}
+            height={32}
+            className="rounded-full"
+          />
+        </span>
+        @fredrivett
+      </a>
+    </Container>
   </Main>
 );
 
