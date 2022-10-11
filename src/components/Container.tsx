@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
-// be sure to add these to the safelist in `tailwind.config.js` otherwise they
-// won't appear on initial load
 const maxWidthVariants = {
   prose: tw`max-w-prose`,
   md: tw`max-w-screen-md`,
