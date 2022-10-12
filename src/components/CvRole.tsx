@@ -52,7 +52,7 @@ const CvRole = ({
       {tags.map((tag) => (
         <span
           key={tag}
-          className="px-3 py-1.5 text-sm bg-gray-200 rounded-full"
+          className="px-3 py-1.5 print:p-0 print:font-bold text-sm bg-gray-200 rounded-full"
         >
           {tag}
         </span>

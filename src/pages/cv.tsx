@@ -139,6 +139,7 @@ const Cv = () => (
                   from me!
                 </strong>
               </Testimonial>
+              <div className="print:mb-24"></div>
             </div>
           </div>
           <div className="p-6 lg:w-3/5">

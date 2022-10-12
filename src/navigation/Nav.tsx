@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const Nav = () => (
-  <nav className="c_main-nav">
+  <nav className="c_main-nav print:hidden">
     <Link href="/">
       <a className="c_main-nav__item fs-2">FR</a>
     </Link>
