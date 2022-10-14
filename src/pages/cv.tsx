@@ -144,7 +144,14 @@ const Cv = () => (
             </div>
           </div>
           <div className="p-6 lg:w-3/5">
-            <span className="fs-2 text-gray-500">/CV</span>
+            <div className="flex items-center mb-2">
+              <img
+                alt="Photo of Dr. Philip Jones"
+                src="/assets/images/fredrivett.jpg"
+                className="inline-block w-14 h-14 mr-1 rounded-full"
+              />
+              <span className="fs-2 text-gray-500">/CV</span>
+            </div>
             <h1 className="fs-0 mb-2 leading-none">Fred Rivett</h1>
             <p className="fs-4">Senior Product-focussed Front-end Engineer.</p>
             <p>
