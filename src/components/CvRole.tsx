@@ -26,8 +26,8 @@ const CvRole = ({
   tags,
 }: ICvRoleProps) => (
   <div className="mb-6 md:mb-12">
-    <h3 className="mb-0">{title}</h3>
-    <p className="font-bold mb-0">
+    <h3 className="mb-1">{title}</h3>
+    <p className="font-bold mb-0.5">
       {company}
       {links && " ("}
       {links &&
