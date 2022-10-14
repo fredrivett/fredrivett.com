@@ -2,6 +2,7 @@ import React from "react";
 
 import Container from "components/Container";
 import { CvRole } from "components/CvRole";
+import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
@@ -185,6 +186,9 @@ const Cv = () => (
             </p>
             <p>
               <strong>Available for contract opportunities.</strong>
+            </p>
+            <p>
+              <Tag>🇬🇧 London / 🌍 Remote</Tag>
             </p>
 
             <hr />
