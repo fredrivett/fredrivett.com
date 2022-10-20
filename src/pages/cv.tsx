@@ -319,9 +319,9 @@ const Cv = () => (
               ]}
               dates="Jun 2018 — Jan 2019 • 8 mos"
               blurb={[
-                "Tech lead and co-creator of The Dot, a mobile news app that develops healthy habits, working with The Guardian as part of the Venture Studio at Founders Factory.",
+                "Tech lead and co-founder of The Dot, a mobile news app that aimed to build a habit loop by enabling users to predict the news, working with The Guardian as part of the Venture Studio at Founders Factory.",
               ]}
-              tags={["React", "Firebase", "Framer", "UI/UX"]}
+              tags={["React", "Firebase", "Framer", "UI/UX", "Product"]}
             />
 
             <CvRole
