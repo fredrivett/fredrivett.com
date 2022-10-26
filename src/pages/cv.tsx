@@ -61,6 +61,61 @@ const Cv = () => (
                 cite={
                   <>
                     <img
+                      alt="Photo of Andrew McDonough"
+                      src="/people/andrew-mcdonough.jpg"
+                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/andrewmcdonough/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Andrew McDonough
+                    </a>{" "}
+                    (CTO,{" "}
+                    <a
+                      href="https://www.captionhub.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      CaptionHub
+                    </a>
+                    )
+                  </>
+                }
+              >
+                I first met Fred when I hired him as a front-end developer for
+                TPO.{" "}
+                <strong>
+                  It was one of the best recruiting decisions I&apos;ve ever
+                  made. I valued Fred&apos;s contributions so highly, that I
+                  subsequently hired him to work with me at two other companies.
+                </strong>{" "}
+                He has a very good eye for design and amazing attention to
+                detail. He has a strong product mindset, and having taken a
+                number of his own products to market, has a deep understanding
+                of the full product lifecycle. He is always thinking about what
+                the customer wants and how to deliver the best value.{" "}
+                <strong>
+                  Fred is strong technically and always seems to be on the
+                  cutting edge of front-end development tools and techniques.
+                </strong>{" "}
+                He has also been able to pick up unfamiliar technologies
+                extremely quickly. For example, on the first project we worked
+                on together, he had never worked with Ruby on Rails, but was
+                able to quickly learn enough to collaborate with the backend
+                developers, and even write some backend Ruby code himself.{" "}
+                <strong>
+                  Fred has strong collaboration skills and is a fantastic team
+                  player.
+                </strong>{" "}
+                He always seems to get on with everyone on the team and is happy
+                to work with people across all functions and levels.
+              </Testimonial>
+              <Testimonial
+                cite={
+                  <>
+                    <img
                       alt="Photo of Tony Walmsley"
                       src="/people/tony-walmsley.jpg"
                       className="inline-block w-6 h-6 mr-1 rounded-full"
