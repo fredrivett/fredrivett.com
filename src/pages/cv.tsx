@@ -359,7 +359,7 @@ const Cv = () => (
               ]}
               dates="May 2017 — Jan 2018 • 9 mos"
               blurb={[
-                "Part-time contracting with Buildupp focussed on leading UI development.",
+                "Part-time contract with Buildupp focussed on leading UI development.",
               ]}
               tags={["Sass", "ITCSS", "JS"]}
             />
