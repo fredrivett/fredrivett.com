@@ -21,9 +21,9 @@ const Cv = () => (
         <div className="flex flex-wrap -m-6">
           <div className="p-6 lg:w-2/5">
             <h2 className="lg:hidden">
-              Kind words from colleagues &amp; clients
+              💬 Kind words from colleagues &amp; clients
             </h2>
-            <div className="border-l-4 border-gray-300 lg:border-l-0 pl-4 lg:pl-0">
+            <div className="flex flex-col border-l-4 border-gray-300 lg:border-l-0 pl-4 lg:pl-0 last-mb-0 mb-8 lg:mb-0">
               <Testimonial
                 cite={
                   <>
@@ -113,6 +113,7 @@ const Cv = () => (
                 to work with people across all functions and levels.
               </Testimonial>
               <Testimonial
+                className="print:mb-12" // add some extra space to push next testimonial onto own page
                 cite={
                   <>
                     <img
@@ -195,7 +196,6 @@ const Cv = () => (
                   from me!
                 </strong>
               </Testimonial>
-              <div className="print:mb-24"></div>
             </div>
           </div>
           <div className="p-6 lg:w-3/5">
@@ -255,7 +255,7 @@ const Cv = () => (
 
             <hr />
 
-            <ul className="o_bordered-list">
+            <ul className="o_bordered-list print:break-inside-avoid-page">
               <li>
                 <a
                   href="https://www.linkedin.com/in/fredrivett/"
@@ -314,7 +314,7 @@ const Cv = () => (
 
             <hr />
 
-            <h2 id="experience">Experience</h2>
+            <h2 id="experience">👨🏻‍💻 Experience</h2>
 
             <CvRole
               title="Senior Front-end Engineer (Contract)"
@@ -453,7 +453,7 @@ const Cv = () => (
 
             <hr />
 
-            <h2 id="side-projects">Side projects</h2>
+            <h2 id="side-projects">🎨 Side projects</h2>
             <p>
               Side projects are how I got into tech in the first place, hacking
               away in my spare time. Here&apos;s a selection of some of the
@@ -618,7 +618,7 @@ const Cv = () => (
             </ul>
             <hr />
             <p>
-              Have an interesting opportunity?{" "}
+              👋🏼 Have an interesting opportunity?{" "}
               <a href="mailto:fred@fredrivett.com?subject=Work%20together%3F">
                 Reach out and say hi
               </a>

@@ -179,6 +179,12 @@ hr {
   }
 }
 
+.last-mb-0 {
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 @import "print";
 
 @import "objects/bordered-list";

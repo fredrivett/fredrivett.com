@@ -1,4 +1,7 @@
 @media print {
+  // src: https://stackoverflow.com/a/1312456/827129
+  * { overflow: auto !important; }
+
   #content,
   #page {
     width: 100%;
@@ -37,7 +40,6 @@
   ol,
   dl {
     page-break-before: avoid;
-    page-break-inside: avoid;
   }
 
   // kinda(?) works, but a bit unpredictable

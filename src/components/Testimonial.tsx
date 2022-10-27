@@ -1,13 +1,16 @@
 import React, { ReactNode } from "react";
 
 type Props = {
+  className?: string;
   children: ReactNode;
   cite: ReactNode;
 };
 
-const Testimonial = ({ children, cite }: Props) => (
-  <blockquote className="relative ml-0 mb-8 text-sm">
-    <div className="p-4 indent-4 bg-gray-200 rounded-xl">
+const Testimonial = ({ className, children, cite }: Props) => (
+  <blockquote
+    className={`relative ml-0 mb-8 print:-mt-4 text-sm ${className ?? ""}`}
+  >
+    <div className="p-4 print:pb-0 indent-4 bg-gray-200 rounded-xl">
       <span className="absolute top-1 left-0 md:top-0 md:-left-1 text-gray-500 fs-1 font-header">
         “
       </span>
