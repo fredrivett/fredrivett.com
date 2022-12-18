@@ -11,9 +11,9 @@ export async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(remarkParse)
     .use(gfm)
-    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypePrism)
-    .use(rehypeStringify, {allowDangerousHtml: true})
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown);
   return result.toString().replace(/@@baseUrl@@/g, process.env.baseUrl || "");
 }
