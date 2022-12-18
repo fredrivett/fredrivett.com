@@ -14,15 +14,23 @@
     @apply px-3 py-2;
   }
 
-  .c_main-nav__item--available {
-    background-image: linear-gradient(to right, rgba(#2ecc71, 0.7) 0%, rgba(#2ecc71, 0.7) 100%);
-    color: rgba(#2ecc7a, 0.7);
+  .c_main-nav__item--available,
+  .c_main-nav__item--unavailable {
+    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%) !important;
     font-weight: bold;
+    opacity: 0.7;
 
     &:hover, &:focus, &:active {
-      background-image: linear-gradient(to right, rgba(#2ecc71, 1) 0%, rgba(#2ecc71, 1) 100%);
-      color: rgba(#2ecc7a, 1);
+      opacity: 1;
     }
+  }
+
+  .c_main-nav__item--available, {
+    @apply text-green-500;
+  }
+
+  .c_main-nav__item--unavailable {
+    @apply text-yellow-500;
   }
 
 

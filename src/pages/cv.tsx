@@ -247,7 +247,9 @@ const Cv = () => (
               .
             </p>
             <p>
-              <strong>Available for contract opportunities.</strong>
+              <strong className="inline-block bg-yellow-100 text-yellow-600 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
+                Available for contract opportunities (from&nbsp;Q3&nbsp;2023)
+              </strong>
             </p>
             <p>
               <Tag>🇬🇧 London / 🌍 Remote</Tag>

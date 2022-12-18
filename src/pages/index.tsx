@@ -62,7 +62,9 @@ const Index = (props: IBlogGalleryProps) => (
         <p>
           <Link href="/cv">
             <a>
-              <strong>Available for contract opportunities</strong>
+              <strong>
+                Available for contract opportunities (from Q3 2023)
+              </strong>
             </a>
           </Link>
           .

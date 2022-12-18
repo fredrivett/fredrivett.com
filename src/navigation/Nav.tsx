@@ -9,8 +9,8 @@ const Nav = () => (
     </Link>
     <div className="c_main-nav__right">
       <Link href="/cv">
-        <a className="c_main-nav__item c_main-nav__item--available">
-          available
+        <a className="c_main-nav__item c_main-nav__item--unavailable">
+          available Q3 2023
         </a>
       </Link>
       <a
