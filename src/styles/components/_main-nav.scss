@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
     @apply px-3 py-2;
+    @apply text-sm;
+
+    @screen sm {
+      @apply text-base;
+    }
   }
 
   .c_main-nav__item--available,

@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./_posts/**/*.md"],
   theme: {
@@ -41,5 +43,54 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        ".last-mb-0": {
+          "& > *:last-child": {
+            marginBottom: 0,
+          },
+        },
+        ".fs-0": {
+          fontSize: "2.281rem !important",
+          lineHeight: 1.1,
+
+          "@media (min-width: 768px)": {
+            fontSize: "3.583rem !important",
+          },
+        },
+        ".fs-1": {
+          fontSize: "1.802rem !important",
+
+          "@media (min-width: 768px)": {
+            fontSize: "2.488rem !important",
+          },
+        },
+        ".fs-2": {
+          fontSize: "1.424rem !important",
+
+          "@media (min-width: 768px)": {
+            fontSize: "1.728rem !important",
+          },
+        },
+        ".fs-3": {
+          fontSize: "1.266rem !important",
+
+          "@media (min-width: 768px)": {
+            fontSize: "1.44rem !important",
+          },
+        },
+        ".fs-4": {
+          fontSize: "1.125rem !important",
+
+          "@media (min-width: 768px)": {
+            fontSize: "1.2rem !important",
+          },
+        },
+        ".fs-5": {
+          fontSize: "1rem !important",
+        },
+      });
+    }),
+  ],
 };
