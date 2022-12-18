@@ -18,7 +18,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
     <ul>
       {props.posts.map((post) => (
         <li key={post.slug} className="flex mb-3">
-          <h2 className="fs-2 mb-2 lg:order-1">
+          <h2 className="fs-2 mb-2 mr-2 lg:ml-0 lg:order-1">
             <Link
               href="/[year]/[month]/[day]/[titleSlug]"
               as={`/${post.year}/${post.month}/${post.day}/${post.titleSlug}`}
