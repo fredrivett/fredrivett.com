@@ -46,6 +46,7 @@ const DisplayPost = (props: IPostProps) => (
       <h1>{props.title}</h1>
 
       <div
+        className="blog-post"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: props.content }}
       />

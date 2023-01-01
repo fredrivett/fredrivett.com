@@ -204,3 +204,46 @@ hr {
   @apply text-sm;
   @apply italic;
 }
+
+ul {
+  ul {
+    @apply pl-12;
+    @apply -indent-8;
+
+    ul {
+      @apply pl-16;
+    }
+  }
+}
+
+// auto added CSS class `twitter-tweet` from CSS embed script
+.twitter-tweet {
+  @apply mx-auto;
+  @apply py-4;
+}
+
+.blog-post {
+  h1 {
+    @apply mt-12;
+
+    @screen md {
+      @apply mt-16;
+    }
+  }
+
+  h2 {
+    @apply mt-8;
+
+    @screen md {
+      @apply mt-12;
+    }
+  }
+
+  h3 {
+    @apply mt-6;
+
+    @screen md {
+      @apply mt-8;
+    }
+  }
+}
