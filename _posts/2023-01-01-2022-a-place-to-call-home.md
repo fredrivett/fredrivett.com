@@ -2,6 +2,7 @@
 title: "2022: A place to call home"
 description: "2022 started slowly but was a year of taking steps forwards in multiple areas of life."
 date: "2023-01-01"
+image: "/assets/images/posts/2023-01-01-2022-a-place-to-call-home/og-image.jpg"
 ---
 
 The start of the year came around in a state of limbo. I'd moved out of my flat having had an offer accepted on a place of my own, hopeful of it being swiftly completed. Naturally with things like this they often take longer than you'd expect, and the flat purchase dragged on month after month.
