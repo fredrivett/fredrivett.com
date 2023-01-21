@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import { BlogDate } from "blog/BlogDate";
+import PseudoIcon from "components/PseudoIcon";
 import { PostItems } from "utils/Content";
 
 export type IBlogGalleryProps = {
@@ -11,8 +12,8 @@ export type IBlogGalleryProps = {
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
-    <h2 className="fs-2 lg:ml-40 lg:pl-2 c_pseudo-icon c_pseudo-icon--arrow">
-      Latest
+    <h2 className="fs-2 lg:ml-40 lg:pl-2">
+      <PseudoIcon icon="arrow">Latest</PseudoIcon>
     </h2>
 
     <ul>

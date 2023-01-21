@@ -247,7 +247,7 @@ const Cv = () => (
               .
             </p>
             <p>
-              <strong className="inline-block bg-yellow-100 text-yellow-600 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
+              <strong className="inline-block bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-yellow-200 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
                 Available for contract opportunities (from&nbsp;Q3&nbsp;2023)
               </strong>
             </p>

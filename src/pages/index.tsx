@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import Container from "components/Container";
+import PseudoIcon from "components/PseudoIcon";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 import { AppConfig } from "utils/AppConfig";
@@ -14,7 +15,9 @@ const Index = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Hey there" description={AppConfig.description} />}>
     <Container maxWidth="md">
       <div className="mb-4">
-        <h2 className="c_pseudo-icon c_pseudo-icon--happy">Hey there</h2>
+        <h2>
+          <PseudoIcon icon="happy">Hey there</PseudoIcon>
+        </h2>
         <p>
           I&rsquo;m{" "}
           <a

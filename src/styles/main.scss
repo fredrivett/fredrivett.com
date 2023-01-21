@@ -14,35 +14,10 @@
   transition: font-size ease 0.25s;
 }
 
-@mixin fs1() {
-  font-size: 1.802rem;
-  @screen md { font-size: 2.488rem; }
-}
-
-@mixin fs2() {
-  font-size: 1.424rem;
-  @screen md { font-size: 1.728rem; }
-}
-
-@mixin fs3() {
-  font-size: 1.266rem;
-  @screen md { font-size: 1.44rem; }
-}
-
-@mixin fs4() {
-  font-size: 1.125rem;
-  @screen md { font-size: 1.2rem; }
-}
-
-@mixin fs5() {
-  font-size: 1rem;
-}
-
 body {
   font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: theme("colors.gray.700");
   text-align: left;
   min-height: 100vh;
 }
@@ -56,12 +31,6 @@ h6,
 .font-header {
   font-family: "Playfair Display", Georgia, sans-serif;
 }
-
-.fs-1 { @include fs1(); }
-.fs-2 { @include fs2(); }
-.fs-3 { @include fs3(); }
-.fs-4 { @include fs4(); }
-.fs-5 { @include fs5(); }
 
 h1,
 .h1,
@@ -80,27 +49,27 @@ h6,
 
 h1,
 .h1 {
-  @include fs1();
+  @apply fs-1;
 }
 h2,
 .h2 {
-  @include fs2();
+  @apply fs-2;
 }
 h3,
 .h3 {
-  @include fs3();
+  @apply fs-3;
 }
 h4,
 .h4 {
-  @include fs4();
+  @apply fs-4;
 }
 h5,
 .h5 {
-  @include fs4();
+  @apply fs-4;
 }
 h6,
 .h6 {
-  @include fs5();
+  @apply fs-5;
 }
 
 p,
@@ -112,10 +81,10 @@ ul,
 
 p
 li {
-  @include fs5();
+  @apply fs-5;
 
   & .c_blog-content {
-    @include fs4();
+    @apply fs-4;
   }
 }
 
@@ -154,10 +123,21 @@ a {
   &:hover {
     background-image: linear-gradient(to right, theme("colors.sky.300") 0%, theme("colors.sky.300") 100%);
   }
+
+  // REWORK WITH WITH TAILWIND SETUP WHEN ALLOWING DARK MODE TOGGLE
+  @media (prefers-color-scheme: dark) {
+    @apply text-sky-400;
+
+    background-image: linear-gradient(to right, theme("colors.gray.800") 0%, theme("colors.gray.800") 100%);
+
+    &:hover {
+      background-image: linear-gradient(to right, theme("colors.sky.800") 0%, theme("colors.sky.800") 100%);
+    }
+  }
 }
 
 blockquote {
-  @include fs2();
+  @apply fs-2;
   @apply ml-4;
 
   cite {
@@ -183,7 +163,6 @@ hr {
 
 @import "objects/bordered-list";
 
-@import "components/main-nav";
 @import "components/pseudo-icon";
 
 .blog-img-wrapper {

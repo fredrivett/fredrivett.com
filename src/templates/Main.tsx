@@ -8,7 +8,7 @@ type IMainProps = {
 
 const Main = ({ children, className, meta }: IMainProps) => (
   <div
-    className={`mx-auto antialiased w-full text-gray-700 mb-8 md:mb-16 py-8 md:py-14 lg:py-20 ${
+    className={`mx-auto antialiased w-full mb-8 md:mb-16 py-8 md:py-14 lg:py-20 ${
       className || ``
     }`}
   >
