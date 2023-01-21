@@ -33,7 +33,7 @@ const Cv = () => (
             <h2 className="lg:hidden">
               💬 Kind words from colleagues &amp; clients
             </h2>
-            <div className="flex flex-col border-l-4 border-gray-300 lg:border-l-0 pl-4 lg:pl-0 last-mb-0 mb-8 lg:mb-0">
+            <div className="flex flex-col border-l-4 border-gray-300 dark:border-gray-800 lg:border-l-0 pl-4 lg:pl-0 last-mb-0 mb-8 lg:mb-0">
               <Testimonial
                 cite={
                   <>
