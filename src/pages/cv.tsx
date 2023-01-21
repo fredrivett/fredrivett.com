@@ -7,6 +7,16 @@ import Testimonial from "components/Testimonial";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
+const getMonthsSince = (dateString: string) => {
+  const currentDate = new Date();
+  const givenDate = new Date(dateString);
+  const diffYear = currentDate.getFullYear() - givenDate.getFullYear();
+  let diff = currentDate.getMonth() - givenDate.getMonth();
+  const roundItUp = 1;
+  diff += diffYear * 12 + roundItUp;
+  return `${diff} mos`;
+};
+
 const Cv = () => (
   <>
     <Main
@@ -317,6 +327,18 @@ const Cv = () => (
             <hr />
 
             <h2 id="experience">👨🏻‍💻 Experience</h2>
+
+            <CvRole
+              title="Senior Front-end Engineer (Contract)"
+              company="BlackRock"
+              dates={`December 2023 – current • ${getMonthsSince(
+                "2022/12/01",
+              )}`}
+              blurb={[
+                "Developing the front-end for a new internal web app in the AI Labs team.",
+              ]}
+              tags={["React", "TypeScript", "Jest", "Next.js", "Bootstrap"]}
+            />
 
             <CvRole
               title="Senior Front-end Engineer (Contract)"
