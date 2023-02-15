@@ -52,6 +52,17 @@ module.exports = {
                 group: "external",
                 position: "before",
               },
+              {
+                pattern: "{components/**,pages/**,views/**}",
+                group: "internal",
+                position: "after",
+              },
+              {
+                pattern:
+                  "{assets/**,constants/**,layouts/**,schemas/**,store/**,tests/**,types/**,utils/**}",
+                group: "internal",
+                position: "after",
+              },
             ],
             pathGroupsExcludedImportTypes: ["react"],
             "newlines-between": "always",

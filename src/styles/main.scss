@@ -144,6 +144,14 @@ a {
   }
 }
 
+@layer utilities {
+  .no-underline {
+    &, &:hover {
+      background-image: none;
+    }
+  }
+}
+
 blockquote {
   @apply fs-2;
   @apply ml-4;
@@ -164,6 +172,11 @@ hr {
 
   @screen md {
     @apply my-8;
+  }
+
+  // REWORK WITH WITH TAILWIND SETUP WHEN ALLOWING DARK MODE TOGGLE
+  @media (prefers-color-scheme: dark) {
+    @apply border-gray-900;
   }
 }
 
