@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  #__next {
+    @apply grow-height;
+  }
+}
+
 :root {
   --default-margin-bottom: 20px;
 }
@@ -15,6 +21,8 @@
 }
 
 body {
+  @apply grow-height;
+
   font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

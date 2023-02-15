@@ -52,6 +52,11 @@ module.exports = {
             marginBottom: 0,
           },
         },
+        ".grow-height": {
+          flex: "1 1 0%",
+          display: "flex",
+          flexDirection: "column",
+        },
         ".fs-0": {
           fontSize: "2.281rem !important",
           lineHeight: 1.1,
