@@ -4,9 +4,11 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 
 import { BlogDate } from "blog/BlogDate";
-import Container from "components/Container";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
+
+import Container from "components/Container";
+
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
 import { markdownToHtml } from "utils/Markdown";
 

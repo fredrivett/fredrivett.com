@@ -1,8 +1,9 @@
 import React from "react";
 
-import Container from "components/Container";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
+
+import Container from "components/Container";
 
 const HabitAppPrivacyPolicy = () => (
   <Main

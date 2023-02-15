@@ -4,10 +4,12 @@ import { GetStaticProps } from "next";
 import Link from "next/link";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
-import Container from "components/Container";
-import PseudoIcon from "components/PseudoIcon";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
+
+import Container from "components/Container";
+import PseudoIcon from "components/PseudoIcon";
+
 import { AppConfig } from "utils/AppConfig";
 import { getAllPosts } from "utils/Content";
 
