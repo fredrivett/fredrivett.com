@@ -41,12 +41,15 @@ const Project: FunctionComponent<Props> = ({
 
   return (
     <HtmlElement
-      className="inline-flex px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full fs-5"
+      className="inline-flex gap-2 flex-wrap items-end max-w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-3xl fs-5"
       href={href}
       rel={rel}
       target={target}
     >
-      {emoji} {name} {duration ? `(${duration})` : ""}
+      <span>
+        {emoji} {name}
+      </span>
+      <span className="text-sm">{duration ? `(${duration})` : ""}</span>
     </HtmlElement>
   );
 };
