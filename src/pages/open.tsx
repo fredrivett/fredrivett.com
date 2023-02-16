@@ -72,7 +72,9 @@ const Open: FunctionComponent<Props> = ({ projectsWithTimeEntries }) => (
         <hr />
         <h2>
           Side projects{" "}
-          <span className="text-gray-700 fs-4">(time tracked this year)</span>
+          <span className="text-gray-600 dark:text-gray-700 fs-4">
+            (time tracked this year)
+          </span>
         </h2>
         <Spacer>
           {projectsWithTimeEntries.map((project) => (
