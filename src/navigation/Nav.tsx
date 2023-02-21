@@ -6,7 +6,7 @@ import tw from "twin.macro";
 
 const SNav = styled.nav(tw`flex justify-between print:hidden`);
 const SNavMain = styled.div(tw`flex`);
-const SNavItem = styled.a<{
+const SNavLink = styled(Link)<{
   availability?: "available" | "unavailable";
   large?: boolean;
 }>(() => [
@@ -24,20 +24,20 @@ const SNavItem = styled.a<{
 
 const Nav = () => (
   <SNav>
-    <Link href="/">
-      <SNavItem large>FR</SNavItem>
-    </Link>
+    <SNavLink large href="/">
+      FR
+    </SNavLink>
     <SNavMain>
-      <Link href="/cv">
-        <SNavItem availability="unavailable">available Q3 2023</SNavItem>
-      </Link>
-      <SNavItem
+      <SNavLink availability="unavailable" href="/cv">
+        available Q3 2023
+      </SNavLink>
+      <SNavLink
         href="https://twitter.com/fredrivett"
         rel="nofollow noreferrer"
         target="_blank"
       >
         @fredrivett
-      </SNavItem>
+      </SNavLink>
     </SNavMain>
   </SNav>
 );

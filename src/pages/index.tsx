@@ -66,11 +66,7 @@ const Index = (props: IBlogGalleryProps) => (
         <p>Senior Product-focussed Front-end Engineer.</p>
         <p>
           <Link href="/cv">
-            <a>
-              <strong>
-                Available for contract opportunities (from Q3 2023)
-              </strong>
-            </a>
+            <strong>Available for contract opportunities (from Q3 2023)</strong>
           </Link>
           .
         </p>

@@ -25,12 +25,9 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             <Link
               href="/[year]/[month]/[day]/[titleSlug]"
               as={`/${post.year}/${post.month}/${post.day}/${post.titleSlug}`}
-            >
-              <a
-                className="c_article-head__title"
-                dangerouslySetInnerHTML={{ __html: post.title }}
-              ></a>
-            </Link>
+              className="c_article-head__title"
+              dangerouslySetInnerHTML={{ __html: post.title }}
+            />
           </h2>
 
           <BlogDate
