@@ -222,7 +222,7 @@ const Cv = () => (
             </p>
             <p>
               Current go-to toolkit includes React, Vue, React Native,
-              TypeScript, Styled Components &amp; Tailwind.
+              TypeScript, Jest, Styled Components &amp; Tailwind.
             </p>
             <p>
               <a
@@ -301,7 +301,7 @@ const Cv = () => (
               </li>
               <li>
                 <a
-                  href="https://www.producthunt.com/@fredrivett/made"
+                  href="https://www.producthunt.com/@fredrivett"
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
