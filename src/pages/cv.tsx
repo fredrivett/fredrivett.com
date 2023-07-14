@@ -25,7 +25,7 @@ const Cv = () => (
       meta={
         <Meta
           title="/CV"
-          description="Senior Product-focussed Front-end Engineer, current go-to toolkit includes React, Vue, React Native, TypeScript, Styled Components & Tailwind."
+          description="Senior Product-focussed Frontend Engineer, current go-to toolkit includes React, React Native, Vue, TypeScript, Jest, styled-components & Tailwind."
         />
       }
     >
@@ -58,6 +58,14 @@ const Cv = () => (
                       rel="nofollow noreferrer"
                     >
                       A Blueprint for Production-Ready Web Applications
+                    </a>{" "}
+                    &amp; VP Technology,{" "}
+                    <a
+                      href="https://curaleaf.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Curaleaf International
                     </a>
                     )
                   </>
@@ -96,7 +104,7 @@ const Cv = () => (
                   </>
                 }
               >
-                I first met Fred when I hired him as a front-end developer for
+                I first met Fred when I hired him as a frontend engineer for
                 TPO.{" "}
                 <strong>
                   It was one of the best recruiting decisions I&apos;ve ever
@@ -110,13 +118,13 @@ const Cv = () => (
                 the customer wants and how to deliver the best value.{" "}
                 <strong>
                   Fred is strong technically and always seems to be on the
-                  cutting edge of front-end development tools and techniques.
+                  cutting edge of frontend development tools and techniques.
                 </strong>{" "}
                 He has also been able to pick up unfamiliar technologies
                 extremely quickly. For example, on the first project we worked
                 on together, he had never worked with Ruby on Rails, but was
                 able to quickly learn enough to collaborate with the backend
-                developers, and even write some backend Ruby code himself.{" "}
+                engineers, and even write some backend Ruby code himself.{" "}
                 <strong>
                   Fred has strong collaboration skills and is a fantastic team
                   player.
@@ -148,7 +156,7 @@ const Cv = () => (
                   This is the second time I have worked with Fred and I&apos;m
                   hoping there will be a third, and a fourth&hellip;
                 </strong>{" "}
-                As the front-end developer for our prototype application Fred
+                As the frontend engineer for our prototype application Fred
                 produced a very clean and functional UI that integrated very
                 smoothly with the REST API that I was developing.{" "}
                 <strong>
@@ -213,16 +221,16 @@ const Cv = () => (
           <div className="p-6 lg:w-3/5">
             <FredHead title="CV" />
             <h1 className="fs-0 mb-2 leading-none">Fred Rivett</h1>
-            <p className="fs-4">Senior Product-focussed Front-end Engineer.</p>
+            <p className="fs-4">Senior Product-focussed Frontend Engineer.</p>
             <p>
-              Passionate about building sane, maintainable systems with a keen
-              eye for design. Fascinated by the challenge of making something
-              great that improves users lives. Able to lead across a wide
-              spectrum or narrowly focus on code alone.
+              Passionate about building maintainable systems with a keen eye for
+              design. Fascinated by the challenge of making something great that
+              improves users lives. Able to lead across a wide spectrum or
+              narrowly focus on code alone.
             </p>
             <p>
-              Current go-to toolkit includes React, Vue, React Native,
-              TypeScript, Jest, Styled Components &amp; Tailwind.
+              Current go-to toolkit includes React, React Native, Vue,
+              TypeScript, Jest, styled-components &amp; Tailwind.
             </p>
             <p>
               <a
@@ -252,12 +260,14 @@ const Cv = () => (
               .
             </p>
             <p>
-              <strong className="inline-block bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-yellow-200 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
-                Available for contract opportunities (from&nbsp;Q3&nbsp;2023)
+              <strong className="inline-block bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-200 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
+                Available for contract opportunities
               </strong>
             </p>
             <p>
-              <Tag>🇬🇧 London / 🌍 Remote</Tag>
+              <Tag>
+                🇬🇧 London <span className="text-gray-700">/</span> 🌍 Remote
+              </Tag>
             </p>
 
             <hr />
@@ -324,23 +334,37 @@ const Cv = () => (
             <h2 id="experience">👨🏻‍💻 Experience</h2>
 
             <CvRole
-              title="Senior Front-end Engineer (Contract)"
-              company="BlackRock"
+              title="Senior Frontend Engineer (Contract)"
+              company="BlackRock (AI Labs)"
+              links={[
+                {
+                  url: "https://www.blackrock.com/corporate/ai",
+                  text: "AI Labs homepage",
+                },
+              ]}
               dates={`December 2023 – current • ${getMonthsSince(
                 "2022/12/01",
               )}`}
               blurb={[
-                "Developing the front-end for a new internal web app in the AI Labs team.",
+                "Sole frontend engineer in the BlackRock AI Labs team, responsible for taking wireframes, adding custom UI polish and building out a new internal web app in Next.js & TypeScript with 100% Jest test coverage.",
               ]}
-              tags={["React", "TypeScript", "Jest", "Next.js", "Bootstrap"]}
+              tags={[
+                "React",
+                "Next.js",
+                "TypeScript",
+                "Jest",
+                "Bootstrap",
+                "Tailwind",
+                "styled-components",
+              ]}
             />
 
             <CvRole
-              title="Senior Front-end Engineer (Contract)"
+              title="Senior Frontend Engineer (Contract)"
               company="Critical Insight Security Ltd"
               dates="August 2022 – September 2022 • 2 mos"
               blurb={[
-                "Short-term contract tasked with delivering the front-end for a new client application.",
+                "Short-term contract tasked with delivering the frontend for a new client application. Completed build from start to finish in 6 weeks.",
               ]}
               tags={["React", "TypeScript", "Next.js", "Material UI"]}
             />
@@ -351,7 +375,7 @@ const Cv = () => (
               links={[{ url: "https://www.num.uk/", text: "Homepage" }]}
               dates="Sep 2019 — July 2022 • 2 yrs 11 mos"
               blurb={[
-                "Heading up the product process across half a dozen projects, from designing the UX flow alongside the CEO and architecting technical solutions with the Lead Back-end Engineer, all the way to designing the aesthetic details of the UI and being the sole front-end engineer implementing it all in Vue.",
+                "Heading up the product process across half a dozen projects, from designing the UX flow alongside the CEO and architecting technical solutions with the Lead Backend Engineer, all the way to designing the aesthetic details of the UI and being the sole frontend engineer implementing it all in Vue.",
               ]}
               tags={["Vue", "Vuex", "Nuxt", "Tailwind", "UI/UX"]}
             />
@@ -379,7 +403,7 @@ const Cv = () => (
               links={[{ url: "https://octopuswealth.com/", text: "Homepage" }]}
               dates="Feb 2019 — Aug 2019 • 7 mos"
               blurb={[
-                "Senior Software Engineer and Lead Front-end Dev, training up junior developers, working with React, Redux and TypeScript.",
+                "Senior Software Engineer and Lead Frontend Dev, training up junior developers, working with React, Redux and TypeScript.",
                 "Made redundant when company pivoted and laid off entire tech team.",
               ]}
               tags={["React", "Redux", "TypeScript", "styled-components"]}
@@ -399,7 +423,7 @@ const Cv = () => (
             />
 
             <CvRole
-              title="Front-end Developer (Contract)"
+              title="Frontend Engineer (Contract)"
               company="The People's Operator"
               links={[
                 {
@@ -415,7 +439,7 @@ const Cv = () => (
             />
 
             <CvRole
-              title="Front-end Developer (Contract)"
+              title="Frontend Engineer (Contract)"
               company="Tabl"
               links={[{ url: "https://tabl.com/", text: "Homepage" }]}
               dates="Nov 2017 — Apr 2018 • 6 mos"
@@ -426,7 +450,7 @@ const Cv = () => (
             />
 
             <CvRole
-              title="Front-end Developer (Contract)"
+              title="Frontend Engineer (Contract)"
               company="Buildupp"
               links={[
                 { url: "https://twitter.com/build_upp", text: "Twitter" },
@@ -439,7 +463,7 @@ const Cv = () => (
             />
 
             <CvRole
-              title="Front-end Developer (Contract)"
+              title="Frontend Engineer (Contract)"
               company="Spoke Law (Lawyers On Demand)"
               links={[
                 {
@@ -449,13 +473,13 @@ const Cv = () => (
               ]}
               dates="Aug 2016 — May 2017 • 10 mos"
               blurb={[
-                "Implementing the front-end alongside a strong product focussed team of three (Product Manager, Product Designer, Back-end Engineer).",
+                "Implementing the frontend alongside a strong product focussed team of three (Product Manager, Product Designer, Backend Engineer).",
               ]}
               tags={["Sass", "ITCSS", "JS"]}
             />
 
             <CvRole
-              title="Front-end Developer"
+              title="Frontend Engineer"
               company="The People's Operator"
               links={[
                 {
@@ -465,7 +489,7 @@ const Cv = () => (
               ]}
               dates="Mar 2015 — Aug 2016 • 1 yr 6 mos"
               blurb={[
-                "Leading the front-end development of our US e-commerce store and community sites, managing two developers, one per project.",
+                "Leading the frontend development of our US e-commerce store and community sites, managing two engineers, one per project.",
               ]}
               tags={["Sass", "ITCSS", "JS"]}
             />

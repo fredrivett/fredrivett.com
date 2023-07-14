@@ -29,6 +29,10 @@
       @screen md {
         @apply pr-4;
       }
+
+      @media (prefers-color-scheme: dark) {
+        border-right-color: theme("colors.gray.800");
+      }
     }
   }
 }
