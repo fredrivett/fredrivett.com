@@ -81,6 +81,109 @@ const Cv = () => (
                 cite={
                   <>
                     <img
+                      alt="Photo of Thayer Prime"
+                      src="/people/thayer-prime.jpg"
+                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/thayerprime"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Thayer Prime
+                    </a>{" "}
+                    (Founder & CEO,{" "}
+                    <a
+                      href="https://team-prime.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Team Prime
+                    </a>
+                    )
+                  </>
+                }
+              >
+                <strong>
+                  I love working with Fred - he&apos;s a definite go to any time
+                  I have a front end contract that needs a safe, grown up pair
+                  of hands to really get in and deliver, he&apos;s the guy.
+                </strong>{" "}
+                I know I can match him to any client and they will be grateful
+                having had him on their project. I would recommend him for any
+                gig, but especially those where you just need a really nice
+                personable human to come in, get stuff done, and be really cool
+                to work with.{" "}
+                <strong>
+                  If you manage to get him count yourself lucky, he&apos;s often
+                  busy due to his excellent reputation. A++ strong recommend
+                  from me!
+                </strong>
+              </Testimonial>
+              <Testimonial
+                cite={
+                  <>
+                    <img
+                      alt="Photo of Raphael Benarrosh"
+                      src="/people/raphael-benarrosh.jpg"
+                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Ralph Benarrosh
+                    </a>{" "}
+                    (Director,{" "}
+                    <a
+                      href="https://www.blackrock.com/corporate/ai"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      BlackRock Lab for Artificial Intelligence
+                    </a>
+                    )
+                  </>
+                }
+              >
+                We hired Fred roughly nine months ago to develop the frontend
+                component of a larger application that we are developing for an
+                internal client. During this time,{" "}
+                <strong>
+                  I can say that Fred has exceeded all of our expectations.
+                </strong>
+                <br />
+                <br />
+                This being one of our team’s first projects that contained a
+                major frontend component, Fred helped us establish the standard
+                frontend stack and toolchain for our team, which we still rely
+                upon heavily and are looking to use for other projects. He then
+                built out the entire vision for the product on a very short
+                timeline.
+                <br />
+                <br />
+                His work was done quickly but was very high quality and required
+                minimal oversight in terms of code reviews, which helped us
+                reduce the overall management overhead for the entire effort. In
+                terms of project management, Fred integrated naturally into our
+                team’s agile process and was very meticulous in tracking the
+                work and keeping the tools up to date.
+                <br />
+                <br />
+                Fred has been a pleasure to work with and has worked extremely
+                well with the entire rest of our team. Fred exemplified all of
+                the values that we look for on our team, including competence,
+                meticulousness, humility, and a desire to do things correctly.{" "}
+                <strong>
+                  I would love to work with Fred again, and I highly recommend
+                  him to anyone looking for an experienced frontend developer.
+                </strong>
+              </Testimonial>
+              <Testimonial
+                cite={
+                  <>
+                    <img
                       alt="Photo of Andrew McDonough"
                       src="/people/andrew-mcdonough.jpg"
                       className="inline-block w-6 h-6 mr-1 rounded-full"
@@ -171,49 +274,6 @@ const Cv = () => (
                 <strong>
                   I seriously doubt our project would have been so successful
                   without his work.
-                </strong>
-              </Testimonial>
-              <Testimonial
-                cite={
-                  <>
-                    <img
-                      alt="Photo of Thayer Prime"
-                      src="/people/thayer-prime.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
-                    />
-                    <a
-                      href="https://www.linkedin.com/in/thayerprime"
-                      target="_blank"
-                      rel="nofollow noreferrer"
-                    >
-                      Thayer Prime
-                    </a>{" "}
-                    (Founder & CEO,{" "}
-                    <a
-                      href="https://team-prime.com/"
-                      target="_blank"
-                      rel="nofollow noreferrer"
-                    >
-                      Team Prime
-                    </a>
-                    )
-                  </>
-                }
-              >
-                <strong>
-                  I love working with Fred - he&apos;s a definite go to any time
-                  I have a front end contract that needs a safe, grown up pair
-                  of hands to really get in and deliver, he&apos;s the guy.
-                </strong>{" "}
-                I know I can match him to any client and they will be grateful
-                having had him on their project. I would recommend him for any
-                gig, but especially those where you just need a really nice
-                personable human to come in, get stuff done, and be really cool
-                to work with.{" "}
-                <strong>
-                  If you manage to get him count yourself lucky, he&apos;s often
-                  busy due to his excellent reputation. A++ strong recommend
-                  from me!
                 </strong>
               </Testimonial>
             </div>
