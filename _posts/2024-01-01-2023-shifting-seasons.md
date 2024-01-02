@@ -1,7 +1,8 @@
 ---
 title: "2023: Shifting seasons"
-description: "2022 started slowly but was a year of taking steps forwards in multiple areas of life."
+description: "Lots happened in 2023, getting married, buying some land & starting a new role to name a few"
 date: "2024-01-01"
+image: "/assets/images/posts/2024-01-01-2023-shifting-seasons/og-image.jpg"
 ---
 
 <div class="blog-img-wrapper">
