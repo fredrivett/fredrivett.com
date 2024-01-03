@@ -32,7 +32,7 @@ I read a quote from James Clear’s newsletter this week that fits with my view 
 
 I’ve also heard before that when assessing the potential of a relationship, there are three key areas to look for: Chemistry, Character, and Calling.
 
-Chemistry is the stuff we all normally focus on chemistry, the feelings we get when we see the other, the ease of jokes flying back and forth, the peace we feel when together.
+Chemistry is the stuff we all normally focus on, the feelings we get when we see the other, the ease of jokes flying back and forth, the peace we feel when together.
 
 Character is the deeper, more ingrained aspects of personality, integrity, values, the sort of person someone is when no one’s looking.
 
