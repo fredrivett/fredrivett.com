@@ -69,7 +69,7 @@ These threads pulling together have given me confidence in where I stand now and
 
 Tinkering away at something day by day and seeing your creation come alive over time is a super satisfying experience.
 
-Recently, I haven't spent much time on techy side projects. The only one I’ve been dabbling on and then being [Blocks](https://twitter.com/blockshabits). The bigger project has been the goal to build a Furnished Holiday Let (FHL) on a piece of land Lorna & I first spotted towards the end of last year.
+Recently, I haven't spent much time on techy side projects. The only one I’ve been dabbling on being [Blocks](https://twitter.com/blockshabits). The bigger project has been the goal to build a Furnished Holiday Let (FHL) on a piece of land Lorna & I first spotted towards the end of last year.
 
 Since then, with the help of our planning consultant, we put in a pre-application to the local council which came back positively, agreed a price with the seller, and finally purchased the plot in August after quite a lot of back and forth (read: solicitors' costs). Since then, we’ve appointed an architect to work with in the planning, design, and build phases, should we get that far.
 
