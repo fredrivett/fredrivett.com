@@ -28,9 +28,7 @@ const Nav = () => (
       FR
     </SNavLink>
     <SNavMain>
-      <SNavLink availability="unavailable" href="/cv">
-        available Q3 2023
-      </SNavLink>
+      <SNavLink href="/cv">/cv</SNavLink>
       <SNavLink
         href="https://twitter.com/fredrivett"
         rel="nofollow noreferrer"

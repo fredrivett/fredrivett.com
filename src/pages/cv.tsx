@@ -9,14 +9,28 @@ import FredHead from "components/FredHead";
 import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
 
-const getMonthsSince = (dateString: string) => {
+const getTimeSince = (dateString: string) => {
   const currentDate = new Date();
   const givenDate = new Date(dateString);
+
+  // Calculate total months difference
   const diffYear = currentDate.getFullYear() - givenDate.getFullYear();
-  let diff = currentDate.getMonth() - givenDate.getMonth();
+  const diffMonths = currentDate.getMonth() - givenDate.getMonth();
   const roundItUp = 1;
-  diff += diffYear * 12 + roundItUp;
-  return `${diff} mos`;
+  const totalMonths = diffYear * 12 + diffMonths + roundItUp;
+
+  // Convert to years and months
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  // Format the output
+  if (years === 0) {
+    return `${months} mos`;
+  }
+  if (months === 0) {
+    return `${years} ${years === 1 ? "yr" : "yrs"}`;
+  }
+  return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
 const Cv = () => (
@@ -320,11 +334,6 @@ const Cv = () => (
               .
             </p>
             <p>
-              <strong className="inline-block bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-200 px-3 py-2 lg:px-4 rounded-xl md:rounded-full">
-                Available for contract opportunities
-              </strong>
-            </p>
-            <p>
               <Tag>
                 🇬🇧 London <span className="text-gray-700">/</span> 🌍 Remote
               </Tag>
@@ -394,6 +403,32 @@ const Cv = () => (
             <h2 id="experience">👨🏻‍💻 Experience</h2>
 
             <CvRole
+              title="Founding Engineer (Contract)"
+              company="Lex"
+              links={[
+                {
+                  url: "https://www.blackrock.com/corporate/ai",
+                  text: "Lex homepage",
+                },
+              ]}
+              dates={`December 2023 – current • ${getTimeSince("2023/12/01")}`}
+              blurb={[
+                "First engineer hire, working across the whole company, from top of funnel to product ideas all the way through to full stack implementation and everything else that goes on at an early stage startup.",
+              ]}
+              tags={[
+                "React",
+                "TypeScript",
+                "Ruby on Rails",
+                "Zustand",
+                "Jest",
+                "Playwright",
+                "ProseMirror",
+                "Tldraw",
+                "stylex",
+              ]}
+            />
+
+            <CvRole
               title="Senior Frontend Engineer (Contract)"
               company="BlackRock (AI Labs)"
               links={[
@@ -402,11 +437,10 @@ const Cv = () => (
                   text: "AI Labs homepage",
                 },
               ]}
-              dates={`December 2023 – current • ${getMonthsSince(
-                "2022/12/01",
-              )}`}
+              dates={`December 2022 – April 2024 • 1 yr 5 mos`}
               blurb={[
                 "Sole frontend engineer in the BlackRock AI Labs team, responsible for taking wireframes, adding custom UI polish and building out a new internal web app in Next.js & TypeScript with 100% Jest test coverage.",
+                "Initial 6 month contract, extended to 12, and then shifted to a short-term retainer until a new team member could be found.",
               ]}
               tags={[
                 "React",
