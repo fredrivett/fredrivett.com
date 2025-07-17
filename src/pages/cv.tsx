@@ -478,13 +478,12 @@ const Cv = () => (
               title="Founder (Side project)"
               company="Blocks iOS app"
               links={[
-                { url: "https://blocks.fernoon.com/", text: "Homepage" },
                 {
                   url: "https://apps.apple.com/us/app/blocks-minimal-habit-tracker/id1550584642",
                   text: "App Store",
                 },
               ]}
-              dates="Feb 2020 — current • 2 yrs 5 mos"
+              dates={`Feb 2020 — current • ${getTimeSince("2020/02/01")}`}
               blurb={[
                 "During lockdown I used my newfound spare time to build an iOS app. I designed the minimalist UI/UX and implemented it all in React Native using Expo.",
               ]}

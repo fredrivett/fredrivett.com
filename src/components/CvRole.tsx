@@ -45,7 +45,7 @@ const CvRole = ({
           .reduce((prev, curr) => [prev, " / ", curr])}
       {links && ")"}
     </p>
-    <p>{dates}</p>
+    <p className="opacity-50">{dates}</p>
     {blurb.map((paragraph, index) => (
       <p key={index}>{paragraph}</p>
     ))}
