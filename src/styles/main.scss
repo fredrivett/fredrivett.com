@@ -87,8 +87,7 @@ ul,
   margin-bottom: var(--default-margin-bottom);
 }
 
-p
-li {
+p li {
   @apply fs-5;
 
   & .c_blog-content {
@@ -123,30 +122,47 @@ a {
   @apply text-sky-500;
   text-decoration: none;
 
-  background-image: linear-gradient(to right, theme("colors.gray.300") 0%, theme("colors.gray.300") 100%);
+  background-image: linear-gradient(
+    to right,
+    theme("colors.gray.300") 0%,
+    theme("colors.gray.300") 100%
+  );
   background-repeat: repeat-x;
   background-position: 0px 100%; /* [1] */
   background-size: 100% 0.18em; /* [2] */
 
   &:hover {
-    background-image: linear-gradient(to right, theme("colors.sky.300") 0%, theme("colors.sky.300") 100%);
+    background-image: linear-gradient(
+      to right,
+      theme("colors.sky.300") 0%,
+      theme("colors.sky.300") 100%
+    );
   }
 
   // REWORK WITH WITH TAILWIND SETUP WHEN ALLOWING DARK MODE TOGGLE
   @media (prefers-color-scheme: dark) {
     @apply text-sky-400;
 
-    background-image: linear-gradient(to right, theme("colors.gray.800") 0%, theme("colors.gray.800") 100%);
+    background-image: linear-gradient(
+      to right,
+      theme("colors.gray.800") 0%,
+      theme("colors.gray.800") 100%
+    );
 
     &:hover {
-      background-image: linear-gradient(to right, theme("colors.sky.800") 0%, theme("colors.sky.800") 100%);
+      background-image: linear-gradient(
+        to right,
+        theme("colors.sky.800") 0%,
+        theme("colors.sky.800") 100%
+      );
     }
   }
 }
 
 @layer utilities {
   .no-underline {
-    &, &:hover {
+    &,
+    &:hover {
       background-image: none;
     }
   }
@@ -194,7 +210,7 @@ hr {
   }
 
   @screen lg {
-    @apply -mx-12 ;
+    @apply -mx-12;
   }
 }
 
@@ -245,5 +261,9 @@ ul {
     @screen md {
       @apply mt-8;
     }
+  }
+
+  .fw-600 {
+    font-weight: 600;
   }
 }
