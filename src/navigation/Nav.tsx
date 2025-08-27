@@ -8,10 +8,10 @@ const SNav = styled.nav(tw`flex justify-between lg:sticky top-0 print:hidden`);
 const SNavMain = styled.div(tw`flex`);
 const SNavLink = styled(Link)<{
   availability?: "available" | "unavailable";
-  large?: boolean;
+  $large?: boolean;
 }>(() => [
   tw`flex items-center px-3 py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950`,
-  ({ large }) => (large ? tw`fs-2` : tw`text-sm sm:text-base`),
+  ({ $large }) => ($large ? tw`fs-2` : tw`text-sm sm:text-base`),
 
   ({ availability }) => availability === "available" && tw`text-green-500`,
   ({ availability }) => availability === "unavailable" && tw`text-yellow-500`,
@@ -24,7 +24,7 @@ const SNavLink = styled(Link)<{
 
 const Nav = () => (
   <SNav>
-    <SNavLink large href="/">
+    <SNavLink $large href="/">
       FR
     </SNavLink>
     <SNavMain>
