@@ -29,6 +29,7 @@ const Nav = () => (
     </SNavLink>
     <SNavMain>
       <SNavLink href="/now">/now</SNavLink>
+      <SNavLink href="/shelf">/shelf</SNavLink>
       <SNavLink href="/cv">/cv</SNavLink>
       <SNavLink
         href="https://twitter.com/fredrivett"

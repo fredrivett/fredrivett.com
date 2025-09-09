@@ -38,7 +38,7 @@ const Cv = () => (
     <Main
       meta={
         <Meta
-          title="/CV"
+          title="/cv"
           description="Senior Product-focussed Frontend Engineer, current go-to toolkit includes React, React Native, Vue, TypeScript, Jest, styled-components & Tailwind."
         />
       }
@@ -293,7 +293,7 @@ const Cv = () => (
             </div>
           </div>
           <div className="p-6 lg:w-3/5">
-            <FredHead title="CV" />
+            <FredHead title="cv" />
             <h1 className="fs-0 mb-2 leading-none">Fred Rivett</h1>
             <p className="fs-4">Senior Product-focussed Frontend Engineer.</p>
             <p>
