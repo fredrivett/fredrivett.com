@@ -84,7 +84,7 @@ const ThemeToggle = () => {
     <Tooltip content={getTooltipContent()} className="flex">
       <button
         onClick={toggleTheme}
-        className="flex items-center text-blue-300 hover:text-blue-500 dark:text-blue-700 dark:hover:text-blue-500 px-3 py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950"
+        className="flex items-center text-blue-300 hover:text-blue-500 dark:text-blue-500 px-3 py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950"
       >
         {getIcon()}
       </button>
