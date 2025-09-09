@@ -41,16 +41,8 @@ const sections: Record<string, ShelfSection> = {
         title: "When Breath Becomes Air",
         by: "Paul Kalanithi",
         description:
-          "A beautifully touching book, written as only a gifted author, dying, could.",
+          "A beautifully touching book, written as only a gifted, dying author could.",
         url: "https://literal.club/fredrivett/book/when-breath-becomes-air-md8wf",
-        copies: 2,
-      },
-      {
-        title: "Ready Player One",
-        by: "Ernest Cline",
-        description:
-          "A gripping story of the ultimate computer game, recommended by someone who doesn't like fiction or sci-fi.",
-        url: "https://literal.club/fredrivett/book/ernest-cline-ready-player-one-jbunr",
         copies: 2,
       },
       {
@@ -67,6 +59,14 @@ const sections: Record<string, ShelfSection> = {
         description:
           "A wonderfully easy, insightful read on how habits are built. Changed my life.",
         url: "https://literal.club/fredrivett/book/charles-duhiggthe-power-of-habit-kmimy",
+        copies: 2,
+      },
+      {
+        title: "Ready Player One",
+        by: "Ernest Cline",
+        description:
+          "A gripping story of the ultimate computer game, recommended by someone who doesn't like fiction or sci-fi.",
+        url: "https://literal.club/fredrivett/book/ernest-cline-ready-player-one-jbunr",
         copies: 2,
       },
       {
