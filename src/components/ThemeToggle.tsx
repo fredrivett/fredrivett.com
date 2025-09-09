@@ -55,9 +55,12 @@ const ThemeToggle = () => {
     setTheme(nextTheme);
   };
 
+  const buttonClasses =
+    "flex items-center text-blue-300 hover:text-blue-500 dark:text-blue-500 p-1 px-1.5 sm:px-3 sm:py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950";
+
   if (!mounted) {
     return (
-      <button className="flex items-center px-3 py-2 cursor-pointer opacity-70">
+      <button className={buttonClasses}>
         <SunMoon size={20} />
       </button>
     );
@@ -66,11 +69,11 @@ const ThemeToggle = () => {
   const getIcon = () => {
     switch (theme) {
       case "light":
-        return <Sun size={20} />;
+        return <Sun size={18} />;
       case "dark":
-        return <Moon size={20} />;
+        return <Moon size={18} />;
       default:
-        return <SunMoon size={20} />;
+        return <SunMoon size={18} />;
     }
   };
 
@@ -82,10 +85,7 @@ const ThemeToggle = () => {
 
   return (
     <Tooltip content={getTooltipContent()} className="flex">
-      <button
-        onClick={toggleTheme}
-        className="flex items-center text-blue-300 hover:text-blue-500 dark:text-blue-500 px-3 py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950"
-      >
+      <button onClick={toggleTheme} className={buttonClasses}>
         {getIcon()}
       </button>
     </Tooltip>
