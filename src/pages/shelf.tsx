@@ -204,7 +204,6 @@ const Shelf = () => (
                           href={item.url}
                           target="_blank"
                           rel="nofollow noreferrer"
-                          className="hover:underline"
                         >
                           {titleContent}
                         </a>

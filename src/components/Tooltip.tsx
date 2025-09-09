@@ -84,7 +84,7 @@ const Tooltip = ({
       </div>
       {isMounted && isOpen && (
         <div
-          className="bg-gray-900 text-white text-sm px-2 py-1 rounded shadow-lg z-50"
+          className="bg-gray-200 font-semibold dark:bg-gray-900 dark:text-white text-sm px-3 py-2 rounded shadow-sm z-50"
           ref={refs.setFloating}
           style={floatingStyles}
           {...getFloatingProps()}
@@ -92,7 +92,7 @@ const Tooltip = ({
           {content}
           <div
             ref={arrowRef}
-            className="absolute w-2 h-2 bg-gray-900 rotate-45"
+            className="absolute w-2 h-2 bg-gray-200 dark:bg-gray-900 rotate-45"
             style={{
               left: arrowX != null ? `${arrowX}px` : "",
               top: arrowY != null ? `${arrowY}px` : "",

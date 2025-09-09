@@ -4,6 +4,8 @@ import Link from "next/link";
 import styled from "styled-components";
 import tw from "twin.macro";
 
+import ThemeToggle from "components/ThemeToggle";
+
 const SNav = styled.nav(tw`flex justify-between lg:sticky top-0 print:hidden`);
 const SNavMain = styled.div(tw`flex`);
 const SNavLink = styled(Link)<{
@@ -28,6 +30,7 @@ const Nav = () => (
       FR
     </SNavLink>
     <SNavMain>
+      <ThemeToggle />
       <SNavLink href="/now">/now</SNavLink>
       <SNavLink href="/shelf">/shelf</SNavLink>
       <SNavLink href="/cv">/cv</SNavLink>

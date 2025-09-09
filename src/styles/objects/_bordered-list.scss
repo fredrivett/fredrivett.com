@@ -22,7 +22,7 @@
       @apply mb-2;
     }
 
-    &:nth-last-child(n+2) {
+    &:nth-last-child(n + 2) {
       @apply pr-2;
       border-right: 2px solid theme("colors.gray.400");
 
@@ -30,7 +30,7 @@
         @apply pr-4;
       }
 
-      @media (prefers-color-scheme: dark) {
+      .dark & {
         border-right-color: theme("colors.gray.800");
       }
     }
