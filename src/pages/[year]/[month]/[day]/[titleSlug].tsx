@@ -1,16 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 import Image from "next/image";
+import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
 
 import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
+import Tweet from "components/Tweet";
 
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
-import { markdownToHtml } from "utils/Markdown";
 
 type IPostUrl = {
   titleSlug: string;
@@ -25,47 +29,10 @@ type IPostProps = {
   date: string;
   modified_date: string;
   image: string | null;
-  content: string;
+  mdxSource: MDXRemoteSerializeResult;
 };
 
 const DisplayPost = (props: IPostProps) => {
-  useEffect(() => {
-    const updateTwitterTheme = () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      const twitterTweets = document.querySelectorAll(".twitter-tweet");
-
-      twitterTweets.forEach((tweet) => {
-        if (isDark) {
-          tweet.setAttribute("data-theme", "dark");
-        } else {
-          tweet.removeAttribute("data-theme");
-        }
-      });
-    };
-
-    // Initial theme update
-    updateTwitterTheme();
-
-    // Watch for theme changes
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (
-          mutation.type === "attributes" &&
-          mutation.attributeName === "class"
-        ) {
-          updateTwitterTheme();
-        }
-      });
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <Main
       className="text-lg py-4 md:py-8 lg:py-16"
@@ -85,11 +52,14 @@ const DisplayPost = (props: IPostProps) => {
         <BlogDate date={props.date} />
         <h1>{props.title}</h1>
 
-        <div
-          className="blog-post"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
+        <div className="blog-post">
+          <MDXRemote
+            {...props.mdxSource}
+            components={{
+              Tweet,
+            }}
+          />
+        </div>
 
         <hr />
 
@@ -146,7 +116,13 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     "content",
     "slug",
   ]);
-  const content = await markdownToHtml(post.content || "");
+
+  const mdxSource = await serialize(post.content || "", {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeHighlight],
+    },
+  });
 
   return {
     props: {
@@ -155,7 +131,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       date: post.date,
       modified_date: post.modified_date ?? post.date,
       image: post.image ?? null,
-      content,
+      mdxSource,
     },
   };
 };

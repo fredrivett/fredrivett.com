@@ -29,8 +29,14 @@ export function getPostSlugs() {
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const realSlug = slug.replace(/\.(md|mdx)$/, "");
+
+  // Try .mdx first, then .md
+  let fullPath = join(postsDirectory, `${realSlug}.mdx`);
+  if (!fs.existsSync(fullPath)) {
+    fullPath = join(postsDirectory, `${realSlug}.md`);
+  }
+
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
   const items: PostItems = {};

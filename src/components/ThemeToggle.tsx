@@ -23,10 +23,12 @@ const ThemeToggle = () => {
       // Force light mode by removing dark class and adding style override
       root.classList.remove("dark");
       root.style.colorScheme = "light";
+      root.setAttribute("data-theme", "light");
     } else if (theme === "dark") {
       // Force dark mode
       root.classList.add("dark");
       root.style.colorScheme = "dark";
+      root.setAttribute("data-theme", "dark");
     } else {
       // Auto mode - use system preference and remove override
       root.style.colorScheme = "";
@@ -35,8 +37,10 @@ const ThemeToggle = () => {
       ).matches;
       if (darkSystemPref) {
         root.classList.add("dark");
+        root.setAttribute("data-theme", "dark");
       } else {
         root.classList.remove("dark");
+        root.setAttribute("data-theme", "light");
       }
     }
   }, [theme]);
