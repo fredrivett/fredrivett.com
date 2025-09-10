@@ -6,13 +6,16 @@ import tw from "twin.macro";
 
 import ThemeToggle from "components/ThemeToggle";
 
-const SNav = styled.nav(tw`flex justify-between lg:sticky top-0 print:hidden`);
+const SNav = styled.nav(() => [
+  tw`flex justify-between lg:sticky z-50 top-0 print:hidden bg-white/80 dark:bg-gray-950/80`,
+  `backdrop-filter: blur(4px)`,
+]);
 const SNavMain = styled.div(tw`flex`);
 const SNavLink = styled(Link)<{
   availability?: "available" | "unavailable";
   $large?: boolean;
 }>(() => [
-  tw`flex items-center px-1.5 py-1 sm:px-3 sm:py-2 cursor-pointer opacity-70 hover:opacity-100 focus:opacity-100 dark:bg-gray-950`,
+  tw`flex items-center px-1.5 py-1 sm:px-3 sm:py-2 cursor-pointer transition-colors duration-200`,
   ({ $large }) => ($large ? tw`fs-2` : tw`text-sm sm:text-base`),
 
   ({ availability }) => availability === "available" && tw`text-green-500`,
