@@ -1,17 +1,27 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import React from "react";
 
-const maxWidthVariants = {
-  prose: tw`max-w-prose`,
-  md: tw`max-w-screen-md`,
-  lg: tw`max-w-screen-lg`,
-  xl: tw`max-w-screen-xl`,
-  "2xl": tw`max-w-screen-2xl`,
+type MaxWidth = "2xl" | "lg" | "md" | "prose" | "xl";
+
+const maxWidthClass: Record<MaxWidth, string> = {
+  prose: "max-w-prose",
+  md: "max-w-screen-md",
+  lg: "max-w-screen-lg",
+  xl: "max-w-screen-xl",
+  "2xl": "max-w-screen-2xl",
 };
 
-export default styled.div<{ maxWidth?: "2xl" | "lg" | "md" | "prose" | "xl" }>(
-  () => [
-    tw`flex flex-col mx-auto px-4 sm:px-8 box-content`,
-    ({ maxWidth = "lg" }) => maxWidthVariants[maxWidth],
-  ],
-);
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  maxWidth?: MaxWidth;
+}
+
+const Container: React.FC<Props> = ({
+  maxWidth = "lg",
+  className = "",
+  ...rest
+}) => {
+  const base = "flex flex-col mx-auto px-4 sm:px-8 box-content";
+  const mw = maxWidthClass[maxWidth];
+  return <div className={`${base} ${mw} ${className}`} {...rest} />;
+};
+
+export default Container;

@@ -1,9 +1,6 @@
-import { ImageResponse } from "@vercel/og";
-import { NextRequest } from "next/server";
+import { ImageResponse, NextRequest } from "next/server";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 // Helper function to load Google Fonts properly
 async function loadGoogleFont(font: string, text: string) {
@@ -47,7 +44,7 @@ function preventOrphans(title: string): string {
   return result;
 }
 
-export default async function handler(req: NextRequest) {
+export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const title = searchParams.get("title");

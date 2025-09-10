@@ -1,17 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import styled from "styled-components";
-import tw from "twin.macro";
-
-const SSpacer = styled.div.attrs(({ className }) => ({
-  className,
-}))`
-  ${tw`flex flex-wrap -mr-2 -mb-2 md:-mr-3 md:-mb-3`};
-
-  & > * {
-    ${tw`flex-shrink-0 mr-2 mb-2 md:mr-3 md:mb-3`};
-  }
-`;
+import { cn } from "lib/cn";
 
 interface Props {
   children: React.ReactNode;
@@ -19,7 +8,14 @@ interface Props {
 }
 
 const Spacer: FunctionComponent<Props> = ({ children, className }) => (
-  <SSpacer className={className}>{children}</SSpacer>
+  <div
+    className={cn("flex flex-wrap -mr-2 -mb-2 md:-mr-3 md:-mb-3", className)}
+  >
+    {/* apply spacing to children */}
+    {React.Children.map(children, (child) => (
+      <div className="flex-shrink-0 mr-2 mb-2 md:mr-3 md:mb-3">{child}</div>
+    ))}
+  </div>
 );
 
 export default Spacer;

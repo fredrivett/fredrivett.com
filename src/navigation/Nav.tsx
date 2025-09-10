@@ -1,51 +1,58 @@
 import React from "react";
 
 import Link from "next/link";
-import styled from "styled-components";
-import tw from "twin.macro";
+
+import { cn } from "lib/cn";
 
 import ThemeToggle from "components/ThemeToggle";
 
-const SNav = styled.nav(() => [
-  tw`flex justify-between lg:sticky z-50 top-0 print:hidden bg-white/80 dark:bg-gray-950/80`,
-  `backdrop-filter: blur(4px)`,
-]);
-const SNavMain = styled.div(tw`flex`);
-const SNavLink = styled(Link)<{
-  availability?: "available" | "unavailable";
-  $large?: boolean;
-}>(() => [
-  tw`flex items-center px-1.5 py-1 sm:px-3 sm:py-2 cursor-pointer transition-colors duration-200`,
-  ({ $large }) => ($large ? tw`fs-2` : tw`text-sm sm:text-base`),
+const linkBase =
+  "flex items-center px-1.5 py-1 sm:px-3 sm:py-2 cursor-pointer transition-colors duration-200";
 
-  ({ availability }) => availability === "available" && tw`text-green-500`,
-  ({ availability }) => availability === "unavailable" && tw`text-yellow-500`,
-  ({ availability }) =>
-    availability !== undefined && [
-      tw`font-bold`,
-      `background-image: linear-gradient(to right, currentColor 0%, currentColor 100%) !important`,
-    ],
-]);
+type NavLinkProps = React.PropsWithChildren<{
+  href: string;
+  className?: string;
+  rel?: string;
+  target?: string;
+}>;
+
+const NavLink = ({ href, className, children, ...rest }: NavLinkProps) => (
+  <Link href={href} className={cn(linkBase, className)} {...rest}>
+    {children}
+  </Link>
+);
 
 const Nav = () => (
-  <SNav>
-    <SNavLink $large href="/">
+  <nav
+    className={cn(
+      "flex justify-between lg:sticky z-50 top-0 print:hidden bg-white/80 dark:bg-gray-950/80",
+      "backdrop-blur-sm",
+    )}
+  >
+    <NavLink href="/" className="fs-2">
       FR
-    </SNavLink>
-    <SNavMain>
+    </NavLink>
+    <div className="flex">
       <ThemeToggle />
-      <SNavLink href="/now">/now</SNavLink>
-      <SNavLink href="/shelf">/shelf</SNavLink>
-      <SNavLink href="/cv">/cv</SNavLink>
-      <SNavLink
+      <NavLink href="/now" className="text-sm sm:text-base">
+        /now
+      </NavLink>
+      <NavLink href="/shelf" className="text-sm sm:text-base">
+        /shelf
+      </NavLink>
+      <NavLink href="/cv" className="text-sm sm:text-base">
+        /cv
+      </NavLink>
+      <NavLink
         href="https://twitter.com/fredrivett"
         rel="nofollow noreferrer"
         target="_blank"
+        className="text-sm sm:text-base"
       >
         @fredrivett
-      </SNavLink>
-    </SNavMain>
-  </SNav>
+      </NavLink>
+    </div>
+  </nav>
 );
 
 export { Nav };
