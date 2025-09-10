@@ -1,0 +1,80 @@
+---
+title: "Becoming the person who does the thing"
+description: "Bad news: your internal identity dictates everything you do. Good news: you can change it"
+date: "2025-09-10"
+---
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">bad news: your internal identity dictates everything you do<br>good news: you can change it</p>&mdash; fred rivett 🇬🇧📈 (@fredrivett) <a href="https://twitter.com/fredrivett/status/1965662575368265755?ref_src=twsrc%5Etfw">September 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+It can be disorienting when our beliefs shift. The world we created no longer exists, and our role in it transforms too.
+
+It can be unsettling, naturally. But that's kind of the point.
+
+Looking back at times when I held certain beliefs—about how the world works, and what my role in this story is—it can feel less like a mod has been installed and more like an entirely new operating system was swapped in.
+
+Up until my late twenties, I could count the number of times I had been to the gym on one hand. Not that week, that month, or that year, literally since I arrived on this planet. On one five-fingered hand.
+
+As a nerd, I viewed that statistic with quiet pride. Why waste hours a week on something that hardly mattered? I have better things to do. I pitied the jocks who slaved away in the gym chasing vanity. What for? I don't need that. Who cares?
+
+Like all childish thinking, it contained some truth. Physical fitness is less important than spiritual, emotional, and mental fitness. But important it remains, foundational too.
+
+Even Paul, one of history’s most influential figures, with a worldview shaped by the utter centrality of spiritual health, <a href="https://www.bible.com/bible/111/1TI.4.8.NIV" target="_blank">said as much</a>.
+
+Your beliefs—and therefore approach to what a healthy life looks like—are fundamental. It might sound obvious, but what you believe a "life well lived" looks like has a pretty transformative impact on both what life you end up building and how well lived it looks.
+
+Which leads us to the bad news: if we’re a product of our beliefs and our most formative preconceptions are imposed by others, then where’s the hope?
+
+We build, layer upon layer, and the layers laid first—now deeply buried within—are the ones we had the least say in.
+
+We didn't pick them, but they shape everything we are and do. Bad luck, I guess.
+
+Thankfully, we are dynamic beings. Old beliefs can peel off, and new ones take their place. Later layers can somehow seep deeper. Some recent beliefs can even become cornerstones.
+
+For me, Something shifted in my late twenties. Growing up I guess you could call it. I don’t remember the exact straw that broke the camel’s back, but a desire for change grew in me. I started working out.
+
+It was a small beginning. If you've touched iron fewer times than the fingers on your left hand, then it doesn't take a lot to hit your limits. But I began. Knee press-ups to start, later adding assisted pull-ups.
+
+If anyone was watching, it would have looked stupid. A grown man barely able to push himself off the floor. But I showed up and put in my reps, day by day, week by week, in the privacy of my bedroom.
+
+As the weeks and months passed, my strength grew.
+
+Eventually, I graduated to proper press-ups and pull-ups, no mods needed.
+
+Every small win reinforced the last and led me further away from who I used to be.
+
+Fast forward almost a decade and I feel a lot more friction _not_ going to the gym than I do _going_. Cognitive dissonance is wonderful when it’s on your side, and it pops up whenever my healthy Fred self-identity and actions diverge.
+
+I'm far from a gym junkie; it hasn't become my life, but I go every weekday, 20 minutes a day. I arrive, do my workout, and leave, while most people are just getting started.
+
+So our self-identity dictates everything, yes, but it is not set in stone.
+
+That's not to say changing our beliefs is easy. Both those about the world around us and the world within. We can't simply will our way there and snap our fingers. We must journey. As with all great things, it's a process.
+
+But it is possible. A well-trodden path is ahead for those who wish to walk it.
+
+A lot has changed in my world in the last 10 years. Both my circumstances and my beliefs. It has been painfully difficult at times. But accepting the invitation into the unknown, to grow, to evolve, to both become and create who I am, has been the most fulfilling journey of my life so far.
+
+So how do you do it? How do you become the person who does the thing?
+
+Yesterday, I spent the morning crafting my digital <a href="/shelf" target="_blank">/shelf</a>, a place where I can put the things that have impacted me the most up for all to see, so others can take them for themselves.
+
+On it are these two quotes that have been living rent-free in my head from the beginning. Together, they create a twin-cog flywheel that cannot be stopped:
+
+> <a href="https://seths.blog/2013/07/people-like-us-do-stuff-like-this/" target="_blank">&ldquo;People like us do things like this&rdquo;</a> > <cite>Seth Godin</cite>
+
+> <a href="https://jamesclear.com/quotes/every-action-you-take-is-a-vote-for-the-type-of-person-you-wish-to-become" target="_blank">&ldquo;Every action you take is a vote for the type of person you wish to become&rdquo;</a>
+> <cite>James Clear</cite>
+
+Your actions follow your self-beliefs. If you identity as a failure, incapable of achievement, unfit, unlovable, destined to play a bit-part role in your own damn story, then by heck no matter how much willpower you put in to push that boulder up the hill, it will return to its place.
+
+But there's a way through: every action you take is a vote for who you wish to become. Every day you wake up, look your old identity in the eye and say "thanks for your service, but you're not needed around here anymore," step forward and lean in, is a day your new identity is built.
+
+It takes time. You have to want it. You have to choose to adopt a new mindset. Rome wasn't built in a day. And heck, you're way more remarkable than Rome. But it comes, a little like how <a href="https://quoteinvestigator.com/2018/08/08/all-at-once/" rel="nofollow noreferrer" target="_blank">Hazel Grace Lancaster describes falling in love in The Fault In Our Stars</a>: _"slowly, and then all at once."_
+
+So take courage. Look yourself in the mirror and call out the beliefs that got you here but won’t get you there. Then take a step. Cast today’s vote. Find your way through.
+
+Soon enough, your inner world will shift and recalibrate around the new reality you're co-creating.
+
+Then one day you'll see it.
+
+People like us really do things like this.
