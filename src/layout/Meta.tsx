@@ -24,7 +24,29 @@ const Meta = (props: IMetaProps) => {
   const imagePath =
     props.post &&
     `${AppConfig.url}${router.basePath}${props.post.image ?? fallbackImage}`;
+
+  // Generate OG image for pages (not posts, not homepage)
+  const pageOgImage =
+    !props.post && router.pathname !== "/"
+      ? `${AppConfig.url}${router.basePath}/api/og?url=${encodeURIComponent(
+          router.pathname,
+        )}`
+      : null;
+
   const title = `${props.title} | ${AppConfig.title}`;
+
+  const twitterOgCardTags = (image: string | null | undefined) =>
+    image ? (
+      <>
+        <meta property="og:type" content="website" key="og:type" />
+        <meta property="og:image" content={image} key="og:image" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+          key="twitter:card"
+        />
+      </>
+    ) : null;
 
   return (
     <>
@@ -95,13 +117,7 @@ const Meta = (props: IMetaProps) => {
         />
         {props.post && (
           <>
-            <meta property="og:type" content="article" key="og:type" />
-            <meta property="og:image" content={imagePath} key="og:image" />
-            <meta
-              name="twitter:card"
-              content="summary_large_image"
-              key="twitter:card"
-            />
+            {twitterOgCardTags(imagePath)}
             <meta
               property="article:published_time"
               content={new Date(props.post.date).toISOString()}
@@ -158,6 +174,7 @@ const Meta = (props: IMetaProps) => {
             />
           </>
         )}
+        {twitterOgCardTags(pageOgImage)}
       </Head>
     </>
   );

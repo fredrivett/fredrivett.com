@@ -50,13 +50,18 @@ function preventOrphans(title: string): string {
 export default async function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const title = searchParams.get("title") || "Fred Rivett";
+    const title = searchParams.get("title");
+    const url = searchParams.get("url");
     const date = searchParams.get("date");
+
+    // Use URL for pages, title for blog posts
+    const displayText = url || title || "Fred Rivett";
+    const isPage = !!url;
 
     // Load fonts using the proper Google Fonts API method
     const [playfairFont, robotoMonoFont] = await Promise.all([
-      loadGoogleFont("Playfair+Display:wght@700", title),
-      loadGoogleFont("Roboto+Mono:wght@400", `${date} fredrivett.com`),
+      loadGoogleFont("Playfair+Display:wght@700", displayText),
+      loadGoogleFont("Roboto+Mono:wght@400", `${date || ""} fredrivett.com`),
     ]);
 
     return new ImageResponse(
@@ -85,7 +90,7 @@ export default async function handler(req: NextRequest) {
           >
             <h1
               style={{
-                fontSize: getTitleFontSize(title),
+                fontSize: getTitleFontSize(displayText),
                 fontWeight: "bold",
                 color: "#ffffff",
                 lineHeight: 1.2,
@@ -93,11 +98,11 @@ export default async function handler(req: NextRequest) {
                 fontFamily: "Playfair Display, serif",
               }}
             >
-              {preventOrphans(title)}
+              {isPage ? displayText : preventOrphans(displayText)}
             </h1>
 
-            {/* Date beneath title */}
-            {date && (
+            {/* Date beneath title - only show for blog posts */}
+            {date && !isPage && (
               <div
                 style={{
                   fontSize: "28px",
