@@ -147,9 +147,9 @@ Other highlights of the year include dog sitting my parents little Cavapoo, Wats
 
 [I set a few goals last year](https://fredrivett.com/2022/01/01/2021-opening-up/), so in the spirit of accountability and self-improvement, here's how I got on:
 
-* 🏃‍♂️ **Health**: Run my first half marathon — _This didn't go to plan as detailed above, but I hope to try again this coming year._
-* 💰 **Business**: Make my first solo dollar on the internet — _I deprioritised this goal and focussed on other areas, having a side project with income is something I'd like, but it's still low on the priority list._
-* 〰️ **Life**: Continue to improve my routines and rhythms — _This was a generic target, but I think was roughly met, certainly in terms of my physical health._
+- 🏃‍♂️ **Health**: Run my first half marathon — _This didn't go to plan as detailed above, but I hope to try again this coming year._
+- 💰 **Business**: Make my first solo dollar on the internet — _I deprioritised this goal and focussed on other areas, having a side project with income is something I'd like, but it's still low on the priority list._
+- 〰️ **Life**: Continue to improve my routines and rhythms — _This was a generic target, but I think was roughly met, certainly in terms of my physical health._
 
 # 👀 Looking forwards to 2023
 
@@ -157,14 +157,14 @@ Predicting the future is hard, and goal setting is a subset of that. As a result
 
 ## 📈 Working on myself
 
-* ❤️ **Emotional**
-	* 🗣 **Therapy**: _Learning to understand myself is one of the highest return on investments. I found value in doing therapy in 2021, so I signed back up late last year and will hopefully be assigned a therapist in the coming months._
-* 🧠 **Mental**
-	* 📚 **At least one book a month**: _I didn't read as much as I'd like in 2022 but plan to prioritise it more this year, with a goal of at least one book read each calendar month._
-* 💪 **Physical**
-	* 🏃‍♂️ **Half marathon**: _After my legs failed me in training for a half marathon last year, I want to give this another shot._
-	* ⚖️ **Body fat**: _My body fat levels are supposedly around 13%, I'd like to get that down to around 10-11% whilst maintaining/increasing muscle mass._
-* 🙏🏼 **Spiritual**
-	* ✝️ _Continue my faith journey of seeking truth as best I can, attending Church, being open to those close to me about where I'm at whilst attempting to be open minded as I investigate with books and videos._
-	  
+- ❤️ **Emotional**
+  - 🗣 **Therapy**: _Learning to understand myself is one of the highest return on investments. I found value in doing therapy in 2021, so I signed back up late last year and will hopefully be assigned a therapist in the coming months._
+- 🧠 **Mental**
+  - 📚 **At least one book a month**: _I didn't read as much as I'd like in 2022 but plan to prioritise it more this year, with a goal of at least one book read each calendar month._
+- 💪 **Physical**
+  - 🏃‍♂️ **Half marathon**: _After my legs failed me in training for a half marathon last year, I want to give this another shot._
+  - ⚖️ **Body fat**: _My body fat levels are supposedly around 13%, I'd like to get that down to around 10-11% whilst maintaining/increasing muscle mass._
+- 🙏🏼 **Spiritual**
+  - ✝️ _Continue my faith journey of seeking truth as best I can, attending Church, being open to those close to me about where I'm at whilst attempting to be open minded as I investigate with books and videos._
+
 Outside of the above, I want to continue investing what's important to me, namely in the people I am close to and the dreams I have.

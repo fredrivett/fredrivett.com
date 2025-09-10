@@ -1,6 +1,8 @@
 @media print {
   // src: https://stackoverflow.com/a/1312456/827129
-  * { overflow: auto !important; }
+  * {
+    overflow: auto !important;
+  }
 
   #content,
   #page {
@@ -24,7 +26,7 @@
   h3,
   h4,
   h5,
-  h6, {
+  h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
   }

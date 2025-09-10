@@ -74,7 +74,7 @@ That perspective helps take the edge off of what could become a horrible taskmas
 
 "Be better, BETTER, BEeTtTTERrR!"
 
-If you're hearing *that* voice in my words, I've painted the wrong picture.
+If you're hearing _that_ voice in my words, I've painted the wrong picture.
 
 See it's not about my shadow self wielding a metaphorical stick in its pursuit of enslaving me to an endless life of never feeling quite good enough.
 
@@ -90,7 +90,7 @@ It won't always be obvious what better looks like.
 
 It's not simply doing more, bigger, longer, louder.
 
-But deep down I'll know, I'll know that I'm doing *my* best, with the data I have here and now.
+But deep down I'll know, I'll know that I'm doing _my_ best, with the data I have here and now.
 
 That ultimately I'm taking steps in the right direction, and trusting the journey to work it all out.
 
@@ -98,11 +98,11 @@ Because ultimately that's all you can do, pick your head up, look around, and ma
 
 Sure, it won't satisfy the perfectionist within you.
 
-You won't have the body you think you *should*.
+You won't have the body you think you _should_.
 
-You won't have the relationships you think you *should*.
+You won't have the relationships you think you _should_.
 
-You won't have the business you think you *should*.
+You won't have the business you think you _should_.
 
 But you'll be showing up, putting in the reps, and making progress over time.
 

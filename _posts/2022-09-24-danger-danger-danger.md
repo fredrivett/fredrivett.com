@@ -24,7 +24,7 @@ Signals detected that need your urgent attention, sir.
 
 My inner monologue whirrs on.
 
-It doesn't actually *say* these things.
+It doesn't actually _say_ these things.
 
 It's not so upfront about it.
 
@@ -78,7 +78,7 @@ But just as much worth realising that it's not so dangerous after all.
 
 In our modern world, we aren't about to get eaten by a lion.
 
-The worst case scenario isn't actually *that* bad.
+The worst case scenario isn't actually _that_ bad.
 
 And even that outcome is pretty unlikely too.
 
