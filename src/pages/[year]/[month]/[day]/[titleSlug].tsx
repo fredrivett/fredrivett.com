@@ -33,6 +33,11 @@ type IPostProps = {
 };
 
 const DisplayPost = (props: IPostProps) => {
+  // Generate dynamic OG image URL
+  const ogImageUrl = `/api/og?title=${encodeURIComponent(
+    props.title,
+  )}&date=${encodeURIComponent(props.date)}`;
+
   return (
     <Main
       className="text-lg py-4 md:py-8 lg:py-16"
@@ -41,7 +46,7 @@ const DisplayPost = (props: IPostProps) => {
           title={props.title}
           description={props.description}
           post={{
-            image: props.image,
+            image: props.image || ogImageUrl,
             date: props.date,
             modified_date: props.modified_date,
           }}
