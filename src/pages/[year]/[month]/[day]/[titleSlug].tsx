@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
@@ -28,54 +28,93 @@ type IPostProps = {
   content: string;
 };
 
-const DisplayPost = (props: IPostProps) => (
-  <Main
-    className="text-lg py-4 md:py-8 lg:py-16"
-    meta={
-      <Meta
-        title={props.title}
-        description={props.description}
-        post={{
-          image: props.image,
-          date: props.date,
-          modified_date: props.modified_date,
-        }}
-      />
-    }
-  >
-    <Container maxWidth="prose">
-      <BlogDate date={props.date} />
-      <h1>{props.title}</h1>
+const DisplayPost = (props: IPostProps) => {
+  useEffect(() => {
+    const updateTwitterTheme = () => {
+      const isDark = document.documentElement.classList.contains("dark");
+      const twitterTweets = document.querySelectorAll(".twitter-tweet");
 
-      <div
-        className="blog-post"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: props.content }}
-      />
+      twitterTweets.forEach((tweet) => {
+        if (isDark) {
+          tweet.setAttribute("data-theme", "dark");
+        } else {
+          tweet.removeAttribute("data-theme");
+        }
+      });
+    };
 
-      <hr />
+    // Initial theme update
+    updateTwitterTheme();
 
-      <a
-        href="https://twitter.com/fredrivett"
-        rel="norefferer noreferrer"
-        target="_blank"
-        className="inline-flex items-center self-start"
-      >
-        &mdash;
-        <span className="flex mx-1.5">
-          <Image
-            src="/assets/images/fredrivett.jpg"
-            alt="Fred Rivett's face"
-            width={32}
-            height={32}
-            className="rounded-full"
-          />
-        </span>
-        @fredrivett
-      </a>
-    </Container>
-  </Main>
-);
+    // Watch for theme changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          updateTwitterTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <Main
+      className="text-lg py-4 md:py-8 lg:py-16"
+      meta={
+        <Meta
+          title={props.title}
+          description={props.description}
+          post={{
+            image: props.image,
+            date: props.date,
+            modified_date: props.modified_date,
+          }}
+        />
+      }
+    >
+      <Container maxWidth="prose">
+        <BlogDate date={props.date} />
+        <h1>{props.title}</h1>
+
+        <div
+          className="blog-post"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        />
+
+        <hr />
+
+        <a
+          href="https://twitter.com/fredrivett"
+          rel="norefferer noreferrer"
+          target="_blank"
+          className="inline-flex items-center self-start"
+        >
+          &mdash;
+          <span className="flex mx-1.5">
+            <Image
+              src="/assets/images/fredrivett.jpg"
+              alt="Fred Rivett's face"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+          </span>
+          @fredrivett
+        </a>
+      </Container>
+    </Main>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   const posts = getAllPosts(["year", "month", "day", "titleSlug"]);

@@ -12,7 +12,10 @@
     "export": "next export",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
+    "fix": "npm run format && npm run lint:fix",
     "lint": "next lint",
+    "lint:fix": "next lint --fix --quiet",
+    "format": "prettier . --write",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
     "new-post": "node scripts/new-post.js"

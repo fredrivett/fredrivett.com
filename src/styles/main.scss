@@ -236,6 +236,15 @@ ul {
 .twitter-tweet {
   @apply mx-auto;
   @apply py-4;
+
+  &:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  iframe {
+    border-radius: 13px; // match border-radius of the internal twitter styling to avoid white bg corner in dark mode
+  }
 }
 
 .blog-post {
