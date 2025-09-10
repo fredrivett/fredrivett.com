@@ -5,3 +5,4 @@ out
 .husky
 .next
 .vscode
+**/*.mdx
