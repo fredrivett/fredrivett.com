@@ -1,0 +1,9 @@
+# Netlify configuration for Next.js with SSR (no static export)
+# Docs: https://docs.netlify.com/integrations/frameworks/next-js/overview/
+
+[build]
+  publish = "out"
+  command = "yarn build-prod"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
