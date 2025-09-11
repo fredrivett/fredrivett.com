@@ -6,6 +6,7 @@ import { Main } from "templates/Main";
 import Container from "components/Container";
 import { CvRole } from "components/CvRole";
 import FredHead from "components/FredHead";
+import SiteCounter from "components/SiteCounter";
 import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
 
@@ -338,6 +339,8 @@ const Cv = () => (
                 🇬🇧 London <span className="text-gray-700">/</span> 🌍 Remote
               </Tag>
             </p>
+
+            <SiteCounter className="mt-4" />
 
             <hr />
 

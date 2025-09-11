@@ -26,6 +26,7 @@ class MyDocument extends Document {
         <body className="text-gray-800 dark:text-gray-400 dark:bg-gray-950">
           <Main />
           <NextScript />
+          <script src="https://www.herenow.fyi/widget.js" async></script>
         </body>
       </Html>
     );

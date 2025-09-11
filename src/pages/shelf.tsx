@@ -8,6 +8,7 @@ import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import FredHead from "components/FredHead";
+import SiteCounter from "components/SiteCounter";
 import Tooltip from "components/Tooltip";
 
 interface ShelfItem {
@@ -168,6 +169,8 @@ const Shelf = () => (
             ~michelin stars)
           </em>
         </p>
+
+        <SiteCounter className="mt-1" />
       </div>
     </Container>
 

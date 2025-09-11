@@ -8,6 +8,7 @@ import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import PseudoIcon from "components/PseudoIcon";
+import SiteCounter from "components/SiteCounter";
 
 import { AppConfig } from "utils/AppConfig";
 import { getAllPosts } from "utils/Content";
@@ -15,7 +16,7 @@ import { getAllPosts } from "utils/Content";
 const Index = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Hey there" description={AppConfig.description} />}>
     <Container maxWidth="md">
-      <div className="mb-4">
+      <div className="mb-8">
         <h2>
           <PseudoIcon icon="happy">Hey there</PseudoIcon>
         </h2>
@@ -76,6 +77,8 @@ const Index = (props: IBlogGalleryProps) => (
             .
           </em>
         </p>
+
+        <SiteCounter className="mt-4" />
       </div>
 
       <BlogGallery posts={props.posts} />

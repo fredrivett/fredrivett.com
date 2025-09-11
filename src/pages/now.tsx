@@ -7,6 +7,7 @@ import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import FredHead from "components/FredHead";
+import SiteCounter from "components/SiteCounter";
 
 const Now = () => (
   <Main meta={<Meta title="/now" description="What I'm up to right now" />}>
@@ -58,6 +59,8 @@ const Now = () => (
             any fixed schedule.
           </small>
         </p>
+
+        <SiteCounter className="mt-8" />
       </div>
     </Container>
   </Main>

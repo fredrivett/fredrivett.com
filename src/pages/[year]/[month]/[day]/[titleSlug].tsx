@@ -68,24 +68,28 @@ const DisplayPost = (props: IPostProps) => {
 
         <hr />
 
-        <a
-          href="https://twitter.com/fredrivett"
-          rel="norefferer noreferrer"
-          target="_blank"
-          className="inline-flex items-center self-start"
-        >
-          &mdash;
-          <span className="flex mx-1.5">
-            <Image
-              src="/assets/images/fredrivett.jpg"
-              alt="Fred Rivett's face"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-          </span>
-          @fredrivett
-        </a>
+        <div className="flex justify-between items-center gap-4">
+          <a
+            href="https://twitter.com/fredrivett"
+            rel="norefferer noreferrer"
+            target="_blank"
+            className="inline-flex items-center self-start"
+          >
+            &mdash;
+            <span className="flex mx-1.5">
+              <Image
+                src="/assets/images/fredrivett.jpg"
+                alt="Fred Rivett's face"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+            </span>
+            @fredrivett
+          </a>
+
+          <div data-herenow></div>
+        </div>
       </Container>
     </Main>
   );
