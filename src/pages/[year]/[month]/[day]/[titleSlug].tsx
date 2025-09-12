@@ -54,7 +54,10 @@ const DisplayPost = (props: IPostProps) => {
       }
     >
       <Container maxWidth="prose">
-        <BlogDate date={props.date} />
+        <div className="flex items-end gap-4 mb-1">
+          <BlogDate date={props.date} />
+          <div data-herenow></div>
+        </div>
         <h1>{props.title}</h1>
 
         <div className="blog-post">
@@ -68,28 +71,24 @@ const DisplayPost = (props: IPostProps) => {
 
         <hr />
 
-        <div className="flex justify-between items-center gap-4">
-          <a
-            href="https://twitter.com/fredrivett"
-            rel="norefferer noreferrer"
-            target="_blank"
-            className="inline-flex items-center self-start"
-          >
-            &mdash;
-            <span className="flex mx-1.5">
-              <Image
-                src="/assets/images/fredrivett.jpg"
-                alt="Fred Rivett's face"
-                width={32}
-                height={32}
-                className="rounded-full"
-              />
-            </span>
-            @fredrivett
-          </a>
-
-          <div data-herenow></div>
-        </div>
+        <a
+          href="https://twitter.com/fredrivett"
+          rel="norefferer noreferrer"
+          target="_blank"
+          className="inline-flex items-center self-start"
+        >
+          &mdash;
+          <span className="flex mx-1.5">
+            <Image
+              src="/assets/images/fredrivett.jpg"
+              alt="Fred Rivett's face"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+          </span>
+          @fredrivett
+        </a>
       </Container>
     </Main>
   );
