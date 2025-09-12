@@ -64,9 +64,22 @@ const Index = (props: IBlogGalleryProps) => (
           .
         </p>
         <p>Senior Product-focussed Front-end Engineer.</p>
+        <p className="mb-0">
+          <em>
+            Founder @{" "}
+            <a
+              href="https://twitter.com/flowlaneAI"
+              rel="nofollow noreferrer"
+              target="_blank"
+            >
+              Flowlane
+            </a>
+            .
+          </em>
+        </p>
         <p>
           <em>
-            Currently: Founding Engineer @{" "}
+            Founding Engineer @{" "}
             <a
               href="https://lex.page"
               rel="nofollow noreferrer"
