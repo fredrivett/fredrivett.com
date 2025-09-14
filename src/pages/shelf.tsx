@@ -2,6 +2,7 @@ import React from "react";
 
 import { format } from "date-fns";
 import { LibrarySquare } from "lucide-react";
+import Link from "next/link";
 
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
@@ -153,7 +154,7 @@ const Shelf = () => (
   >
     <Container maxWidth="md">
       <div className="mb-8 md:mb-12 lg:mb-16">
-        <FredHead title="shelf" />
+        <FredHead title="shelf" after={<SiteCounter />} />
         <h1 className="fs-0 mb-1 leading-none">My shelf</h1>
         <p className="mb-4">
           If I could only have a few things to regularly return to and lend to
@@ -169,8 +170,14 @@ const Shelf = () => (
             ~michelin stars)
           </em>
         </p>
-
-        <SiteCounter className="mt-1" />
+        <hr className="my-2" />
+        <p className="text-sm opacity-75 mt-4">
+          <small>
+            This is a <Link href="/shelf-page">shelf page</Link>. It&rsquo;s a
+            curated collection of books, articles, and other media that have
+            shaped my thinking or that I highly recommend.
+          </small>
+        </p>
       </div>
     </Container>
 
