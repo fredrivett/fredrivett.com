@@ -12,6 +12,7 @@ import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
+import EmailSubscribe from "components/EmailSubscribe";
 import Tweet from "components/Tweet";
 
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
@@ -64,6 +65,7 @@ const DisplayPost = (props: IPostProps) => {
           <MDXRemote
             {...props.mdxSource}
             components={{
+              EmailSubscribe,
               Tweet,
             }}
           />

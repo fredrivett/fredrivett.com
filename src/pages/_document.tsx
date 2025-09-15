@@ -26,7 +26,10 @@ class MyDocument extends Document {
         <body className="text-gray-800 dark:text-gray-400 dark:bg-gray-950">
           <Main />
           <NextScript />
-          <script src="https://www.herenow.fyi/widget.js" async></script>
+          <script
+            src={`${process.env.NEXT_PUBLIC_HERENOW_BASE_URL}/widget.js`}
+            async
+          ></script>
         </body>
       </Html>
     );

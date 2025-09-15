@@ -3,7 +3,8 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:react-tweet.vercel.app)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:developers.kit.com)"
     ],
     "deny": [],
     "ask": []

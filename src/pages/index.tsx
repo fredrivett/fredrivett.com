@@ -7,6 +7,7 @@ import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
+import EmailSubscribe from "components/EmailSubscribe";
 import PseudoIcon from "components/PseudoIcon";
 import SiteCounter from "components/SiteCounter";
 
@@ -92,6 +93,8 @@ const Index = (props: IBlogGalleryProps) => (
         </p>
 
         <SiteCounter className="mt-4" />
+
+        <EmailSubscribe className="mt-8" />
       </div>
 
       <BlogGallery posts={props.posts} />
