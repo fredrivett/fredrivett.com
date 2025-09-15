@@ -73,24 +73,33 @@ const DisplayPost = (props: IPostProps) => {
 
         <hr />
 
-        <a
-          href="https://twitter.com/fredrivett"
-          rel="norefferer noreferrer"
-          target="_blank"
-          className="inline-flex items-center self-start"
-        >
-          &mdash;
-          <span className="flex mx-1.5">
-            <Image
-              src="/assets/images/fredrivett.jpg"
-              alt="Fred Rivett's face"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-          </span>
-          @fredrivett
-        </a>
+        <div className="text-gray-600 dark:text-gray-500">
+          <p>
+            If you liked this post or have any thoughts, feel free to ping me on
+            twitter:
+          </p>
+          <p>
+            <a
+              href="https://twitter.com/fredrivett"
+              rel="norefferer noreferrer"
+              target="_blank"
+              className="inline-flex items-center self-start"
+            >
+              <span className="flex mx-1.5">
+                <Image
+                  src="/assets/images/fredrivett.jpg"
+                  alt="Fred Rivett's face"
+                  width={32}
+                  height={32}
+                  className="rounded-full"
+                />
+              </span>
+              @fredrivett
+            </a>
+          </p>
+        </div>
+
+        <EmailSubscribe className="mt-4" />
       </Container>
     </Main>
   );
