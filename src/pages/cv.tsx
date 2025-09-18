@@ -1,5 +1,16 @@
 import React from "react";
 
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faProductHunt,
+  faUnsplash,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FileText, Clock } from "lucide-react";
+
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
@@ -34,20 +45,17 @@ const getTimeSince = (dateString: string) => {
   return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
+const role = "Senior Founding/Product/Design Engineer";
+const toolkit =
+  "current go-to toolkit includes React, React Native, TypeScript, Jest, styled-components & Tailwind.";
+
 const Cv = () => (
   <>
-    <Main
-      meta={
-        <Meta
-          title="/cv"
-          description="Senior Product-focussed Frontend Engineer, current go-to toolkit includes React, React Native, Vue, TypeScript, Jest, styled-components & Tailwind."
-        />
-      }
-    >
+    <Main meta={<Meta title="/cv" description={`${role}, ${toolkit}`} />}>
       <Container>
         <div className="flex flex-wrap -m-6">
-          <div className="p-6 lg:w-2/5">
-            <h2 className="lg:hidden">
+          <div className="p-6 lg:w-2/5 print:order-2 print:w-full">
+            <h2 className="lg:hidden print:block">
               💬 Kind words from colleagues &amp; clients
             </h2>
             <div className="flex flex-col border-l-4 border-gray-300 dark:border-gray-800 lg:border-l-0 pl-4 lg:pl-0 last-mb-0 mb-8 lg:mb-0">
@@ -57,7 +65,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Dr. Philip Jones"
                       src="/people/philip-jones.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full"
                     />
                     <a
                       href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
@@ -98,7 +106,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Thayer Prime"
                       src="/people/thayer-prime.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full"
                     />
                     <a
                       href="https://www.linkedin.com/in/thayerprime"
@@ -141,7 +149,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Raphael Benarrosh"
                       src="/people/raphael-benarrosh.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full"
                     />
                     <a
                       href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
@@ -201,7 +209,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Andrew McDonough"
                       src="/people/andrew-mcdonough.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full"
                     />
                     <a
                       href="https://www.linkedin.com/in/andrewmcdonough/"
@@ -257,7 +265,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Tony Walmsley"
                       src="/people/tony-walmsley.jpg"
-                      className="inline-block w-6 h-6 mr-1 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full"
                     />
                     <a
                       href="https://www.linkedin.com/in/tony-walmsley-8540732/"
@@ -293,21 +301,38 @@ const Cv = () => (
               </Testimonial>
             </div>
           </div>
-          <div className="p-6 lg:w-3/5">
-            <FredHead title="cv" />
-            <h1 className="fs-0 mb-2 leading-none">Fred Rivett</h1>
-            <p className="fs-4">Senior Product-focussed Frontend Engineer.</p>
-            <p>
-              Passionate about building maintainable systems with a keen eye for
-              design. Fascinated by the challenge of making something great that
-              improves users lives. Able to lead across a wide spectrum or
-              narrowly focus on code alone.
+          <div className="p-6 lg:w-3/5 print:order-1 print:w-full">
+            <div className="relative">
+              <FredHead title="cv" />
+              <div className="hidden print:block absolute top-0 right-0">
+                <div className="text-right space-y-1">
+                  <div className="text-xs text-gray-600 mr-3 inline-flex items-center gap-1">
+                    <Clock size={12} />
+                    {new Date().toISOString().slice(0, 16).replace("T", " ")}
+                  </div>
+                  <div className="text-xs text-gray-800 bg-gray-200 rounded-full text-sm py-1.5 px-3 flex items-center gap-1.5">
+                    <FileText size={14} />
+                    PDF Generated from{" "}
+                    <a href="https://fredrivett.com/cv" target="_blank">
+                      fredrivett.com/cv
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1 className="fs-0 mb-0 leading-none">Fred Rivett</h1>
+            <p className="fs-4 mb-3 font-semibold text-gray-700 dark:text-gray-500">
+              {role}
             </p>
-            <p>
-              Current go-to toolkit includes React, React Native, Vue,
-              TypeScript, Jest, styled-components &amp; Tailwind.
+            <p className="mb-3">
+              Engineer with a product mindset and designers eye, passionate
+              about building products that improve people&apos;s lives.
             </p>
-            <p>
+            <p className="mb-3">
+              Able to lead across a wide spectrum or narrowly focus on code
+              alone.
+            </p>
+            <p className="mb-6">
               <a
                 href="https://www.producthunt.com/@fredrivett"
                 rel="nofollow noreferrer"
@@ -336,70 +361,68 @@ const Cv = () => (
             </p>
             <p>
               <Tag>
-                🇬🇧 London <span className="text-gray-700">/</span> 🌍 Remote
+                🇬🇧 London <span className="text-gray-500">/</span> 🌍 Remote
               </Tag>
             </p>
 
-            <SiteCounter className="mt-4" />
+            <div className="flex flex-wrap gap-5 mt-8 print:break-inside-avoid-page">
+              <a
+                href="https://www.linkedin.com/in/fredrivett/"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="LinkedIn"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="xl" />
+              </a>
+              <a
+                href="https://stackoverflow.com/users/827129/fredrivett?tab=topactivity"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="Stack Overflow"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faStackOverflow} size="xl" />
+              </a>
+              <a
+                href="https://github.com/fredrivett"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="GitHub"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faGithub} size="xl" />
+              </a>
+              <a
+                href="https://twitter.com/fredrivett"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="Twitter"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faTwitter} size="xl" />
+              </a>
+              <a
+                href="https://www.producthunt.com/@fredrivett"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="Product Hunt"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faProductHunt} size="xl" />
+              </a>
+              <a
+                href="https://unsplash.com/@fredrivett"
+                rel="nofollow noreferrer"
+                target="_blank"
+                title="Unsplash"
+                className="no-underline w-6 h-6 flex justify-center"
+              >
+                <FontAwesomeIcon icon={faUnsplash} size="xl" />
+              </a>
+            </div>
 
-            <hr />
-
-            <ul className="o_bordered-list print:break-inside-avoid-page">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/fredrivett/"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://stackoverflow.com/users/827129/fredrivett?tab=topactivity"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  Stack Overflow
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/fredrivett"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/fredrivett"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.producthunt.com/@fredrivett"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  Product Hunt
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/@fredrivett"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  Unsplash
-                </a>
-              </li>
-            </ul>
+            <SiteCounter className="mt-7 print:hidden" />
 
             <hr />
 
@@ -408,15 +431,16 @@ const Cv = () => (
             <CvRole
               title="Founding Engineer (Contract)"
               company="Lex"
+              companyLogoPath="lex.png"
               links={[
                 {
-                  url: "https://www.blackrock.com/corporate/ai",
+                  url: "https://lex.page",
                   text: "Lex homepage",
                 },
               ]}
               dates={`December 2023 – current • ${getTimeSince("2023/12/01")}`}
               blurb={[
-                "First engineer hire, working across the whole company, from top of funnel to product ideas all the way through to full stack implementation and everything else that goes on at an early stage startup.",
+                "First (and at times only) engineer post $2.75m raise, working across the whole company, from top of funnel to product ideas all the way through to full stack implementation and everything else that goes on at an early stage startup.",
               ]}
               tags={[
                 "React",
@@ -434,6 +458,7 @@ const Cv = () => (
             <CvRole
               title="Senior Frontend Engineer (Contract)"
               company="BlackRock (AI Labs)"
+              companyLogoPath="blackrock.png"
               links={[
                 {
                   url: "https://www.blackrock.com/corporate/ai",
@@ -469,6 +494,7 @@ const Cv = () => (
             <CvRole
               title="Senior Product Engineer"
               company="NUM"
+              companyLogoPath="num.jpg"
               links={[{ url: "https://www.num.uk/", text: "Homepage" }]}
               dates="Sep 2019 — July 2022 • 2 yrs 11 mos"
               blurb={[
@@ -480,6 +506,7 @@ const Cv = () => (
             <CvRole
               title="Founder (Side project)"
               company="Blocks iOS app"
+              companyLogoPath="blocks.png"
               links={[
                 {
                   url: "https://apps.apple.com/us/app/blocks-minimal-habit-tracker/id1550584642",
@@ -495,7 +522,8 @@ const Cv = () => (
 
             <CvRole
               title="Senior Software Engineer"
-              company="Octopus Wealth"
+              company="Octopus Wealth (now: Nova)"
+              companyLogoPath="octopus-wealth.png"
               links={[{ url: "https://octopuswealth.com/", text: "Homepage" }]}
               dates="Feb 2019 — Aug 2019 • 7 mos"
               blurb={[
@@ -508,6 +536,7 @@ const Cv = () => (
             <CvRole
               title="Tech Lead (Contract)"
               company="Founders Factory"
+              companyLogoPath="founders-factory.jpg"
               links={[
                 { url: "https://foundersfactory.com/", text: "Homepage" },
               ]}
@@ -521,6 +550,7 @@ const Cv = () => (
             <CvRole
               title="Frontend Engineer (Contract)"
               company="The People's Operator"
+              companyLogoPath="tpo.jpeg"
               links={[
                 {
                   url: "https://en.wikipedia.org/wiki/The_People%27s_Operator",
@@ -537,6 +567,7 @@ const Cv = () => (
             <CvRole
               title="Frontend Engineer (Contract)"
               company="Tabl"
+              companyLogoPath="tabl.jpeg"
               links={[{ url: "https://tabl.com/", text: "Homepage" }]}
               dates="Nov 2017 — Apr 2018 • 6 mos"
               blurb={[
@@ -548,6 +579,7 @@ const Cv = () => (
             <CvRole
               title="Frontend Engineer (Contract)"
               company="Buildupp"
+              companyLogoPath="buildupp.jpeg"
               links={[
                 { url: "https://twitter.com/build_upp", text: "Twitter" },
               ]}
@@ -561,6 +593,7 @@ const Cv = () => (
             <CvRole
               title="Frontend Engineer (Contract)"
               company="Spoke Law (Lawyers On Demand)"
+              companyLogoPath="spoke.png"
               links={[
                 {
                   url: "https://www.legalbusiness.co.uk/blogs/lawyers-line-up-to-be-matched-up-as-lod-service-spoke-receives-2400-applications-ahead-of-launch/",
@@ -577,6 +610,7 @@ const Cv = () => (
             <CvRole
               title="Frontend Engineer"
               company="The People's Operator"
+              companyLogoPath="tpo.jpeg"
               links={[
                 {
                   url: "https://en.wikipedia.org/wiki/The_People%27s_Operator",
@@ -600,14 +634,22 @@ const Cv = () => (
             </p>
             <ul className="o_naked-list u_indent-0">
               <li>
+                2025{" "}
+                <a href="https://herenow.fyi" target="_blank" rel="noreferrer">
+                  <strong>here/now</strong> — A minimal, self-hosted visitor
+                  tracking API that shows both <em>total visitor count</em> and{" "}
+                  <em>real-time visitor counts</em> per webpage.
+                </a>
+              </li>
+              <li>
                 2022{" "}
                 <a
                   href="https://privacyshortlist.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  PrivacyShortlist — The best privacy-focussed products to build
-                  &amp; grow your startup
+                  <strong>PrivacyShortlist</strong> — The best privacy-focussed
+                  products to build &amp; grow your startup
                 </a>
               </li>
               <li>
@@ -617,7 +659,7 @@ const Cv = () => (
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Blocks — Minimalist, gesture-based habit app
+                  <strong>Blocks</strong> — Minimalist, gesture-based habit app
                 </a>
               </li>
               <li>
@@ -627,7 +669,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  Bluffball — World Cup phrases to help you fit in
+                  <strong>Bluffball</strong> — World Cup phrases to help you fit
+                  in
                 </a>
               </li>
               <li>
@@ -637,8 +680,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  [Apr 1] Stories as a Service — Add stories to your website
-                  with 1 line of code
+                  <strong>Stories as a Service</strong> — Add stories to your
+                  website with 1 line of code (April fools)
                 </a>
               </li>
               <li>
@@ -648,7 +691,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  Hit Reply Podcast — Yet Another Startup Podcast?
+                  <strong>Hit Reply Podcast</strong> — Yet Another Startup
+                  Podcast?
                 </a>
               </li>
               <li>
@@ -658,7 +702,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  Real Time Users — Add a real time user counter to your site
+                  <strong>Real Time Users</strong> — Add a real time user
+                  counter to your site
                 </a>
               </li>
               <li>
@@ -668,8 +713,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  LearningToLaunch — Short e-book on how to launch your first
-                  side project
+                  <strong>LearningToLaunch</strong> — Short e-book on how to
+                  launch your first side project
                 </a>
               </li>
               <li>
@@ -679,7 +724,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  ProductHaunt — Browse the Product Hunt graveyard
+                  <strong>ProductHaunt</strong> — Browse the Product Hunt
+                  graveyard
                 </a>
               </li>
               <li>
@@ -689,7 +735,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  MyYear — Create your own review of your year in minutes
+                  <strong>MyYear</strong> — Create your own review of your year
+                  in minutes
                 </a>
               </li>
               <li>
@@ -699,8 +746,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  FoundersKit — $6k of discounts for the best startup tools for
-                  only $39
+                  <strong>FoundersKit</strong> — $6k of discounts for the best
+                  startup tools for only $39
                 </a>
               </li>
               <li>
@@ -710,8 +757,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  The Working Lunch — Daily newsletter with resources for
-                  startup founders
+                  <strong>The Working Lunch</strong> — Daily newsletter with
+                  resources for startup founders
                 </a>
               </li>
               <li>
@@ -721,7 +768,7 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  Outstanding Bar — Minimalist Wordpress plugin
+                  <strong>Outstanding Bar</strong> — Minimalist Wordpress plugin
                 </a>
               </li>
               <li>
@@ -731,7 +778,7 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  FlashTabs — Flashcards in your new tab screen
+                  <strong>FlashTabs</strong> — Flashcards in your new tab screen
                 </a>
               </li>
               <li>
@@ -741,7 +788,8 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  HowsItGoin — Set questions and track your answers over time
+                  <strong>HowsItGoin</strong> — Set questions and track your
+                  answers over time
                 </a>
               </li>
               <li>
@@ -751,7 +799,7 @@ const Cv = () => (
                   rel="nofollow noreferrer"
                   target="_blank"
                 >
-                  AreTheNSAWatchingMe.com – Yes, yes they are
+                  <strong>AreTheNSAWatchingMe.com</strong> – Yes, yes they are
                 </a>
               </li>
             </ul>

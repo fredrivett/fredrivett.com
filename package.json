@@ -24,9 +24,13 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.16",
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-brands-svg-icons": "^7.0.1",
+    "@fortawesome/react-fontawesome": "^3.0.2",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^15.5.2",
+    "@radix-ui/react-avatar": "^1.1.10",
     "@vercel/og": "^0.8.5",
     "clsx": "^2.1.1",
     "date-fns": "^2.28.0",

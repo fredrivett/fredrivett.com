@@ -182,11 +182,6 @@ blockquote {
   cite {
     display: block;
     font-style: italic;
-
-    &::before {
-      content: "\2013";
-      margin-right: 0.5em;
-    }
   }
 }
 
