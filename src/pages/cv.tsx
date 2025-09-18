@@ -63,9 +63,46 @@ const Cv = () => (
                 cite={
                   <>
                     <img
+                      alt="Photo of Nathan Baschez"
+                      src="/people/nathan-bashez.jpg"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
+                    />
+                    <a
+                      href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Nathan Baschez
+                    </a>{" "}
+                    (Founder & CEO,{" "}
+                    <a
+                      href="https://lex.page/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                    >
+                      Lex
+                    </a>
+                    )
+                  </>
+                }
+              >
+                Fred is{" "}
+                <strong>
+                  not only an extremely skilled front-end engineer, he’s got a
+                  talent for design, good product instincts, and most
+                  importantly, he deeply cares.
+                </strong>{" "}
+                He wants to get it right, and{" "}
+                <strong>he works incredibly hard to do so</strong>. I hope I’m
+                lucky enough to be able to work with him again one day soon!
+              </Testimonial>
+              <Testimonial
+                cite={
+                  <>
+                    <img
                       alt="Photo of Dr. Philip Jones"
                       src="/people/philip-jones.jpg"
-                      className="inline-block w-6 h-6 mr-2 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
                     />
                     <a
                       href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
@@ -106,7 +143,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Thayer Prime"
                       src="/people/thayer-prime.jpg"
-                      className="inline-block w-6 h-6 mr-2 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
                     />
                     <a
                       href="https://www.linkedin.com/in/thayerprime"
@@ -149,7 +186,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Raphael Benarrosh"
                       src="/people/raphael-benarrosh.jpg"
-                      className="inline-block w-6 h-6 mr-2 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
                     />
                     <a
                       href="https://www.linkedin.com/in/dr-philip-jones-4b0a1879/"
@@ -209,7 +246,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Andrew McDonough"
                       src="/people/andrew-mcdonough.jpg"
-                      className="inline-block w-6 h-6 mr-2 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
                     />
                     <a
                       href="https://www.linkedin.com/in/andrewmcdonough/"
@@ -265,7 +302,7 @@ const Cv = () => (
                     <img
                       alt="Photo of Tony Walmsley"
                       src="/people/tony-walmsley.jpg"
-                      className="inline-block w-6 h-6 mr-2 rounded-full"
+                      className="inline-block w-6 h-6 mr-2 rounded-full -translate-y-px"
                     />
                     <a
                       href="https://www.linkedin.com/in/tony-walmsley-8540732/"
