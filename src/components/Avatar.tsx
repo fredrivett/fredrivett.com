@@ -56,7 +56,7 @@ function Avatar({ className, type, ...props }: AvatarProps) {
   return (
     <AvatarPrimitive.Root
       className={cn(
-        "relative flex h-8 w-8 border border-gray-100 dark:border-gray-900 shrink-0 overflow-hidden",
+        "relative flex h-8 w-8 border border-gray-200 dark:border-gray-900 shrink-0 overflow-hidden",
         radiusClass,
         className,
       )}

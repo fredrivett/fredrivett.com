@@ -58,7 +58,7 @@ const Cv = () => (
             <h2 className="lg:hidden print:block">
               💬 Kind words from colleagues &amp; clients
             </h2>
-            <div className="flex flex-col border-l-4 border-gray-300 dark:border-gray-800 lg:border-l-0 pl-4 lg:pl-0 last-mb-0 mb-8 lg:mb-0">
+            <div className="flex flex-col gap-3 border-l-4 border-gray-300 dark:border-gray-800 lg:border-l-0 pl-4 lg:pl-0 mb-8 lg:mb-0">
               <Testimonial
                 cite={
                   <>
@@ -408,7 +408,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="LinkedIn"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="xl" />
               </a>
@@ -417,7 +417,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="Stack Overflow"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faStackOverflow} size="xl" />
               </a>
@@ -426,7 +426,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="GitHub"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faGithub} size="xl" />
               </a>
@@ -435,7 +435,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="Twitter"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faTwitter} size="xl" />
               </a>
@@ -444,7 +444,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="Product Hunt"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faProductHunt} size="xl" />
               </a>
@@ -453,7 +453,7 @@ const Cv = () => (
                 rel="nofollow noreferrer"
                 target="_blank"
                 title="Unsplash"
-                className="no-underline w-6 h-6 flex justify-center"
+                className="no-underline w-6 h-6 flex justify-center hover:text-blue-600"
               >
                 <FontAwesomeIcon icon={faUnsplash} size="xl" />
               </a>
