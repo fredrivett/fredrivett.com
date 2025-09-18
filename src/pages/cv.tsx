@@ -274,7 +274,7 @@ const Cv = () => (
                     >
                       Tony Walmsley
                     </a>{" "}
-                    (Experienced Software Engineer)
+                    (Senior Software Engineer)
                   </>
                 }
               >
