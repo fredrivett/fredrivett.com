@@ -1,0 +1,46 @@
+name: Generate CV PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/pages/cv.tsx'
+      - 'scripts/generate-cv-pdf.js'
+      - 'src/styles/**'
+      - 'package.json'
+      - 'yarn.lock'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build site
+        run: yarn build
+
+      - name: Generate CV PDF
+        run: yarn generate:cv-pdf
+
+      - name: Commit updated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: refresh CV PDF'
+          file_pattern: public/cv/fred-rivett-cv.pdf
