@@ -552,7 +552,7 @@ const Cv = () => (
               ]}
               dates={`Feb 2020 — current • ${getTimeSince("2020/02/01")}`}
               blurb={[
-                "During lockdown I used my newfound spare time to build an iOS app. I designed the minimalist UI/UX and implemented it all in React Native using Expo.",
+                "During lockdown I used my newfound spare time to build an iOS app. Designed the minimalist UI/UX and implemented it all in React Native using Expo.",
               ]}
               tags={["React Native", "Redux", "Expo", "Tailwind", "UI/UX"]}
             />
@@ -670,6 +670,13 @@ const Cv = () => (
               projects I&apos;ve launched:
             </p>
             <ul className="o_naked-list u_indent-0">
+              <li>
+                2025{" "}
+                <a href="https://flowlane.ai" target="_blank" rel="noreferrer">
+                  <strong>Flowlane</strong> — The smart autopilot for your SaaS
+                  email flows
+                </a>
+              </li>
               <li>
                 2025{" "}
                 <a href="https://herenow.fyi" target="_blank" rel="noreferrer">
