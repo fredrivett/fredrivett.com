@@ -68,7 +68,7 @@ const Cv = () => {
                   emoji="💬"
                   label="Speech balloon"
                   size={20}
-                  className="mr-2 align-middle"
+                  className="inline-block mr-2 align-middle"
                 />
                 Kind words from colleagues &amp; clients
               </h2>
