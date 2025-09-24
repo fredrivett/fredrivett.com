@@ -76,7 +76,10 @@ async function generatePdf() {
   try {
     await waitForServerReady(`${baseUrl}/cv`);
 
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     const page = await browser.newPage();
 
     await page.evaluateOnNewDocument(() => {
