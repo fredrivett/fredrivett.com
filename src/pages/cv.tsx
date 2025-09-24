@@ -9,7 +9,7 @@ import {
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FileText, Clock } from "lucide-react";
+import { FileDown, FileText, Clock } from "lucide-react";
 
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
@@ -20,6 +20,7 @@ import FredHead from "components/FredHead";
 import SiteCounter from "components/SiteCounter";
 import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
+import Twemoji from "components/Twemoji";
 
 const getTimeSince = (dateString: string) => {
   const currentDate = new Date();
@@ -56,7 +57,6 @@ const getGeneratedAt = () => {
 
 const Cv = () => {
   const generatedAt = getGeneratedAt();
-
   const pdfDownloadUrl = "/cv/fred-rivett-cv.pdf";
 
   return (
@@ -66,7 +66,13 @@ const Cv = () => {
           <div className="flex flex-wrap -m-6">
             <div className="p-6 lg:w-2/5 print:order-2 print:w-full">
               <h2 className="lg:hidden print:block">
-                💬 Kind words from colleagues &amp; clients
+                <Twemoji
+                  emoji="💬"
+                  label="Speech balloon"
+                  size={20}
+                  className="mr-2 align-middle"
+                />
+                Kind words from colleagues &amp; clients
               </h2>
               <div className="flex flex-col gap-3 border-l-4 border-gray-300 dark:border-gray-800 lg:border-l-0 pl-4 lg:pl-0 mb-8 lg:mb-0">
                 <Testimonial
@@ -374,10 +380,10 @@ const Cv = () => {
                   <div className="flex flex-wrap items-center gap-3 text-sm font-semibold print:hidden">
                     <a
                       href={pdfDownloadUrl}
-                      className="inline-flex items-center gap-2 rounded-full dark:bg-gray-900 px-4 py-2 dark:text-white transition dark:hover:bg-gray-800 no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 bg-gray-100 text-gray-900 hover:bg-gray-200"
+                      className="inline-flex items-center text-base gap-2 rounded-full dark:bg-gray-900 px-5 py-3 dark:text-white border-2 border-gray-200 dark:border-gray-800 transition dark:hover:bg-gray-800 no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 bg-gray-100 text-gray-700 hover:bg-gray-200"
                       download="fred-rivett-cv.pdf"
                     >
-                      <FileText size={16} />
+                      <FileDown className="opacity-60" size={20} />
                       Download as PDF
                     </a>
                   </div>
@@ -424,7 +430,20 @@ const Cv = () => {
               </p>
               <p>
                 <Tag>
-                  🇬🇧 London <span className="text-gray-500">/</span> 🌍 Remote
+                  <Twemoji
+                    emoji="🇬🇧"
+                    label="United Kingdom"
+                    size={18}
+                    className="inline-block align-[-4px] mr-2"
+                  />
+                  London <span className="text-gray-500">/</span>{" "}
+                  <Twemoji
+                    emoji="🌍"
+                    label="Globe"
+                    size={18}
+                    className="inline-block align-[-4px] mr-2"
+                  />
+                  Remote
                 </Tag>
               </p>
 
@@ -489,7 +508,15 @@ const Cv = () => {
 
               <hr />
 
-              <h2 id="experience">👨🏻‍💻 Experience</h2>
+              <h2 id="experience">
+                <Twemoji
+                  emoji="👨🏻‍💻"
+                  label="Technologist"
+                  size={24}
+                  className="inline-block mr-2 align-baseline"
+                />
+                Experience
+              </h2>
 
               <CvRole
                 title="Founding Engineer (Contract)"
@@ -693,7 +720,15 @@ const Cv = () => {
 
               <hr />
 
-              <h2 id="side-projects">🎨 Side projects</h2>
+              <h2 id="side-projects">
+                <Twemoji
+                  emoji="🎨"
+                  label="Palette"
+                  size={24}
+                  className="inline-block mr-2 align-baseline"
+                />
+                Side projects
+              </h2>
               <p>
                 Side projects are how I got into tech in the first place,
                 hacking away in my spare time. Here&apos;s a selection of some
@@ -890,7 +925,13 @@ const Cv = () => {
               </ul>
               <hr />
               <p>
-                👋🏼 Have an interesting opportunity?{" "}
+                <Twemoji
+                  emoji="👋🏼"
+                  label="Waving hand"
+                  size={18}
+                  className="inline-block align-[-3px] mr-2"
+                />
+                Have an interesting opportunity?{" "}
                 <a href="mailto:fred@fredrivett.com?subject=Work%20together%3F">
                   Reach out and say hi
                 </a>
