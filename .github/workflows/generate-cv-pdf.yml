@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - 'src/components/Twemoji.tsx'
       - 'src/pages/cv.tsx'
       - 'scripts/generate-cv-pdf.js'
       - 'src/styles/**'

@@ -37,9 +37,7 @@ const getTimeSince = (dateString: string) => {
   const months = totalMonths % 12;
 
   // Format the output
-  if (years === 0) {
-    return `${months} mos`;
-  }
+  if (years === 0) return `${months} mos`;
   if (months === 0) {
     return `${years} ${years === 1 ? "yr" : "yrs"}`;
   }
