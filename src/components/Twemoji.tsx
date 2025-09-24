@@ -23,7 +23,9 @@ const Twemoji = ({ emoji, size = 20, className, label }: TwemojiProps) => {
       alt={altText}
       className={className}
       draggable={false}
-      loading="lazy"
+      loading="eager"
+      decoding="async"
+      referrerPolicy="no-referrer"
     />
   );
 };
