@@ -44,7 +44,7 @@ const getTimeSince = (dateString: string) => {
   return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
-const role = "Senior [Founding/Product/Design] Engineer";
+const role = "Senior [Founding/Product/Design/Frontend] Engineer";
 const toolkit =
   "current go-to toolkit includes React, React Native, TypeScript, Jest, styled-components & Tailwind.";
 
@@ -392,7 +392,7 @@ const Cv = () => {
                 {role}
               </p>
               <p className="mb-3">
-                Engineer with a product mindset and designers eye, passionate
+                Engineer with a designers eye and product mindset, passionate
                 about building products that improve people&apos;s lives.
               </p>
               <p className="mb-3">
@@ -540,7 +540,7 @@ const Cv = () => {
                   "Jest",
                   "Playwright",
                   "ProseMirror",
-                  "Tldraw",
+                  "tldraw",
                   "stylex",
                 ]}
               />

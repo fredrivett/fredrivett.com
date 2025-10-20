@@ -64,7 +64,7 @@ const Index = (props: IBlogGalleryProps) => (
           </a>
           .
         </p>
-        <p>Senior [Founding/Product/Design] Engineer.</p>
+        <p>Senior [Founding/Product/Design/Frontend] Engineer.</p>
         <p className="mb-0">
           <em>
             Founder @{" "}
