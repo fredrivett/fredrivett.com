@@ -18,7 +18,7 @@ const Now = () => (
           What I&apos;m up to right now
         </h1>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2025-07-17"), "do MMMM yyyy")}</em>
+          <em>Updated: {format(new Date("2025-10-21"), "do MMMM yyyy")}</em>
         </p>
 
         <hr />
@@ -35,11 +35,27 @@ const Now = () => (
 
         <h3 className="mb-2">Work</h3>
         <p>
-          First engineer hire at{" "}
+          Recently finished up my role as Founding Engineer at{" "}
           <a href="https://lex.page" rel="nofollow noreferrer" target="_blank">
             Lex
           </a>
-          , building the future of writing in the AI era.
+          , now exploring new ideas (
+          <a href="https://log.limo" rel="nofollow noreferrer" target="_blank">
+            log.limo
+          </a>{" "}
+          /{" "}
+          <a
+            href="https://flowlane.ai"
+            rel="nofollow noreferrer"
+            target="_blank"
+          >
+            flowlane
+          </a>
+          ) whilst doing some contract work.
+        </p>
+        <p>
+          Have a contract role or project you think I might be a good fit for?
+          Feel free to <a href="mailto:fred@fredrivett.com">get in touch</a>.
         </p>
 
         <hr />
