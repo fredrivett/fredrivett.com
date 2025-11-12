@@ -67,7 +67,11 @@ const Index = (props: IBlogGalleryProps) => (
         <p>Senior [Founding/Design/Product/Frontend] Engineer.</p>
         <p className="mb-0">
           <em>
-            Founder @{" "}
+            now: Exploring new ideas [
+            <a href="https://log.limo" target="_blank" rel="noreferrer">
+              log.limo
+            </a>{" "}
+            /{" "}
             <a
               href="https://twitter.com/flowlaneAI"
               rel="nofollow noreferrer"
@@ -75,12 +79,12 @@ const Index = (props: IBlogGalleryProps) => (
             >
               Flowlane
             </a>
-            .
+            ].
           </em>
         </p>
         <p>
           <em>
-            Founding Engineer @{" "}
+            prev: Founding Engineer @{" "}
             <a
               href="https://lex.page"
               rel="nofollow noreferrer"

@@ -517,6 +517,32 @@ const Cv = () => {
               </h2>
 
               <CvRole
+                title="Design Engineer (Contract)"
+                company="Nolana"
+                companyLogoPath="nolana.png"
+                links={[
+                  {
+                    url: "https://nolana.com",
+                    text: "Nolana homepage",
+                  },
+                ]}
+                dates={`October 2025 – November 2025 • 5 weeks`}
+                blurb={[
+                  "Brought in on a short-term contract to help implement a couple new features and tighten up the frontend/UI.",
+                ]}
+                tags={[
+                  "React",
+                  "TypeScript",
+                  "NextJS",
+                  "AI SDK",
+                  "Tailwind",
+                  "shadcn",
+                  "Tanstack Query",
+                  "Zod",
+                ]}
+              />
+
+              <CvRole
                 title="Founding Engineer (Contract)"
                 company="Lex"
                 companyLogoPath="lex.png"
@@ -526,9 +552,7 @@ const Cv = () => {
                     text: "Lex homepage",
                   },
                 ]}
-                dates={`December 2023 – current • ${getTimeSince(
-                  "2023/12/01",
-                )}`}
+                dates={`November 2023 – September 2025 • 1 yr 10 mos`}
                 blurb={[
                   "First (and at times only) engineer post $2.75m raise, working across the whole company, from top of funnel to product ideas all the way through to full stack implementation and everything else that goes on at an early stage startup.",
                 ]}
@@ -735,13 +759,20 @@ const Cv = () => {
               <ul className="o_naked-list u_indent-0">
                 <li>
                   2025{" "}
+                  <a href="https://log.limo" target="_blank" rel="noreferrer">
+                    <strong>log.limo</strong> (early access) — git log —&gt;
+                    changelog
+                  </a>
+                </li>
+                <li>
+                  2025{" "}
                   <a
                     href="https://flowlane.ai"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <strong>Flowlane</strong> — The smart autopilot for your
-                    SaaS email flows
+                    <strong>Flowlane</strong> (early access) — The smart
+                    autopilot for your SaaS email flows
                   </a>
                 </li>
                 <li>
