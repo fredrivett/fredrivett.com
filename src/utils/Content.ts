@@ -1,7 +1,6 @@
 import fs from "fs";
 import { join } from "path";
 
-import { format } from "date-fns";
 import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "_posts");
@@ -55,9 +54,11 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
   });
 
-  items.year = format(new Date(data.date), "yyyy");
-  items.month = format(new Date(data.date), "MM");
-  items.day = format(new Date(data.date), "dd");
+  // Use UTC so the slug/date parts stay stable regardless of server/local timezone
+  const postDate = new Date(data.date);
+  items.year = postDate.getUTCFullYear().toString();
+  items.month = String(postDate.getUTCMonth() + 1).padStart(2, "0");
+  items.day = String(postDate.getUTCDate()).padStart(2, "0");
   // get slug string after date part
   items.titleSlug = realSlug.split("-").slice(3).join("-");
 
