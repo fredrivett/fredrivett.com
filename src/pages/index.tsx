@@ -1,6 +1,7 @@
 import React from "react";
 
 import { GetStaticProps } from "next";
+import Link from "next/link";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import { Meta } from "layout/Meta";
@@ -67,19 +68,7 @@ const Index = (props: IBlogGalleryProps) => (
         <p>Senior [Founding/Design/Product/Frontend] Engineer.</p>
         <p className="mb-0">
           <em>
-            now: Exploring new ideas [
-            <a href="https://log.limo" target="_blank" rel="noreferrer">
-              log.limo
-            </a>{" "}
-            /{" "}
-            <a
-              href="https://twitter.com/flowlaneAI"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              Flowlane
-            </a>
-            ].
+            now: <Link href="/now#exploring">Exploring new ideas</Link>
           </em>
         </p>
         <p>
@@ -92,7 +81,6 @@ const Index = (props: IBlogGalleryProps) => (
             >
               Lex
             </a>
-            .
           </em>
         </p>
 
