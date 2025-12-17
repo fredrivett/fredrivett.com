@@ -50,7 +50,7 @@ const Now = () => (
           Exploring
         </h3>
 
-        <h4 className="mb-1">Automating communication cruft</h4>
+        <h4 className="mb-1">📮 Automating communication cruft</h4>
         <p>
           One primary idea I&apos;m exploring is how we automate the cruft
           around building product. A major area of cruft is communicating with
@@ -78,7 +78,7 @@ const Now = () => (
           <a href="mailto:fred@fredrivett.com">feel free to reach out</a>.
         </p>
 
-        <h4 className="mb-1">Your digital home</h4>
+        <h4 className="mb-1">🏠 Your digital home</h4>
         <p>
           The digital world has so much to explore, from images, to articles, to
           books and films. Organising this coherently can be overwhelming, but
