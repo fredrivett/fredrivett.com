@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "setup": "if [ -n \"${CONDUCTOR_ROOT_PATH:-}\" ] && [ -f \"$CONDUCTOR_ROOT_PATH/.env.local\" ]; then ln -sf \"$CONDUCTOR_ROOT_PATH/.env.local\" .env.local; else echo \"Missing CONDUCTOR_ROOT_PATH/.env.local; skipping link\"; fi && yarn install",
+    "run": "yarn dev"
+  }
+}
