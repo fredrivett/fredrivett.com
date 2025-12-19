@@ -18,7 +18,7 @@ const Now = () => (
           What I&apos;m up to right now
         </h1>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2025-10-21"), "do MMMM yyyy")}</em>
+          <em>Updated: {format(new Date("2025-12-17"), "do MMMM yyyy")}</em>
         </p>
 
         <hr />
