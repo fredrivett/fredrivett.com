@@ -6,10 +6,10 @@ import { BlogDate } from "blog/BlogDate";
 
 import PseudoIcon from "components/PseudoIcon";
 
-import { PostItems } from "utils/Content";
+import { PostItemsWithHeadings } from "utils/Content";
 
 export type IBlogGalleryProps = {
-  posts: PostItems[];
+  posts: PostItemsWithHeadings[];
 };
 
 const MOST_POPULAR_SLUG = "becoming-the-person-who-does-the-thing";
@@ -25,13 +25,13 @@ const BlogGallery = (props: IBlogGalleryProps) => (
         const isMostPopular = post.titleSlug === MOST_POPULAR_SLUG;
 
         return (
-          <li key={post.slug} className="flex mb-3">
+          <li key={post.slug as string} className="flex mb-3">
             <h2 className="relative fs-2 mb-2 mr-2 lg:ml-0 lg:order-1">
               <Link
                 href="/[year]/[month]/[day]/[titleSlug]"
                 as={`/${post.year}/${post.month}/${post.day}/${post.titleSlug}`}
                 className="c_article-head__title"
-                dangerouslySetInnerHTML={{ __html: post.title }}
+                dangerouslySetInnerHTML={{ __html: post.title as string }}
               />
               {isMostPopular && (
                 <span
@@ -65,7 +65,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             </h2>
 
             <BlogDate
-              date={post.date}
+              date={post.date as string}
               className="flex-shrink-0 fs-4 mr-2 lg:w-40 lg:text-right ml-auto lg:ml-0"
             />
           </li>

@@ -26,7 +26,7 @@ type HeadingLinkProps = {
 };
 
 export function HeadingLink({ level, children }: HeadingLinkProps) {
-  const { getOrCreateId } = useHeadingId();
+  const { getOrCreateId, registerHeading } = useHeadingId();
   const instanceKey = useId(); // Stable key for this component instance
   const headingRef = useRef<HTMLHeadingElement>(null);
   const [isHighlighted, setIsHighlighted] = useState(false);
@@ -34,6 +34,11 @@ export function HeadingLink({ level, children }: HeadingLinkProps) {
   const baseId = slugify(text);
   const id = getOrCreateId(instanceKey, baseId);
   const Tag = `h${level}` as const;
+
+  // Register this heading with the context so TOC can find it
+  useEffect(() => {
+    registerHeading(instanceKey, id, level, text);
+  }, [instanceKey, id, level, text, registerHeading]);
 
   const triggerHighlight = useCallback(() => {
     setIsHighlighted(true);
@@ -68,7 +73,9 @@ export function HeadingLink({ level, children }: HeadingLinkProps) {
     };
 
     document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
   }, [id, scrollAndHighlight]);
 
   const handleClick = () => {
