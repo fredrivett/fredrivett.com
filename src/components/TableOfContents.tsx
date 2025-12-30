@@ -54,7 +54,13 @@ export function TableOfContents({ className }: TableOfContentsProps) {
   const minLevel = Math.min(...headings.map((h) => h.level));
 
   return (
-    <nav className={cn("text-sm", className)} aria-label="Table of contents">
+    <nav
+      className={cn(
+        "text-sm lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto",
+        className,
+      )}
+      aria-label="Table of contents"
+    >
       <p className="font-semibold mb-2 text-gray-900 dark:text-gray-100">
         <ScrollText className="inline-block h-4 w-4 mr-1.5 mb-0.5 opacity-50" />
         In this post
