@@ -13,6 +13,8 @@ import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import EmailSubscribe from "components/EmailSubscribe";
+import { HeadingIdProvider } from "components/heading-id-context";
+import { HeadingLink } from "components/HeadingLink";
 import Tweet from "components/Tweet";
 
 import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
@@ -61,15 +63,35 @@ const DisplayPost = (props: IPostProps) => {
         </div>
         <h1>{props.title}</h1>
 
-        <div className="blog-post">
-          <MDXRemote
-            {...props.mdxSource}
-            components={{
-              EmailSubscribe,
-              Tweet,
-            }}
-          />
-        </div>
+        <HeadingIdProvider>
+          <div className="blog-post">
+            <MDXRemote
+              {...props.mdxSource}
+              components={{
+                EmailSubscribe,
+                Tweet,
+                h1: ({ children }) => (
+                  <HeadingLink level={1}>{children}</HeadingLink>
+                ),
+                h2: ({ children }) => (
+                  <HeadingLink level={2}>{children}</HeadingLink>
+                ),
+                h3: ({ children }) => (
+                  <HeadingLink level={3}>{children}</HeadingLink>
+                ),
+                h4: ({ children }) => (
+                  <HeadingLink level={4}>{children}</HeadingLink>
+                ),
+                h5: ({ children }) => (
+                  <HeadingLink level={5}>{children}</HeadingLink>
+                ),
+                h6: ({ children }) => (
+                  <HeadingLink level={6}>{children}</HeadingLink>
+                ),
+              }}
+            />
+          </div>
+        </HeadingIdProvider>
 
         <hr />
 

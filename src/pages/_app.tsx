@@ -1,6 +1,7 @@
 import React from "react";
 
 import { AppProps } from "next/app";
+import { Toaster } from "sonner";
 
 import { Nav } from "navigation/Nav";
 
@@ -11,6 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Nav />
     <Component {...pageProps} />
+    <Toaster theme="dark" toastOptions={{ className: "!rounded-none" }} />
   </>
 );
 
