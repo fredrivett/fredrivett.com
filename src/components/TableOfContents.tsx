@@ -1,23 +1,25 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { ScrollText } from "lucide-react";
 
 import { cn } from "lib/cn";
 
-import { HeadingItem } from "utils/Content";
+import { useHeadingId } from "./heading-id-context";
 
 type TableOfContentsProps = {
-  headings: HeadingItem[];
   className?: string;
 };
 
-export function TableOfContents({ headings, className }: TableOfContentsProps) {
+export function TableOfContents({ className }: TableOfContentsProps) {
+  const { headings } = useHeadingId();
   const [activeId, setActiveId] = useState<string | null>(null);
 
   // Observe headings to highlight the current one
   useEffect(() => {
+    if (headings.length === 0) return undefined;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,20 +41,10 @@ export function TableOfContents({ headings, className }: TableOfContentsProps) {
       }
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    };
   }, [headings]);
-
-  const handleClick = useCallback(
-    (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-      e.preventDefault();
-      const element = document.getElementById(id);
-      if (element) {
-        window.history.pushState(null, "", `#${id}`);
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-    [],
-  );
 
   if (headings.length === 0) {
     return null;
@@ -75,7 +67,6 @@ export function TableOfContents({ headings, className }: TableOfContentsProps) {
           >
             <a
               href={`#${id}`}
-              onClick={(e) => handleClick(e, id)}
               className={cn(
                 "block py-0.5 no-underline transition-colors hover:text-gray-900 dark:hover:text-gray-100",
                 activeId === id

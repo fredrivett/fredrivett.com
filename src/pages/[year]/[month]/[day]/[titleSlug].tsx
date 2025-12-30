@@ -18,12 +18,7 @@ import { HeadingLink } from "components/HeadingLink";
 import { TableOfContents } from "components/TableOfContents";
 import Tweet from "components/Tweet";
 
-import {
-  getAllPosts,
-  getPostSlug,
-  getPostBySlug,
-  HeadingItem,
-} from "utils/Content";
+import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
 
 type IPostUrl = {
   titleSlug: string;
@@ -40,7 +35,6 @@ type IPostProps = {
   image: string | null;
   mdxSource: MDXRemoteSerializeResult;
   tableOfContents: boolean;
-  headings: HeadingItem[];
 };
 
 const DisplayPost = (props: IPostProps) => {
@@ -49,7 +43,7 @@ const DisplayPost = (props: IPostProps) => {
     props.title,
   )}&date=${encodeURIComponent(props.date)}`;
 
-  const showToc = props.tableOfContents && props.headings.length > 0;
+  const showToc = props.tableOfContents;
 
   return (
     <Main
@@ -66,21 +60,21 @@ const DisplayPost = (props: IPostProps) => {
         />
       }
     >
-      <div
-        className={
-          showToc
-            ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_20rem] lg:gap-12"
-            : undefined
-        }
-      >
-        <Container maxWidth={showToc ? undefined : "prose"}>
-          <div className="flex items-end gap-4 mb-1">
-            <BlogDate date={props.date} />
-            <div data-herenow></div>
-          </div>
-          <h1>{props.title}</h1>
+      <HeadingIdProvider>
+        <div
+          className={
+            showToc
+              ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_20rem] lg:gap-12"
+              : undefined
+          }
+        >
+          <Container maxWidth={showToc ? undefined : "prose"}>
+            <div className="flex items-end gap-4 mb-1">
+              <BlogDate date={props.date} />
+              <div data-herenow></div>
+            </div>
+            <h1>{props.title}</h1>
 
-          <HeadingIdProvider>
             <div className="blog-post">
               <MDXRemote
                 {...props.mdxSource}
@@ -108,46 +102,46 @@ const DisplayPost = (props: IPostProps) => {
                 }}
               />
             </div>
-          </HeadingIdProvider>
 
-          <hr />
+            <hr />
 
-          <div className="text-gray-600 dark:text-gray-500">
-            <p>
-              If you liked this post or have any thoughts, feel free to ping me
-              on twitter:
-            </p>
-            <p>
-              <a
-                href="https://twitter.com/fredrivett"
-                rel="norefferer noreferrer"
-                target="_blank"
-                className="inline-flex items-center self-start"
-              >
-                <span className="flex mx-1.5">
-                  <Image
-                    src="/assets/images/fredrivett.jpg"
-                    alt="Fred Rivett's face"
-                    width={32}
-                    height={32}
-                    className="rounded-full"
-                  />
-                </span>
-                @fredrivett
-              </a>
-            </p>
-          </div>
-
-          <EmailSubscribe className="mt-4" />
-        </Container>
-        {showToc && (
-          <aside className="-order-1 lg:order-2 mb-12 p-4 bg-gray-50 dark:bg-gray-900/50 lg:mb-0 lg:p-0 lg:pt-12 lg:bg-transparent lg:dark:bg-transparent lg:rounded-none">
-            <div className="lg:sticky lg:top-24">
-              <TableOfContents headings={props.headings} />
+            <div className="text-gray-600 dark:text-gray-500">
+              <p>
+                If you liked this post or have any thoughts, feel free to ping
+                me on twitter:
+              </p>
+              <p>
+                <a
+                  href="https://twitter.com/fredrivett"
+                  rel="norefferer noreferrer"
+                  target="_blank"
+                  className="inline-flex items-center self-start"
+                >
+                  <span className="flex mx-1.5">
+                    <Image
+                      src="/assets/images/fredrivett.jpg"
+                      alt="Fred Rivett's face"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                    />
+                  </span>
+                  @fredrivett
+                </a>
+              </p>
             </div>
-          </aside>
-        )}
-      </div>
+
+            <EmailSubscribe className="mt-4" />
+          </Container>
+          {showToc && (
+            <aside className="-order-1 lg:order-2 mb-12 p-4 bg-gray-50 dark:bg-gray-900/50 lg:mb-0 lg:p-0 lg:pt-12 lg:bg-transparent lg:dark:bg-transparent lg:rounded-none">
+              <div className="lg:sticky lg:top-24">
+                <TableOfContents />
+              </div>
+            </aside>
+          )}
+        </div>
+      </HeadingIdProvider>
     </Main>
   );
 };
@@ -182,7 +176,6 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     "content",
     "slug",
     "tableOfContents",
-    "headings",
   ]);
 
   const mdxSource = await serialize((post.content as string) || "", {
@@ -202,7 +195,6 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       mdxSource,
       tableOfContents:
         post.tableOfContents === true || post.tableOfContents === "true",
-      headings: (post.headings as HeadingItem[]) ?? [],
     },
   };
 };
