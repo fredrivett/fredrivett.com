@@ -12,7 +12,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Nav />
     <Component {...pageProps} />
-    <Toaster theme="dark" toastOptions={{ className: "!rounded-none" }} />
+    <Toaster
+      theme="dark"
+      position="top-right"
+      toastOptions={{ className: "!rounded-none text-sm" }}
+      className="lg:!top-[5.5rem]"
+    />
   </>
 );
 
