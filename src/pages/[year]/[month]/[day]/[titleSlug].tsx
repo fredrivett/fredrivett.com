@@ -13,6 +13,7 @@ import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import EmailSubscribe from "components/EmailSubscribe";
+import { ExternalLink } from "components/ExternalLink";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
 import { TableOfContents } from "components/TableOfContents";
@@ -99,6 +100,7 @@ const DisplayPost = (props: IPostProps) => {
                   h6: ({ children }) => (
                     <HeadingLink level={6}>{children}</HeadingLink>
                   ),
+                  a: ExternalLink,
                 }}
               />
             </div>
