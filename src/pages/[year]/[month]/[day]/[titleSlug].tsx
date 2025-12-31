@@ -74,7 +74,7 @@ const DisplayPost = (props: IPostProps) => {
         <div
           className={
             showToc
-              ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_16rem] lg:gap-12"
+              ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_20rem] lg:gap-12"
               : undefined
           }
         >
@@ -85,6 +85,7 @@ const DisplayPost = (props: IPostProps) => {
             </div>
             <h1>{props.title}</h1>
 
+            {/* allYearReviews is sorted by year descending, so [0] is the latest */}
             {props.yearInReview !== null && props.allYearReviews.length > 0 && (
               <div className="text-gray-600 dark:text-gray-400 mb-8">
                 <p className="mb-2">

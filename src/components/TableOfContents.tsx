@@ -12,10 +12,6 @@ type TableOfContentsProps = {
   className?: string;
 };
 
-type TableOfContentsAsideProps = {
-  className?: string;
-};
-
 export function TableOfContents({ className }: TableOfContentsProps) {
   const { headings } = useHeadingId();
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -93,7 +89,7 @@ export function TableOfContents({ className }: TableOfContentsProps) {
   );
 }
 
-export function TableOfContentsAside({ className }: TableOfContentsAsideProps) {
+export function TableOfContentsAside({ className }: TableOfContentsProps) {
   const { headings } = useHeadingId();
 
   if (headings.length === 0) {

@@ -133,6 +133,10 @@ export type YearReviewPost = {
   slug: string;
 };
 
+export function getPostUrl(post: PostItemsWithHeadings): string {
+  return `/${post.year}/${post.month}/${post.day}/${post.titleSlug}`;
+}
+
 export function getAllYearReviewPosts(): YearReviewPost[] {
   const slugs = getPostSlugs();
 
@@ -142,7 +146,7 @@ export function getAllYearReviewPosts(): YearReviewPost[] {
     .map((post) => ({
       year: post.yearInReview as number,
       title: post.title as string,
-      slug: `/${post.year}/${post.month}/${post.day}/${post.titleSlug}`,
+      slug: getPostUrl(post),
     }))
     .sort((a, b) => b.year - a.year);
 }
