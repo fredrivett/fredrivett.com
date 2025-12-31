@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Image from "next/image";
+import Link from "next/link";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 
@@ -19,7 +20,13 @@ import { HeadingLink } from "components/HeadingLink";
 import { TableOfContents } from "components/TableOfContents";
 import Tweet from "components/Tweet";
 
-import { getAllPosts, getPostSlug, getPostBySlug } from "utils/Content";
+import {
+  getAllPosts,
+  getPostSlug,
+  getPostBySlug,
+  getAllYearReviewPosts,
+  YearReviewPost,
+} from "utils/Content";
 
 type IPostUrl = {
   titleSlug: string;
@@ -36,6 +43,8 @@ type IPostProps = {
   image: string | null;
   mdxSource: MDXRemoteSerializeResult;
   tableOfContents: boolean;
+  yearInReview: number | null;
+  allYearReviews: YearReviewPost[];
 };
 
 const DisplayPost = (props: IPostProps) => {
@@ -75,6 +84,32 @@ const DisplayPost = (props: IPostProps) => {
               <div data-herenow></div>
             </div>
             <h1>{props.title}</h1>
+
+            {props.yearInReview !== null && props.allYearReviews.length > 0 && (
+              <div className="text-gray-600 dark:text-gray-400 mb-8">
+                <p className="mb-2">
+                  {props.allYearReviews[0]?.year === props.yearInReview
+                    ? "This is the latest in a series of year in review posts:"
+                    : "This post is part of a series of year in review posts:"}
+                </p>
+                <ul className="list-disc pl-5 mb-0">
+                  {props.allYearReviews.map((review) =>
+                    review.year === props.yearInReview ? (
+                      <li key={review.year}>
+                        <span className="opacity-50">
+                          {review.title} (you are here)
+                        </span>
+                      </li>
+                    ) : (
+                      <li key={review.year}>
+                        <Link href={review.slug}>{review.title}</Link>
+                      </li>
+                    ),
+                  )}
+                </ul>
+                <hr className="my-6" />
+              </div>
+            )}
 
             <div className="blog-post">
               <MDXRemote
@@ -178,6 +213,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     "content",
     "slug",
     "tableOfContents",
+    "yearInReview",
   ]);
 
   const mdxSource = await serialize((post.content as string) || "", {
@@ -186,6 +222,11 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       rehypePlugins: [rehypeHighlight],
     },
   });
+
+  // Get all year review posts if this is a year review post
+  const yearInReview =
+    typeof post.yearInReview === "number" ? post.yearInReview : null;
+  const allYearReviews = yearInReview !== null ? getAllYearReviewPosts() : [];
 
   return {
     props: {
@@ -197,6 +238,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       mdxSource,
       tableOfContents:
         post.tableOfContents === true || post.tableOfContents === "true",
+      yearInReview,
+      allYearReviews,
     },
   };
 };

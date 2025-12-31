@@ -16,7 +16,7 @@ export type PostItems = {
 };
 
 export type PostItemsWithHeadings = {
-  [key: string]: string | boolean | HeadingItem[];
+  [key: string]: string | boolean | number | HeadingItem[];
 };
 
 function slugify(text: string): string {
@@ -125,4 +125,24 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
+}
+
+export type YearReviewPost = {
+  year: number;
+  title: string;
+  slug: string;
+};
+
+export function getAllYearReviewPosts(): YearReviewPost[] {
+  const slugs = getPostSlugs();
+
+  return slugs
+    .map((slug) => getPostBySlug(slug, ["yearInReview", "title"]))
+    .filter((post) => typeof post.yearInReview === "number")
+    .map((post) => ({
+      year: post.yearInReview as number,
+      title: post.title as string,
+      slug: `/${post.year}/${post.month}/${post.day}/${post.titleSlug}`,
+    }))
+    .sort((a, b) => b.year - a.year);
 }
