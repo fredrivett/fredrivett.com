@@ -17,7 +17,7 @@ import EmailSubscribe from "components/EmailSubscribe";
 import { ExternalLink } from "components/ExternalLink";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
-import { TableOfContents } from "components/TableOfContents";
+import { TableOfContentsAside } from "components/TableOfContents";
 import Tweet from "components/Tweet";
 
 import {
@@ -70,11 +70,11 @@ const DisplayPost = (props: IPostProps) => {
         />
       }
     >
-      <HeadingIdProvider>
+      <HeadingIdProvider key={props.title}>
         <div
           className={
             showToc
-              ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_20rem] lg:gap-12"
+              ? "flex flex-col mx-auto px-4 sm:px-8 box-content max-w-prose lg:max-w-6xl lg:grid lg:grid-cols-[1fr_16rem] lg:gap-12"
               : undefined
           }
         >
@@ -107,7 +107,7 @@ const DisplayPost = (props: IPostProps) => {
                     ),
                   )}
                 </ul>
-                <hr className="my-6" />
+                <hr className="my-10" />
               </div>
             )}
 
@@ -170,13 +170,7 @@ const DisplayPost = (props: IPostProps) => {
 
             <EmailSubscribe className="mt-4" />
           </Container>
-          {showToc && (
-            <aside className="-order-1 lg:order-2 mb-12 p-4 bg-gray-50 dark:bg-gray-900/50 lg:mb-0 lg:p-0 lg:pt-12 lg:bg-transparent lg:dark:bg-transparent lg:rounded-none">
-              <div className="lg:sticky lg:top-24">
-                <TableOfContents />
-              </div>
-            </aside>
-          )}
+          {showToc && <TableOfContentsAside />}
         </div>
       </HeadingIdProvider>
     </Main>
