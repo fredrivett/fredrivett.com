@@ -88,3 +88,24 @@ export function TableOfContents({ className }: TableOfContentsProps) {
     </nav>
   );
 }
+
+export function TableOfContentsAside({ className }: TableOfContentsProps) {
+  const { headings } = useHeadingId();
+
+  if (headings.length === 0) {
+    return null;
+  }
+
+  return (
+    <aside
+      className={cn(
+        "-order-1 lg:order-2 mb-8 p-4 bg-gray-50 dark:bg-gray-900/50 rounded-md lg:mb-0 lg:p-0 lg:pt-12 lg:bg-transparent lg:dark:bg-transparent lg:rounded-none",
+        className,
+      )}
+    >
+      <div className="lg:sticky lg:top-24">
+        <TableOfContents />
+      </div>
+    </aside>
+  );
+}
