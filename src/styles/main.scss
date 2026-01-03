@@ -88,6 +88,10 @@ ul,
   margin-bottom: var(--default-margin-bottom);
 }
 
+li ul {
+  margin-bottom: 0;
+}
+
 p li {
   @apply fs-5;
 
@@ -100,6 +104,21 @@ p li {
   ul {
     list-style-type: disc;
     @apply ml-8;
+
+    ul {
+      list-style-type: circle;
+      text-indent: 0;
+      @apply ml-0;
+      @apply pl-8;
+    }
+  }
+
+  & > pre {
+    @apply ml-4;
+  }
+
+  [data-abode-room] {
+    margin-bottom: var(--default-margin-bottom);
   }
 }
 

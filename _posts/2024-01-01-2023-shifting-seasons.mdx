@@ -7,26 +7,24 @@ tableOfContents: true
 yearInReview: 2023
 ---
 
-<div className="blog-img-wrapper">
-  <div className="grid grid-cols-3 gap-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-1.jpg"
-      alt="Leaving the ceremony"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-2.jpg"
-      alt="Customary fam shot"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-3.jpg"
-      alt="First dance after surprise outfit change"
-      className="rounded-xl w-full"
-    />
-  </div>
-  <div className="blog-img-wrapper__desc">A few photos from the big day</div>
-</div>
+<BlogImageWrapper
+  columns={3}
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-1.jpg",
+      alt: "Leaving the ceremony",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-2.jpg",
+      alt: "Customary fam shot",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/wedding-3.jpg",
+      alt: "First dance after surprise outfit change",
+    },
+  ]}
+  caption="A few photos from the big day"
+/>
 
 ## 💒 Tying the knot
 
@@ -72,16 +70,16 @@ On top of this, during the wedding, a close friend shared a picture he had for m
 
 These threads pulling together have given me confidence in where I stand now and the steps ahead out into new territory.
 
-<div className="blog-img-wrapper">
-  <img
-    src="/assets/images/posts/2024-01-01-2023-shifting-seasons/land.jpg"
-    alt="Customary fam shot"
-    className="rounded-xl mb-4"
-  />
-  <div className="blog-img-wrapper__desc">
-    Lorna & I measuring out the plot last summer
-  </div>
-</div>
+<BlogImageWrapper
+  columns={1}
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/land.jpg",
+      alt: "Lorna & I measuring out the plot last summer",
+    },
+  ]}
+  caption="Lorna & I measuring out the plot last summer"
+/>
 
 ## 🏡 Buying land
 
@@ -117,36 +115,36 @@ It’s only been a couple of months, but I’m really enjoying working on an app
 
 Soon after joining we had our first team retreat here in London. We turned on paid plans, celebrating our first paying customer outside the historic Shakespeare’s Globe. Now there’s a man who knew a thing or two about the written word.
 
-<div className="blog-img-wrapper">
-  <div className="grid grid-cols-3 gap-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/health-1.png"
-      alt="Workout stats for the year"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/health-2.png"
-      alt="Mood stats for the year"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/health-3.png"
-      alt="Body fat / muscle stats for the year"
-      className="rounded-xl w-full"
-    />
-  </div>
-  <div className="blog-img-wrapper__desc">
-    Some stats for the year from my app,{" "}
-    <a
-      href="https://twitter.com/blockshabits"
-      rel="nofollow noreferrer"
-      target="_blank"
-    >
-      Blocks
-    </a>{" "}
-    (workouts and body comp dropped off from the summer, read below for why)
-  </div>
-</div>
+<BlogImageWrapper
+  columns={3}
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/health-1.png",
+      alt: "Workout stats for the year",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/health-2.png",
+      alt: "Mood stats for the year",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/health-3.png",
+      alt: "Body fat / muscle stats for the year",
+    },
+  ]}
+  caption={
+    <>
+      Some stats for the year from my app,{" "}
+      <a
+        href="https://twitter.com/blockshabits"
+        rel="nofollow noreferrer"
+        target="_blank"
+      >
+        Blocks
+      </a>{" "}
+      (workouts and body comp dropped off from the summer, read below for why)
+    </>
+  }
+/>
 
 <EmailSubscribe />
 
@@ -176,50 +174,44 @@ After I finish with my current therapist in a few weeks time, I plan to take a b
 
 I feel very blessed to be able to get away, see places new and old, and spend time with people I value. This year wasn’t a crazy one, but here are a few spots I managed to get to:
 
-<div className="blog-img-wrapper">
-  <div className="grid grid-cols-3 gap-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-1.jpg"
-      alt="Alleyway in Bideford"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-2.jpg"
-      alt="Boat race in Bideford"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-3.jpg"
-      alt="Narrow road in Bideford"
-      className="rounded-xl w-full"
-    />
-  </div>
-  <div className="blog-img-wrapper__desc">
-    A few shots from the summer trip to Cornwall
-  </div>
-</div>
+<BlogImageWrapper
+  columns={3}
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-1.jpg",
+      alt: "Alleyway in Bideford",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-2.jpg",
+      alt: "Boat race in Bideford",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/devon-3.jpg",
+      alt: "Narrow road in Bideford",
+    },
+  ]}
+  caption="A few shots from the summer trip to Cornwall"
+/>
 
 ### 🌊 Bideford, Devon
 
 An impromptu long weekend trip to the west coast was the ideal way to start the summer, with walks, chats, ice creams, and hearty meals.
 
-<div className="blog-img-wrapper">
-  <div className="columns-2 last-mb-0">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/lake-district-1.jpg"
-      alt="Boat race in Bideford"
-      className="rounded-xl mb-4"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/lake-district-2.jpg"
-      alt="Narrow road in Bideford"
-      className="rounded-xl mb-4"
-    />
-  </div>
-  <div className="blog-img-wrapper__desc">
-    Countryside adventures in the Lake District
-  </div>
-</div>
+<BlogImageWrapper
+  columns={2}
+  layout="columns"
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/lake-district-1.jpg",
+      alt: "Countryside view in the Lake District",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/lake-district-2.jpg",
+      alt: "Lake District landscape",
+    },
+  ]}
+  caption="Countryside adventures in the Lake District"
+/>
 
 ### 🏞️ Lake District
 
@@ -228,35 +220,36 @@ My siblings decided a while back to conquer the world, with one of my sisters li
 Saying goodbye is always hard, but times like these spent together are some of the richest we have, so I’m always grateful when they come around, however fleeting.
 
 <div className="blog-img-wrapper">
-  <div className="grid grid-cols-3 gap-4 mb-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-1.jpg"
-      alt="Road in Bergen"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-2.jpg"
-      alt="Cycling through Stavanger"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-3.jpg"
-      alt="Northern Lights near Tromsø"
-      className="rounded-xl w-full"
-    />
-  </div>
-  <div className="grid grid-cols-2 gap-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-4.jpg"
-      alt="Christmassy hotel lobby in Stavanger"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-5.jpg"
-      alt="Cabin by a frozen lake near Tromsø"
-      className="rounded-xl w-full"
-    />
-  </div>
+  <BlogImageWrapper
+    columns={3}
+    images={[
+      {
+        src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-1.jpg",
+        alt: "Road in Bergen",
+      },
+      {
+        src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-2.jpg",
+        alt: "Cycling through Stavanger",
+      },
+      {
+        src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-3.jpg",
+        alt: "Northern Lights near Tromsø",
+      },
+    ]}
+  />
+  <BlogImageWrapper
+    columns={2}
+    images={[
+      {
+        src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-4.jpg",
+        alt: "Christmassy hotel lobby in Stavanger",
+      },
+      {
+        src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/norway-5.jpg",
+        alt: "Cabin by a frozen lake near Tromsø",
+      },
+    ]}
+  />
   <div className="blog-img-wrapper__desc">Some highlights from the honeymoon</div>
 </div>
 
@@ -270,26 +263,24 @@ The day before our arrival, our accommodation for the northern leg of the trip c
 
 We hope to visit Oslo, the one place we didn’t get to, on a long weekend in the next few years.
 
-<div className="blog-img-wrapper">
-  <div className="grid grid-cols-3 gap-4">
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-1.jpg"
-      alt="Reading Rest, whilst Watson rests at my feet"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-2.jpg"
-      alt="Watson in the snow"
-      className="rounded-xl w-full"
-    />
-    <img
-      src="/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-3.jpg"
-      alt="New years fireworks"
-      className="rounded-xl w-full"
-    />
-  </div>
-  <div className="blog-img-wrapper__desc">It was a restful time up in Scotland</div>
-</div>
+<BlogImageWrapper
+  columns={3}
+  images={[
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-1.jpg",
+      alt: "Reading Rest, whilst Watson rests at my feet",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-2.jpg",
+      alt: "Watson in the snow",
+    },
+    {
+      src: "/assets/images/posts/2024-01-01-2023-shifting-seasons/edinburgh-3.jpg",
+      alt: "New years fireworks",
+    },
+  ]}
+  caption="It was a restful time up in Scotland"
+/>
 
 ### 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh
 

@@ -12,6 +12,7 @@ import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
 import { Main } from "templates/Main";
 
+import BlogImageWrapper from "components/BlogImageWrapper";
 import Container from "components/Container";
 import EmailSubscribe from "components/EmailSubscribe";
 import { ExternalLink } from "components/ExternalLink";
@@ -112,10 +113,11 @@ const DisplayPost = (props: IPostProps) => {
               </div>
             )}
 
-            <div className="blog-post">
+            <div className="blog-post c_blog-content">
               <MDXRemote
                 {...props.mdxSource}
                 components={{
+                  BlogImageWrapper,
                   EmailSubscribe,
                   Tweet,
                   h1: ({ children }) => (
