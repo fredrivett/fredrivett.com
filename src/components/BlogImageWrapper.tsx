@@ -20,8 +20,11 @@ const BlogImageWrapper: React.FC<BlogImageWrapperProps> = ({
 }) => {
   const renderImages = () => {
     if (layout === "columns") {
+      let columnsClass = "columns-1";
+      if (columns === 2) columnsClass = "columns-2";
+      if (columns === 3) columnsClass = "columns-3";
       return (
-        <div className={`columns-${columns} last-mb-0`}>
+        <div className={`${columnsClass} last-mb-0`}>
           {images.map((image, index) => (
             <img
               key={index}
@@ -50,8 +53,9 @@ const BlogImageWrapper: React.FC<BlogImageWrapperProps> = ({
       );
     }
 
+    const gridColsClass = columns === 2 ? "grid-cols-2" : "grid-cols-3";
     return (
-      <div className={`grid grid-cols-${columns} gap-4`}>
+      <div className={`grid ${gridColsClass} gap-4`}>
         {images.map((image, index) => (
           <img
             key={index}
