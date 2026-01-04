@@ -15,7 +15,7 @@ interface EmailSubscribeProps {
 
 const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
   className = "",
-  placeholder = "[Your email address]",
+  placeholder = "Email",
   buttonText = "Subscribe",
   successMessage = "Thanks! Please check your inbox to confirm your email address.",
   title = "Stay in touch?",
@@ -67,7 +67,7 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
   return (
     <div
       className={cn(
-        "p-6 bg-gray-100 border border-gray-300 dark:border-gray-900 dark:bg-gray-900/50 rounded-md max-w-[34rem] my-10",
+        "p-6 bg-gray-100 border border-gray-300 dark:border-gray-900 dark:bg-gray-900/50 rounded-md max-w-[20rem] my-10",
         className,
       )}
     >
@@ -99,7 +99,7 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
               onChange={(e) => setEmail(e.target.value)}
               placeholder={placeholder}
               disabled={status === "loading"}
-              className="flex-1 px-3 py-2 bg-transparent border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950 placeholder:text-gray-600 dark:placeholder:text-gray-600 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm"
+              className="flex-1 px-3 py-2 bg-transparent border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950 placeholder:text-gray-600 dark:placeholder:text-gray-600 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm min-w-0"
             />
             <button
               type="submit"
