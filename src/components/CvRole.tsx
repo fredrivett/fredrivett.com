@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "components/Avatar";
+import { HeadingLink } from "components/HeadingLink";
 import Spacer from "components/Spacer";
 import Tag from "components/Tag";
 
@@ -29,7 +30,7 @@ const CvRole = ({
   tags,
 }: ICvRoleProps) => (
   <div className="mb-6 md:mb-12">
-    <h3 className="mb-2">{title}</h3>
+    <HeadingLink level={3}>{title}</HeadingLink>
     <p className="font-bold mb-0.5 flex items-center gap-2.5">
       <Avatar className="h-7 w-7 flex-shrink-0 shadow-xs" type="org">
         {companyLogoPath ? (
