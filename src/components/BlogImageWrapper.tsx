@@ -18,6 +18,8 @@ const BlogImageWrapper: React.FC<BlogImageWrapperProps> = ({
   caption,
   layout = "grid",
 }) => {
+  if (!images) return null;
+
   const renderImages = () => {
     if (layout === "columns") {
       let columnsClass = "columns-1";

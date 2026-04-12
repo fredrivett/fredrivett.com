@@ -46,7 +46,7 @@ const getTimeSince = (dateString: string) => {
   return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
-const role = "Senior [Founding/Design/Product/Frontend] Engineer";
+const role = "Senior Product Engineer";
 const toolkit =
   "current go-to toolkit includes React, React Native, TypeScript, Jest, styled-components & Tailwind.";
 
@@ -526,6 +526,34 @@ const Cv = () => {
                   />
                   Experience
                 </HeadingLink>
+
+                <CvRole
+                  title="Senior Product Engineer"
+                  company="GPTZero"
+                  companyLogoPath="gptzero.png"
+                  links={[
+                    {
+                      url: "https://gptzero.me",
+                      text: "GPTZero homepage",
+                    },
+                  ]}
+                  dates={`January 2026 – current`}
+                  blurb={[
+                    "Migrating the Quill editor to Tiptap (built on ProseMirror), building out the in-app editor into a top-class writing experience with deep AI analysis baked in.",
+                  ]}
+                  tags={[
+                    "React",
+                    "TypeScript",
+                    "NextJS",
+                    "Tiptap",
+                    "Prisma",
+                    "Supabase",
+                    "Tailwind",
+                    "Jotai",
+                    "Tanstack Query",
+                    "Zod",
+                  ]}
+                />
 
                 <CvRole
                   title="Design Engineer (Contract)"

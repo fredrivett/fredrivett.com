@@ -1,7 +1,6 @@
 import React from "react";
 
 import { GetStaticProps } from "next";
-import Link from "next/link";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import { Meta } from "layout/Meta";
@@ -65,10 +64,17 @@ const Index = (props: IBlogGalleryProps) => (
           </a>
           .
         </p>
-        <p>Senior [Founding/Design/Product/Frontend] Engineer.</p>
+        <p>Senior Product Engineer.</p>
         <p className="mb-0">
           <em>
-            now: <Link href="/now#exploring">Exploring new ideas</Link>
+            now: Senior Product Engineer @{" "}
+            <a
+              href="https://gptzero.me"
+              rel="nofollow noreferrer"
+              target="_blank"
+            >
+              GPTZero
+            </a>
           </em>
         </p>
         <p>
