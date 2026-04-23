@@ -5,6 +5,8 @@ import { formatDistanceToNowStrict, parseISO } from "date-fns";
 import { PROJECT_STATES, type Project, type ProjectState } from "data/projects";
 import { cn } from "lib/cn";
 
+import ProjectsFilterMenu from "components/ProjectsFilterMenu";
+
 export type EnrichedProject = Omit<Project, "started"> & {
   stars: number | null;
   lastUpdate: string | null;
@@ -189,22 +191,11 @@ const ProjectsTable: React.FC<Props> = ({ projects }) => {
 
   return (
     <div>
-      <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
-        <span className="opacity-60">Filter:</span>
-        {PROJECT_STATES.map((state) => (
-          <label
-            key={state}
-            className="inline-flex items-center gap-1.5 cursor-pointer select-none"
-          >
-            <input
-              type="checkbox"
-              checked={visibleStates.has(state)}
-              onChange={() => toggleState(state)}
-              className="cursor-pointer"
-            />
-            <span>{STATE_LABEL[state]}</span>
-          </label>
-        ))}
+      <div className="mb-3 flex items-center justify-end">
+        <ProjectsFilterMenu
+          visibleStates={visibleStates}
+          onToggle={toggleState}
+        />
       </div>
 
       <div className="overflow-x-auto -mx-4 sm:mx-0">
