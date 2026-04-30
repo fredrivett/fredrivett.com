@@ -13,7 +13,13 @@ export type EnrichedProject = Omit<Project, "started"> & {
   started: string | null;
 };
 
-type SortKey = "name" | "tagline" | "stars" | "lastUpdate" | "state";
+type SortKey =
+  | "name"
+  | "tagline"
+  | "stars"
+  | "started"
+  | "lastUpdate"
+  | "state";
 type SortDir = "asc" | "desc";
 
 const STATE_ORDER: Record<ProjectState, number> = {
@@ -74,6 +80,13 @@ function sortProjects(
           : b.tagline.localeCompare(a.tagline);
       case "stars":
         return compareNullable(a.stars, b.stars, (x, y) => x - y, dir);
+      case "started":
+        return compareNullable(
+          a.started,
+          b.started,
+          (x, y) => x.localeCompare(y),
+          dir,
+        );
       case "lastUpdate":
         return compareNullable(
           a.lastUpdate,
@@ -104,6 +117,30 @@ function formatRelative(iso: string | null): string {
 function formatStars(stars: number | null): string {
   if (stars == null) return "—";
   return stars.toString();
+}
+
+const MONTH_NAMES = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+function formatLaunched(started: string | null): string {
+  if (!started) return "";
+  const [yearStr, monthStr] = started.split("-");
+  const year = Number(yearStr);
+  const monthIdx = Number(monthStr) - 1;
+  if (!year || monthIdx < 0 || monthIdx > 11) return "";
+  return `${MONTH_NAMES[monthIdx]} ${year}`;
 }
 
 function SortIndicator({
@@ -225,6 +262,14 @@ const ProjectsTable: React.FC<Props> = ({ projects }) => {
                 align="right"
               />
               <Header
+                label="Launched"
+                sortKey="started"
+                currentKey={sortKey}
+                currentDir={sortDir}
+                onSort={handleSort}
+                align="right"
+              />
+              <Header
                 label="Updated"
                 sortKey="lastUpdate"
                 currentKey={sortKey}
@@ -245,7 +290,7 @@ const ProjectsTable: React.FC<Props> = ({ projects }) => {
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5} className="py-6 text-center opacity-60 italic">
+                <td colSpan={6} className="py-6 text-center opacity-60 italic">
                   No projects match the current filter.
                 </td>
               </tr>
@@ -278,6 +323,9 @@ const ProjectsTable: React.FC<Props> = ({ projects }) => {
                   <td className="py-2 px-3 opacity-80">{p.tagline}</td>
                   <td className="py-2 px-3 text-right tabular-nums">
                     {formatStars(p.stars)}
+                  </td>
+                  <td className="py-2 px-3 text-right whitespace-nowrap tabular-nums opacity-80">
+                    {formatLaunched(p.started)}
                   </td>
                   <td className="py-2 px-3 text-right whitespace-nowrap tabular-nums opacity-80">
                     {formatRelative(p.lastUpdate)}

@@ -141,7 +141,7 @@ export const getStaticProps: GetStaticProps<NowProps> = async () => {
         ...project,
         stars: meta.stars,
         lastUpdate: meta.lastCommit,
-        started: project.started ?? meta.createdAt ?? null,
+        started: project.started ?? null,
       };
     }),
   );
