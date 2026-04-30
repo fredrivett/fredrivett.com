@@ -10,8 +10,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FileDown, FileText, Clock } from "lucide-react";
+import type { GetStaticProps } from "next";
 
 import { Meta } from "layout/Meta";
+import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
@@ -19,10 +21,15 @@ import { CvRole } from "components/CvRole";
 import FredHead from "components/FredHead";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
+import ProjectsTable from "components/ProjectsTable";
 import SiteCounter from "components/SiteCounter";
 import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
 import Twemoji from "components/Twemoji";
+
+interface CvProps {
+  projects: EnrichedProject[];
+}
 
 const getTimeSince = (dateString: string) => {
   const currentDate = new Date();
@@ -55,7 +62,7 @@ const getGeneratedAt = () => {
   return `${iso.slice(0, 16).replace("T", " ")} UTC`;
 };
 
-const Cv = () => {
+const Cv = ({ projects }: CvProps) => {
   const generatedAt = getGeneratedAt();
   const pdfDownloadUrl = "/cv/fred-rivett-cv.pdf";
 
@@ -792,217 +799,10 @@ const Cv = () => {
                 </HeadingLink>
                 <p>
                   Side projects are how I got into tech in the first place,
-                  hacking away in my spare time. Here&apos;s a selection of some
-                  of the projects I&apos;ve launched:
+                  hacking away in my spare time. Here&apos;s everything
+                  I&apos;ve built, shipped or explored:
                 </p>
-                <ul className="o_naked-list u_indent-0">
-                  <li>
-                    2025{" "}
-                    <a
-                      href="https://abode.fyi"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>abode.fyi</strong> (early access) — your digital
-                      home
-                    </a>
-                  </li>
-                  <li>
-                    2025{" "}
-                    <a href="https://log.limo" target="_blank" rel="noreferrer">
-                      <strong>log.limo</strong> (early access) — git log —&gt;
-                      changelog
-                    </a>
-                  </li>
-                  <li>
-                    2025{" "}
-                    <a
-                      href="https://flowlane.ai"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>Flowlane</strong> (early access) — The smart
-                      autopilot for your SaaS email flows
-                    </a>
-                  </li>
-                  <li>
-                    2025{" "}
-                    <a
-                      href="https://herenow.fyi"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>here/now</strong> — A minimal, self-hosted visitor
-                      tracking API that shows both <em>total visitor count</em>{" "}
-                      and <em>real-time visitor counts</em> per webpage.
-                    </a>
-                  </li>
-                  <li>
-                    2022{" "}
-                    <a
-                      href="https://privacyshortlist.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>PrivacyShortlist</strong> — The best
-                      privacy-focussed products to build &amp; grow your startup
-                    </a>
-                  </li>
-                  <li>
-                    2022{" "}
-                    <a
-                      href="https://blocks.fernoon.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <strong>Blocks</strong> — Minimalist, gesture-based habit
-                      app
-                    </a>
-                  </li>
-                  <li>
-                    2018{" "}
-                    <a
-                      href="https://www.producthunt.com/products/bluffball#bluffball"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>Bluffball</strong> — World Cup phrases to help you
-                      fit in
-                    </a>
-                  </li>
-                  <li>
-                    2017{" "}
-                    <a
-                      href="https://www.producthunt.com/products/stories-as-a-service#stories-as-a-service"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>Stories as a Service</strong> — Add stories to
-                      your website with 1 line of code (April fools)
-                    </a>
-                  </li>
-                  <li>
-                    2016{" "}
-                    <a
-                      href="https://www.producthunt.com/products/hit-reply#hit-reply-episode-0-yet-another-startup-podcast"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>Hit Reply Podcast</strong> — Yet Another Startup
-                      Podcast?
-                    </a>
-                  </li>
-                  <li>
-                    2016{" "}
-                    <a
-                      href="https://www.producthunt.com/products/real-time-users#real-time-users"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>Real Time Users</strong> — Add a real time user
-                      counter to your site
-                    </a>
-                  </li>
-                  <li>
-                    2016{" "}
-                    <a
-                      href="https://www.producthunt.com/products/learning-to-launch#learning-to-launch"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>LearningToLaunch</strong> — Short e-book on how to
-                      launch your first side project
-                    </a>
-                  </li>
-                  <li>
-                    2016{" "}
-                    <a
-                      href="https://www.producthunt.com/products/product-haunt#product-haunt"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>ProductHaunt</strong> — Browse the Product Hunt
-                      graveyard
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/my-year#my-year"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>MyYear</strong> — Create your own review of your
-                      year in minutes
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/founderskit#founderskit"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>FoundersKit</strong> — $6k of discounts for the
-                      best startup tools for only $39
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/the-working-lunch#the-working-lunch"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>The Working Lunch</strong> — Daily newsletter with
-                      resources for startup founders
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/outstandingbar#outstandingbar"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>Outstanding Bar</strong> — Minimalist Wordpress
-                      plugin
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/flashtabs#flashtabs"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>FlashTabs</strong> — Flashcards in your new tab
-                      screen
-                    </a>
-                  </li>
-                  <li>
-                    2015{" "}
-                    <a
-                      href="https://www.producthunt.com/products/howsitgoin#howsitgoin"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>HowsItGoin</strong> — Set questions and track your
-                      answers over time
-                    </a>
-                  </li>
-                  <li>
-                    2013{" "}
-                    <a
-                      href="https://arethensawatchingme.com/"
-                      rel="nofollow noreferrer"
-                      target="_blank"
-                    >
-                      <strong>AreTheNSAWatchingMe.com</strong> – Yes, yes they
-                      are
-                    </a>
-                  </li>
-                </ul>
+                <ProjectsTable projects={projects} />
                 <hr />
                 <p>
                   <Twemoji
@@ -1025,5 +825,10 @@ const Cv = () => {
     </>
   );
 };
+
+export const getStaticProps: GetStaticProps<CvProps> = async () => ({
+  props: { projects: await enrichProjects() },
+  revalidate: 3600,
+});
 
 export default Cv;

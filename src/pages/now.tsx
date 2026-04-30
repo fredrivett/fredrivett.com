@@ -18,13 +18,16 @@ const Now = () => (
           What I&apos;m up to right now
         </h1>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2026-04-12"), "do MMMM yyyy")}</em>
+          <em>Updated: {format(new Date("2026-04-30"), "do MMMM yyyy")}</em>
         </p>
 
         <hr />
 
         <h3 className="mb-2">Life</h3>
-        <p>My wife, Lorna, and I got married in late 2023.</p>
+        <p>
+          My wife, Lorna, and I got married in late 2023. Our first kid is due
+          this summer.
+        </p>
 
         <h3 className="mb-2">Where</h3>
         <p>
@@ -44,31 +47,22 @@ const Now = () => (
             GPTZero
           </a>
           .
+          <br />
+          Previously Founding Engineer (and employee #2) at{" "}
+          <a
+            href="https://www.lex.page"
+            rel="nofollow noreferrer"
+            target="_blank"
+          >
+            Lex
+          </a>
+          .
         </p>
 
         <h3 id="exploring" className="mb-2">
           Exploring
         </h3>
         <ul className="list-disc ml-8">
-          <li>
-            📮 Automating communication cruft —{" "}
-            <a
-              href="https://log.limo"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              log.limo
-            </a>{" "}
-            (git log → changelog) and{" "}
-            <a
-              href="https://flowlane.ai"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              flowlane
-            </a>{" "}
-            (automated user onboarding flows)
-          </li>
           <li>
             🏠 Your digital home —{" "}
             <a
@@ -79,6 +73,17 @@ const Now = () => (
               abode
             </a>
             , a self-organising place for all your digital stuff
+          </li>
+          <li>
+            🗺️ Exploring your e2e code flows —{" "}
+            <a
+              href="https://www.treck.dev"
+              rel="nofollow noreferrer"
+              target="_blank"
+            >
+              treck
+            </a>
+            , docs that automatically sync with your code
           </li>
         </ul>
 
