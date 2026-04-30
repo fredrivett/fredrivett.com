@@ -55,8 +55,7 @@ const Now = ({ projects }: NowProps) => (
             GPTZero
           </a>
           .
-        </p>
-        <p>
+          <br />
           Previously Founding Engineer (and employee #2) at{" "}
           <a
             href="https://www.lex.page"
