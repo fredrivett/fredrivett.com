@@ -81,7 +81,7 @@ const Now = ({ projects }: NowProps) => (
             , a self-organising place for all your digital stuff
           </li>
           <li>
-            🗺️ Visualising how your codebase flows actually work —{" "}
+            🗺️ Exploring your e2e code flows —{" "}
             <a
               href="https://www.treck.dev"
               rel="nofollow noreferrer"
