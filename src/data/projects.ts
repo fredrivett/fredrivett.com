@@ -41,21 +41,21 @@ export const projects: Project[] = [
     tagline: "Turn your git log into a changelog",
     state: "building",
     repo: "log.limo",
-    url: "https://log.limo",
+    url: "https://www.log.limo",
   },
   {
     name: "flowlane",
     tagline: "Automated user onboarding flows",
     state: "building",
     repo: "flowlane",
-    url: "https://flowlane.ai",
+    url: "https://www.flowlane.ai",
   },
   {
     name: "treck",
     tagline: "Docs that automatically sync with your code",
     state: "building",
     repo: "treck",
-    url: "https://treck.dev",
+    url: "https://www.treck.dev",
   },
 ];
 

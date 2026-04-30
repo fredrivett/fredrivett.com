@@ -61,7 +61,7 @@ const Now = ({ projects }: NowProps) => (
           <li>
             📮 Automating communication cruft —{" "}
             <a
-              href="https://log.limo"
+              href="https://www.log.limo"
               rel="nofollow noreferrer"
               target="_blank"
             >
@@ -69,7 +69,7 @@ const Now = ({ projects }: NowProps) => (
             </a>{" "}
             (git log → changelog) and{" "}
             <a
-              href="https://flowlane.ai"
+              href="https://www.flowlane.ai"
               rel="nofollow noreferrer"
               target="_blank"
             >

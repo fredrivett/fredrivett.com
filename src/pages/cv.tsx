@@ -799,7 +799,7 @@ const Cv = () => {
                   <li>
                     2025{" "}
                     <a
-                      href="https://abode.fyi"
+                      href="https://www.abode.fyi"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -809,7 +809,11 @@ const Cv = () => {
                   </li>
                   <li>
                     2025{" "}
-                    <a href="https://log.limo" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.log.limo"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <strong>log.limo</strong> (early access) — git log —&gt;
                       changelog
                     </a>
@@ -817,7 +821,7 @@ const Cv = () => {
                   <li>
                     2025{" "}
                     <a
-                      href="https://flowlane.ai"
+                      href="https://www.flowlane.ai"
                       target="_blank"
                       rel="noreferrer"
                     >
