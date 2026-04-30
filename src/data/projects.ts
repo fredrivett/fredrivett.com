@@ -50,6 +50,13 @@ export const projects: Project[] = [
     repo: "flowlane",
     url: "https://flowlane.ai",
   },
+  {
+    name: "treck",
+    tagline: "Docs that automatically sync with your code",
+    state: "building",
+    repo: "treck",
+    url: "https://treck.dev",
+  },
 ];
 
 export const validatedProjects: Project[] = ProjectsSchema.parse(projects);
