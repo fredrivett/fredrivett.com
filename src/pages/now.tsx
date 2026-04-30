@@ -32,7 +32,10 @@ const Now = ({ projects }: NowProps) => (
         <hr />
 
         <h3 className="mb-2">Life</h3>
-        <p>My wife, Lorna, and I got married in late 2023.</p>
+        <p>
+          My wife, Lorna, and I got married in late 2023. Our first kid is due
+          this summer.
+        </p>
 
         <h3 className="mb-2">Where</h3>
         <p>
@@ -51,6 +54,14 @@ const Now = ({ projects }: NowProps) => (
           >
             GPTZero
           </a>
+          . Previously Founding Engineer (and employee #2) at{" "}
+          <a
+            href="https://www.lex.page"
+            rel="nofollow noreferrer"
+            target="_blank"
+          >
+            Lex
+          </a>
           .
         </p>
 
@@ -58,25 +69,6 @@ const Now = ({ projects }: NowProps) => (
           Exploring
         </h3>
         <ul className="list-disc ml-8">
-          <li>
-            📮 Automating communication cruft —{" "}
-            <a
-              href="https://www.log.limo"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              log.limo
-            </a>{" "}
-            (git log → changelog) and{" "}
-            <a
-              href="https://www.flowlane.ai"
-              rel="nofollow noreferrer"
-              target="_blank"
-            >
-              flowlane
-            </a>{" "}
-            (automated user onboarding flows)
-          </li>
           <li>
             🏠 Your digital home —{" "}
             <a
@@ -87,6 +79,17 @@ const Now = ({ projects }: NowProps) => (
               abode
             </a>
             , a self-organising place for all your digital stuff
+          </li>
+          <li>
+            🗺️ Visualising how your codebase flows actually work —{" "}
+            <a
+              href="https://www.treck.dev"
+              rel="nofollow noreferrer"
+              target="_blank"
+            >
+              treck
+            </a>
+            , docs that automatically sync with your code
           </li>
         </ul>
 
