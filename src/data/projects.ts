@@ -39,14 +39,14 @@ export const projects: Project[] = [
   {
     name: "log.limo",
     tagline: "Turn your git log into a changelog",
-    state: "building",
+    state: "explored",
     repo: "log.limo",
     url: "https://www.log.limo",
   },
   {
     name: "flowlane",
     tagline: "Automated user onboarding flows",
-    state: "building",
+    state: "explored",
     repo: "flowlane",
     url: "https://www.flowlane.ai",
   },
