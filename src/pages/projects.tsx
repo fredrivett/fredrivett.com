@@ -23,7 +23,7 @@ const Projects = ({ projects }: ProjectsProps) => (
       />
     }
   >
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <div className="mb-4">
         <FredHead title="projects" />
         <h1 className="fs-0 mb-1 leading-none">Projects</h1>
