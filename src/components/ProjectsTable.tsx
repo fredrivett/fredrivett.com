@@ -2,16 +2,11 @@ import React, { useMemo, useState } from "react";
 
 import { formatDistanceToNowStrict, parseISO } from "date-fns";
 
-import { PROJECT_STATES, type Project, type ProjectState } from "data/projects";
+import { PROJECT_STATES, type ProjectState } from "data/projects";
 import { cn } from "lib/cn";
+import type { EnrichedProject } from "lib/projects";
 
 import ProjectsFilterMenu from "components/ProjectsFilterMenu";
-
-export type EnrichedProject = Omit<Project, "started"> & {
-  stars: number | null;
-  lastUpdate: string | null;
-  started: string | null;
-};
 
 type SortKey =
   | "name"

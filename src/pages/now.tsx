@@ -1,23 +1,15 @@
 import React from "react";
 
 import { format } from "date-fns";
-import type { GetStaticProps } from "next";
 
-import { validatedProjects } from "data/projects";
 import { Meta } from "layout/Meta";
-import { fetchRepoMeta } from "lib/github";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import FredHead from "components/FredHead";
-import ProjectsTable, { type EnrichedProject } from "components/ProjectsTable";
 import SiteCounter from "components/SiteCounter";
 
-interface NowProps {
-  projects: EnrichedProject[];
-}
-
-const Now = ({ projects }: NowProps) => (
+const Now = () => (
   <Main meta={<Meta title="/now" description="What I'm up to right now" />}>
     <Container maxWidth="md">
       <div className="mb-4">
@@ -97,17 +89,6 @@ const Now = ({ projects }: NowProps) => (
 
         <hr />
 
-        <h3 id="projects" className="mb-2">
-          Projects
-        </h3>
-        <p className="opacity-70 text-sm mb-4">
-          Everything I&rsquo;ve built, shipped or explored. Last-update pulled
-          from GitHub automatically.
-        </p>
-        <ProjectsTable projects={projects} />
-
-        <hr />
-
         <p>
           <small>
             This is a{" "}
@@ -129,32 +110,5 @@ const Now = ({ projects }: NowProps) => (
     </Container>
   </Main>
 );
-
-export const getStaticProps: GetStaticProps<NowProps> = async () => {
-  const enriched: EnrichedProject[] = await Promise.all(
-    validatedProjects.map(async (project) => {
-      if (!project.repo) {
-        return {
-          ...project,
-          stars: null,
-          lastUpdate: null,
-          started: project.started ?? null,
-        };
-      }
-      const meta = await fetchRepoMeta(project.repo);
-      return {
-        ...project,
-        stars: meta.stars,
-        lastUpdate: meta.lastCommit,
-        started: project.started ?? null,
-      };
-    }),
-  );
-
-  return {
-    props: { projects: enriched },
-    revalidate: 3600,
-  };
-};
 
 export default Now;
