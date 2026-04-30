@@ -230,7 +230,7 @@ const ProjectsTable: React.FC<Props> = ({ projects }) => {
         />
       </div>
 
-      <div className="overflow-x-auto -mx-4 sm:mx-0">
+      <div className="overflow-x-auto -mx-4 sm:mx-0 u_scroll-shadows">
         <table className="min-w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-gray-200 dark:border-gray-800">
