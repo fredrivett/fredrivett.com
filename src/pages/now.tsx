@@ -26,7 +26,7 @@ const Now = ({ projects }: NowProps) => (
           What I&apos;m up to right now
         </h1>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2026-04-12"), "do MMMM yyyy")}</em>
+          <em>Updated: {format(new Date("2026-04-30"), "do MMMM yyyy")}</em>
         </p>
 
         <hr />
