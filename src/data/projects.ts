@@ -151,7 +151,7 @@ export const projects: Project[] = [
   {
     name: "FlashTabs",
     tagline: "Flashcards in your new tab screen",
-    state: "live",
+    state: "idle",
     url: "https://www.producthunt.com/products/flashtabs",
     started: "2015-02",
   },
@@ -165,7 +165,7 @@ export const projects: Project[] = [
   {
     name: "AreTheNSAWatchingMe.com",
     tagline: "Yes, yes they are",
-    state: "live",
+    state: "idle",
     url: "https://arethensawatchingme.com",
     started: "2013-12",
   },
