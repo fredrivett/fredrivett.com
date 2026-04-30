@@ -96,7 +96,7 @@ const Now = ({ projects }: NowProps) => (
           Projects
         </h3>
         <p className="opacity-70 text-sm mb-4">
-          Everything I&rsquo;ve built, shipped and explored. Last-update pulled
+          Everything I&rsquo;ve built, shipped or explored. Last-update pulled
           from GitHub automatically.
         </p>
         <ProjectsTable projects={projects} />
