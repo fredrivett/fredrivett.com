@@ -66,11 +66,13 @@ const CommitsHeatmap: React.FC<Props> = ({ data }) => {
   return (
     <div className="mb-10">
       <div className="mb-2 flex justify-end">
-        <div className="hidden sm:flex items-center gap-1 text-xs opacity-60">
+        <div className="hidden sm:flex items-center gap-2 text-xs opacity-60">
           <span>Less</span>
-          {BUCKET_CLASS.map((cls, i) => (
-            <span key={i} className={cn("h-[11px] w-[11px]", cls)} />
-          ))}
+          <div className="flex items-center gap-1">
+            {BUCKET_CLASS.map((cls, i) => (
+              <span key={i} className={cn("h-[11px] w-[11px]", cls)} />
+            ))}
+          </div>
           <span>More</span>
         </div>
       </div>
