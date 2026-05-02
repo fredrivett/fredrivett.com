@@ -12,12 +12,6 @@ import {
 
 const wordsDirectory = join(process.cwd(), "_words");
 
-function ensureDir() {
-  if (!fs.existsSync(wordsDirectory)) {
-    fs.mkdirSync(wordsDirectory, { recursive: true });
-  }
-}
-
 function readEntry(filename: string): WordEntry {
   const slug = filename.replace(/\.(md|mdx)$/, "");
   const fullPath = join(wordsDirectory, filename);
@@ -36,7 +30,7 @@ function readEntry(filename: string): WordEntry {
 }
 
 export function getAllWords(): WordEntry[] {
-  ensureDir();
+  if (!fs.existsSync(wordsDirectory)) return [];
   const files = fs
     .readdirSync(wordsDirectory)
     .filter((f) => /\.(md|mdx)$/.test(f));
@@ -49,7 +43,7 @@ export function getAllWordsMeta(): WordEntryMeta[] {
 }
 
 export function getWordBySlug(slug: string): WordEntry | null {
-  ensureDir();
+  if (!fs.existsSync(wordsDirectory)) return null;
   const real = slug.replace(/\.(md|mdx)$/, "");
   const candidates = [`${real}.mdx`, `${real}.md`];
   const filename = candidates.find((f) =>
