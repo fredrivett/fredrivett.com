@@ -37,6 +37,9 @@ const Nav = () => (
       <NavLink href="/now" className="text-sm sm:text-base">
         /now
       </NavLink>
+      <NavLink href="/words" className="text-sm sm:text-base">
+        /words
+      </NavLink>
       <NavLink href="/shelf" className="text-sm sm:text-base">
         /shelf
       </NavLink>
