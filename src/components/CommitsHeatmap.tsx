@@ -64,7 +64,7 @@ const CommitsHeatmap: React.FC<Props> = ({ data }) => {
   }
 
   return (
-    <div className="mb-6">
+    <div className="mb-10">
       <div className="mb-2 flex justify-end">
         <div className="hidden sm:flex items-center gap-1 text-xs opacity-60">
           <span>Less</span>
