@@ -10,8 +10,14 @@ import Container from "components/Container";
 
 const WordsLogin = () => {
   const router = useRouter();
+  const rawNext = router.query.next;
   const next =
-    typeof router.query.next === "string" ? router.query.next : "/words";
+    typeof rawNext === "string" &&
+    rawNext.startsWith("/") &&
+    !rawNext.startsWith("//") &&
+    !rawNext.startsWith("/\\")
+      ? rawNext
+      : "/words";
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
