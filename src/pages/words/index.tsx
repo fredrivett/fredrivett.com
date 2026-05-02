@@ -9,6 +9,7 @@ import { isAuthedFromCookieHeader } from "lib/words-auth";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
+import FredHead from "components/FredHead";
 
 import { getAllWordsMeta, getWordsStats } from "utils/Words";
 import { WORDS_GOAL, WordEntryMeta, WordsStats } from "utils/words-shared";
@@ -32,16 +33,13 @@ const WordsIndex = ({ entries, stats, authed }: Props) => (
   <Main meta={<Meta title="/words" description="Daily writing log" />}>
     <Container maxWidth="md">
       <div className="mb-4">
-        <h1 className="fs-0 mb-1 leading-none">Words</h1>
+        <FredHead title="words" />
         <p className="opacity-50 mb-8">
-          Daily writing — at least {WORDS_GOAL} words a day, most days.{" "}
-          {authed ? (
+          Daily writing — at least {WORDS_GOAL} words a day, most days.
+          {authed && (
             <>
+              {" "}
               <Link href="/words/new">Write a new entry →</Link>
-            </>
-          ) : (
-            <>
-              <Link href="/words/login">Sign in</Link> to write.
             </>
           )}
         </p>
