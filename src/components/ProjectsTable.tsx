@@ -1,6 +1,10 @@
 import React, { useMemo, useState } from "react";
 
-import { formatDistanceToNowStrict, parseISO } from "date-fns";
+import {
+  differenceInCalendarDays,
+  formatDistanceToNowStrict,
+  parseISO,
+} from "date-fns";
 
 import { PROJECT_STATES, type ProjectState } from "data/projects";
 import { cn } from "lib/cn";
@@ -103,7 +107,12 @@ function sortProjects(
 function formatRelative(iso: string | null): string {
   if (!iso) return "—";
   try {
-    return `${formatDistanceToNowStrict(parseISO(iso))} ago`;
+    const date = parseISO(iso);
+    const days = differenceInCalendarDays(new Date(), date);
+    if (days <= 0) return "today";
+    if (days === 1) return "yesterday";
+    if (days < 30) return `${days} days ago`;
+    return `${formatDistanceToNowStrict(date)} ago`;
   } catch {
     return "—";
   }

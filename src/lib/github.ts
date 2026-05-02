@@ -21,6 +21,13 @@ type CommitApiResponse = {
   };
 };
 
+type CommitsListItem = {
+  commit: {
+    author: { date: string } | null;
+    committer: { date: string } | null;
+  };
+};
+
 function authHeaders(): HeadersInit {
   const token = process.env.GITHUB_PAT;
   const base: HeadersInit = {
@@ -60,4 +67,42 @@ export async function fetchRepoMeta(repo: string): Promise<RepoMeta> {
   } catch {
     return empty;
   }
+}
+
+const COMMITS_PAGE_SIZE = 100;
+const COMMITS_MAX_PAGES = 10;
+
+function parseNextLink(linkHeader: string | null): boolean {
+  if (!linkHeader) return false;
+  return /<[^>]+>;\s*rel="next"/.test(linkHeader);
+}
+
+export async function fetchCommitDates(
+  repo: string,
+  sinceIso: string,
+): Promise<string[] | null> {
+  const dates: string[] = [];
+  for (let page = 1; page <= COMMITS_MAX_PAGES; page++) {
+    const url = `${GITHUB_API}/repos/${GITHUB_OWNER}/${repo}/commits?since=${encodeURIComponent(
+      sinceIso,
+    )}&per_page=${COMMITS_PAGE_SIZE}&page=${page}`;
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      const res = await fetch(url, { headers: authHeaders() });
+      if (!res.ok) return page === 1 ? null : dates;
+      // eslint-disable-next-line no-await-in-loop
+      const data = (await res.json()) as CommitsListItem[];
+      if (!Array.isArray(data)) return null;
+      data.forEach((item) => {
+        const date =
+          item.commit.committer?.date ?? item.commit.author?.date ?? null;
+        if (date) dates.push(date);
+      });
+      if (data.length < COMMITS_PAGE_SIZE) return dates;
+      if (!parseNextLink(res.headers.get("link"))) return dates;
+    } catch {
+      return page === 1 ? null : dates;
+    }
+  }
+  return dates;
 }
