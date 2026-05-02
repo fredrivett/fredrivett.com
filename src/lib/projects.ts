@@ -38,7 +38,8 @@ export async function fetchCommitsHeatmap(): Promise<CommitsHeatmap> {
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   );
   const todayDow = todayUTC.getUTCDay();
-  const endOfWeek = new Date(todayUTC.getTime() + (6 - todayDow) * DAY_MS);
+  const daysToSunday = todayDow === 0 ? 0 : 7 - todayDow;
+  const endOfWeek = new Date(todayUTC.getTime() + daysToSunday * DAY_MS);
   const totalCells = HEATMAP_WEEKS * HEATMAP_ROWS;
   const start = new Date(endOfWeek.getTime() - (totalCells - 1) * DAY_MS);
   const sinceIso = start.toISOString();
