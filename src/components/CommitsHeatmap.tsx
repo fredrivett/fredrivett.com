@@ -20,10 +20,10 @@ const MONTHS_SHORT = [
 
 const BUCKET_CLASS = [
   "bg-gray-200 dark:bg-gray-800",
-  "bg-green-200 dark:bg-green-900",
-  "bg-green-400 dark:bg-green-700",
-  "bg-green-600 dark:bg-green-500",
-  "bg-green-800 dark:bg-green-300",
+  "bg-blue-200 dark:bg-blue-900",
+  "bg-blue-400 dark:bg-blue-700",
+  "bg-blue-600 dark:bg-blue-500",
+  "bg-blue-800 dark:bg-blue-300",
 ];
 
 function bucket(count: number): number {
@@ -65,18 +65,11 @@ const CommitsHeatmap: React.FC<Props> = ({ data }) => {
 
   return (
     <div className="mb-6">
-      <div className="flex items-baseline justify-between mb-2">
-        <h2 className="text-sm opacity-70">
-          {total.toLocaleString()} commit{total === 1 ? "" : "s"} to these repos
-          in the last year
-        </h2>
+      <div className="mb-2 flex justify-end">
         <div className="hidden sm:flex items-center gap-1 text-xs opacity-60">
           <span>Less</span>
           {BUCKET_CLASS.map((cls, i) => (
-            <span
-              key={i}
-              className={cn("h-[11px] w-[11px] rounded-[2px]", cls)}
-            />
+            <span key={i} className={cn("h-[11px] w-[11px]", cls)} />
           ))}
           <span>More</span>
         </div>
@@ -109,7 +102,7 @@ const CommitsHeatmap: React.FC<Props> = ({ data }) => {
               key={cell.date}
               title={formatTooltip(cell)}
               className={cn(
-                "aspect-square w-full rounded-[2px]",
+                "aspect-square w-full",
                 cell.isFuture
                   ? "bg-transparent"
                   : BUCKET_CLASS[bucket(cell.count)],

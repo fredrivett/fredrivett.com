@@ -33,7 +33,6 @@ const Projects = ({ projects, heatmap }: ProjectsProps) => (
     <Container maxWidth="lg">
       <div className="mb-4">
         <FredHead title="projects" />
-        <h1 className="fs-0 mb-1 leading-none">Projects</h1>
         <p className="opacity-70 text-sm mb-4">
           Everything I&rsquo;ve built, shipped or explored. Last-update pulled
           from GitHub automatically.
