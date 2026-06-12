@@ -37,7 +37,7 @@ const Projects = ({ projects, heatmap }: ProjectsProps) => {
     >
       <Container maxWidth="lg">
         <div className="mb-4">
-          <div className="flex items-center justify-between gap-4">
+          <div className="mb-4 flex items-center justify-between gap-4">
             <FredHead title="projects" />
             <ProjectsFilterMenu
               visibleStates={visibleStates}

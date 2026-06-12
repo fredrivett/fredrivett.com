@@ -791,8 +791,8 @@ const Cv = ({ projects }: CvProps) => {
 
                 <hr />
 
-                <div className="flex items-center justify-between gap-4">
-                  <HeadingLink level={2}>
+                <div className="mb-4 flex items-center justify-between gap-4">
+                  <HeadingLink level={2} className="mb-0">
                     <Twemoji
                       emoji="🎨"
                       label="Palette"

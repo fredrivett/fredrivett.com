@@ -23,9 +23,10 @@ function slugify(text: string): string {
 type HeadingLinkProps = {
   level: 1 | 2 | 3 | 4 | 5 | 6;
   children: React.ReactNode;
+  className?: string;
 };
 
-export function HeadingLink({ level, children }: HeadingLinkProps) {
+export function HeadingLink({ level, children, className }: HeadingLinkProps) {
   const { getOrCreateId, registerHeading } = useHeadingId();
   const instanceKey = useId(); // Stable key for this component instance
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -93,6 +94,7 @@ export function HeadingLink({ level, children }: HeadingLinkProps) {
       className={cn(
         "group relative -mx-2.5 -mt-1.5 scroll-mt-20 px-2.5 py-1.5 transition-all duration-500",
         isHighlighted && "scale-[1.05] bg-gray-100 dark:bg-gray-800 shadow-lg",
+        className,
       )}
     >
       <button
