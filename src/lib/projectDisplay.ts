@@ -6,15 +6,6 @@ import {
 
 import type { ProjectState } from "data/projects";
 
-export const STATE_ORDER: Record<ProjectState, number> = {
-  building: 0,
-  live: 1,
-  idle: 2,
-  sold: 3,
-  explored: 4,
-  killed: 5,
-};
-
 export const STATE_LABEL: Record<ProjectState, string> = {
   building: "building",
   live: "live",
@@ -61,11 +52,6 @@ export function formatRelative(iso: string | null): string {
   } catch {
     return "—";
   }
-}
-
-export function formatStars(stars: number | null): string {
-  if (stars == null) return "—";
-  return stars.toString();
 }
 
 export function formatLaunched(started: string | null): string {
