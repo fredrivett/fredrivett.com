@@ -4,20 +4,27 @@ import { GetStaticProps } from "next";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import { Meta } from "layout/Meta";
+import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
 import Container from "components/Container";
 import EmailSubscribe from "components/EmailSubscribe";
+import ProjectsList from "components/ProjectsList";
 import PseudoIcon from "components/PseudoIcon";
 import SiteCounter from "components/SiteCounter";
+import Twemoji from "components/Twemoji";
 
 import { AppConfig } from "utils/AppConfig";
 import { getAllPosts } from "utils/Content";
 
-const Index = (props: IBlogGalleryProps) => (
+type IndexProps = IBlogGalleryProps & {
+  projects: EnrichedProject[];
+};
+
+const Index = (props: IndexProps) => (
   <Main meta={<Meta title="Hey there" description={AppConfig.description} />}>
-    <Container maxWidth="md">
-      <div className="mb-8">
+    <Container maxWidth="xl">
+      <div className="mb-8 max-w-screen-md">
         <h2>
           <PseudoIcon icon="happy">Hey there</PseudoIcon>
         </h2>
@@ -95,18 +102,37 @@ const Index = (props: IBlogGalleryProps) => (
         <EmailSubscribe className="mt-8" />
       </div>
 
-      <BlogGallery posts={props.posts} />
+      <div className="lg:flex lg:gap-12">
+        <div className="lg:w-3/5">
+          <BlogGallery posts={props.posts} />
+        </div>
+        <div className="mt-12 lg:mt-0 lg:w-2/5">
+          <h2 className="fs-2 mb-4">
+            <Twemoji
+              emoji="🚀"
+              label="Rocket"
+              size={24}
+              className="inline-block mr-2 align-baseline"
+            />
+            Projects
+          </h2>
+          <ProjectsList projects={props.projects} />
+        </div>
+      </div>
     </Container>
   </Main>
 );
 
-export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
+export const getStaticProps: GetStaticProps<IndexProps> = async () => {
   const posts = getAllPosts(["title", "date", "slug"]);
+  const projects = await enrichProjects();
 
   return {
     props: {
       posts,
+      projects,
     },
+    revalidate: 3600,
   };
 };
 
