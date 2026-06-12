@@ -55,7 +55,7 @@ const getTimeSince = (dateString: string) => {
   return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
-const role = "Senior Product Engineer";
+const role = "Senior [Founding/Product/Design/Fullstack] Engineer";
 const toolkit =
   "current go-to toolkit includes React, React Native, TypeScript, Jest, styled-components & Tailwind.";
 

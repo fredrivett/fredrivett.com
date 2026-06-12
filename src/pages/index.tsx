@@ -77,7 +77,7 @@ const Index = (props: IndexProps) => {
             </a>
             .
           </p>
-          <p>Senior Product Engineer.</p>
+          <p>Senior [Founding/Product/Design/Fullstack] Engineer.</p>
           <p className="mb-0">
             <em>
               now: Senior Product Engineer @{" "}
