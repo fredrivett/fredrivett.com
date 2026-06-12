@@ -21,11 +21,13 @@ import { CvRole } from "components/CvRole";
 import FredHead from "components/FredHead";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
-import ProjectsTable from "components/ProjectsTable";
+import ProjectsFilterMenu from "components/ProjectsFilterMenu";
+import ProjectsList from "components/ProjectsList";
 import SiteCounter from "components/SiteCounter";
 import Tag from "components/Tag";
 import Testimonial from "components/Testimonial";
 import Twemoji from "components/Twemoji";
+import { useProjectsFilter } from "components/useProjectsFilter";
 
 interface CvProps {
   projects: EnrichedProject[];
@@ -53,7 +55,7 @@ const getTimeSince = (dateString: string) => {
   return `${years} ${years === 1 ? "yr" : "yrs"} ${months} mos`;
 };
 
-const role = "Senior Product Engineer";
+const role = "Senior [Founding/Product/Design/Fullstack] Engineer";
 const toolkit =
   "current go-to toolkit includes React, React Native, TypeScript, Jest, styled-components & Tailwind.";
 
@@ -65,6 +67,7 @@ const getGeneratedAt = () => {
 const Cv = ({ projects }: CvProps) => {
   const generatedAt = getGeneratedAt();
   const pdfDownloadUrl = "/cv/fred-rivett-cv.pdf";
+  const { visibleStates, toggleState, filtered } = useProjectsFilter(projects);
 
   return (
     <>
@@ -788,21 +791,27 @@ const Cv = ({ projects }: CvProps) => {
 
                 <hr />
 
-                <HeadingLink level={2}>
-                  <Twemoji
-                    emoji="🎨"
-                    label="Palette"
-                    size={24}
-                    className="inline-block mr-2 align-baseline"
+                <div className="mb-4 flex items-center justify-between gap-4">
+                  <HeadingLink level={2} className="mb-0">
+                    <Twemoji
+                      emoji="🎨"
+                      label="Palette"
+                      size={24}
+                      className="inline-block mr-2 align-baseline"
+                    />
+                    Side projects
+                  </HeadingLink>
+                  <ProjectsFilterMenu
+                    visibleStates={visibleStates}
+                    onToggle={toggleState}
                   />
-                  Side projects
-                </HeadingLink>
+                </div>
                 <p>
                   Side projects are how I got into tech in the first place,
                   hacking away in my spare time. Here&apos;s everything
                   I&apos;ve built, shipped or explored:
                 </p>
-                <ProjectsTable projects={projects} />
+                <ProjectsList projects={filtered} />
                 <hr />
                 <p>
                   <Twemoji

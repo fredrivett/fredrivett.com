@@ -17,7 +17,7 @@ const MOST_POPULAR_SLUG = "becoming-the-person-who-does-the-thing";
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <h2 className="fs-2 lg:ml-40 lg:pl-2">
-      <PseudoIcon icon="arrow">Latest</PseudoIcon>
+      <PseudoIcon icon="arrow">Writing</PseudoIcon>
     </h2>
 
     <ul>

@@ -22,6 +22,9 @@ export const ProjectSchema = z.object({
     .string()
     .regex(/^\d{4}-\d{2}$/, "started must be in YYYY-MM format")
     .optional(),
+  // Upvotes from the project's Product Hunt launch (static — launches are
+  // historical so the count is effectively frozen).
+  phVotes: z.number().int().nonnegative().optional(),
 });
 
 export type Project = z.infer<typeof ProjectSchema>;
@@ -88,6 +91,7 @@ export const projects: Project[] = [
     repo: "bluffball",
     url: "https://www.producthunt.com/products/bluffball",
     started: "2018-07",
+    phVotes: 129,
   },
   {
     name: "Stories as a Service",
@@ -95,6 +99,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/stories-as-a-service",
     started: "2017-04",
+    phVotes: 343,
   },
   {
     name: "Hit Reply Podcast",
@@ -109,6 +114,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/real-time-users",
     started: "2016-06",
+    phVotes: 241,
   },
   {
     name: "LearningToLaunch",
@@ -116,6 +122,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/learning-to-launch",
     started: "2016-03",
+    phVotes: 55,
   },
   {
     name: "ProductHaunt",
@@ -123,6 +130,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/product-haunt",
     started: "2016-01",
+    phVotes: 75,
   },
   {
     name: "MyYear",
@@ -130,6 +138,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/my-year",
     started: "2015-12",
+    phVotes: 175,
   },
   {
     name: "FoundersKit",
@@ -137,6 +146,7 @@ export const projects: Project[] = [
     state: "sold",
     url: "https://www.producthunt.com/products/founderskit",
     started: "2015-08",
+    phVotes: 499,
   },
   {
     name: "The Working Lunch",
@@ -144,6 +154,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/the-working-lunch",
     started: "2015-08",
+    phVotes: 155,
   },
   {
     name: "Outstanding Bar",
@@ -151,6 +162,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/outstandingbar",
     started: "2015-03",
+    phVotes: 112,
   },
   {
     name: "FlashTabs",
@@ -158,6 +170,7 @@ export const projects: Project[] = [
     state: "idle",
     url: "https://www.producthunt.com/products/flashtabs",
     started: "2015-02",
+    phVotes: 113,
   },
   {
     name: "HowsItGoin",
@@ -165,6 +178,7 @@ export const projects: Project[] = [
     state: "killed",
     url: "https://www.producthunt.com/products/howsitgoin",
     started: "2015-01",
+    phVotes: 112,
   },
   {
     name: "AreTheNSAWatchingMe.com",
