@@ -69,7 +69,7 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
   return (
     <div
       className={cn(
-        "p-6 bg-gray-100 border border-gray-300 dark:border-gray-900 dark:bg-gray-900/50 rounded-md max-w-[20rem] my-10",
+        "p-6 bg-gray-100 border border-gray-300 dark:border-gray-900 dark:bg-gray-900/50 rounded-md max-w-[25rem] my-10",
         className,
       )}
     >
