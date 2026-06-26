@@ -33,6 +33,14 @@ export const ProjectsSchema = z.array(ProjectSchema);
 
 export const projects: Project[] = [
   {
+    name: "reeve",
+    tagline: "Monitor your PM2 processes from your Mac menu bar",
+    state: "live",
+    repo: "reeve",
+    url: "https://reeve.fredrivett.com",
+    started: "2026-06",
+  },
+  {
     name: "abode",
     tagline: "A self-organising place for all your digital stuff",
     state: "building",
