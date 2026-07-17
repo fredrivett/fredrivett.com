@@ -30,7 +30,7 @@ const StatBlock = ({ label, value }: { label: string; value: string }) => (
 );
 
 const WordsIndex = ({ entries, stats, authed }: Props) => (
-  <Main meta={<Meta title="/words" description="Daily writing log" />}>
+  <Main meta={<Meta title="/words" description="Daily writing log" noindex />}>
     <Container maxWidth="md">
       <div className="mb-4">
         <FredHead title="words" />

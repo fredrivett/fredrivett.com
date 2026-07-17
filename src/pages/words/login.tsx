@@ -47,7 +47,11 @@ const WordsLogin = () => {
   };
 
   return (
-    <Main meta={<Meta title="/words/login" description="Sign in to /words" />}>
+    <Main
+      meta={
+        <Meta title="/words/login" description="Sign in to /words" noindex />
+      }
+    >
       <Container maxWidth="md">
         <div className="mb-4 max-w-sm">
           <h1 className="fs-1 mb-6">Sign in</h1>
