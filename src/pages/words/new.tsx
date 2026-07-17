@@ -12,7 +12,9 @@ import Container from "components/Container";
 import { WordsEditor } from "../../words/WordsEditor";
 
 const NewWord = () => (
-  <Main meta={<Meta title="/words/new" description="Write a new entry" />}>
+  <Main
+    meta={<Meta title="/words/new" description="Write a new entry" noindex />}
+  >
     <Container maxWidth="md">
       <div className="mb-4">
         <p className="mb-2">

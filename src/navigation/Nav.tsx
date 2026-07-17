@@ -32,7 +32,6 @@ const navLinks: Array<{
   target?: string;
 }> = [
   { href: "/now", label: "/now" },
-  { href: "/words", label: "/words" },
   { href: "/shelf", label: "/shelf" },
   { href: "/cv", label: "/cv" },
   {

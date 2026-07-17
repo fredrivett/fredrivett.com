@@ -39,7 +39,9 @@ const WordPage = (props: Props) => {
   return (
     <Main
       className="text-lg py-4 md:py-8 lg:py-16"
-      meta={<Meta title={metaTitle} description="A daily writing entry" />}
+      meta={
+        <Meta title={metaTitle} description="A daily writing entry" noindex />
+      }
     >
       <Container maxWidth="prose">
         <p className="mb-2">

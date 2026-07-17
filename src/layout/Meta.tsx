@@ -10,6 +10,7 @@ type IMetaProps = {
   title: string;
   description: string;
   canonical?: string;
+  noindex?: boolean;
   post?: {
     image: string | null;
     date: string;
@@ -98,6 +99,9 @@ const Meta = (props: IMetaProps) => {
           key="description"
         />
         <meta name="author" content={AppConfig.author} key="author" />
+        {props.noindex && (
+          <meta name="robots" content="noindex, nofollow" key="robots" />
+        )}
         {props.canonical && (
           <link rel="canonical" href={props.canonical} key="canonical" />
         )}
