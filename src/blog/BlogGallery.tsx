@@ -50,7 +50,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               )}
               {isMostPopular && (
                 <span
-                  className="hidden sm:flex absolute top-6 -translate-y-full left-full ml-2 lg:-right-5 flex-col items-start"
+                  className="hidden 2xl:flex absolute top-6 -translate-y-full left-full ml-2 lg:-right-5 flex-col items-start"
                   aria-hidden="true"
                 >
                   <span className="ml-6 text-base italic font-mono text-gray-500 dark:text-gray-400 whitespace-nowrap mb-1.5 select-none">
