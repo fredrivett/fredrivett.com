@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import { BlogDate } from "blog/BlogDate";
+import { HN_ITEM_URL } from "lib/hackernews";
 
 import PseudoIcon from "components/PseudoIcon";
 
@@ -23,6 +24,8 @@ const BlogGallery = (props: IBlogGalleryProps) => (
     <ul>
       {props.posts.map((post) => {
         const isMostPopular = post.titleSlug === MOST_POPULAR_SLUG;
+        const hnStoryId = post.hnStoryId as number | undefined;
+        const hnPoints = post.hnPoints as number | undefined;
 
         return (
           <li key={post.slug as string} className="flex mb-3">
@@ -33,6 +36,18 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                 className="c_article-head__title"
                 dangerouslySetInnerHTML={{ __html: post.title as string }}
               />
+              {hnStoryId !== undefined && hnPoints !== undefined && (
+                <a
+                  href={`${HN_ITEM_URL}${hnStoryId}`}
+                  rel="nofollow noreferrer"
+                  target="_blank"
+                  title={`${hnPoints} points on Hacker News`}
+                  className="no-underline ml-2 inline-flex items-center gap-0.5 align-middle text-sm font-mono text-gray-400 hover:text-[#ff6600] dark:text-gray-500 dark:hover:text-[#ff6600]"
+                >
+                  <span aria-hidden="true">▲</span>
+                  {hnPoints}
+                </a>
+              )}
               {isMostPopular && (
                 <span
                   className="hidden sm:flex absolute top-6 -translate-y-full left-full ml-2 lg:-right-5 flex-col items-start"
