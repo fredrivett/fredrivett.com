@@ -42,6 +42,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                   rel="nofollow noreferrer"
                   target="_blank"
                   title={`${hnPoints} points on Hacker News`}
+                  aria-label={`${hnPoints} points on Hacker News (opens in new tab)`}
                   className="no-underline ml-2 inline-flex items-center gap-0.5 align-middle text-sm font-mono text-gray-400 hover:text-[#ff6600] dark:text-gray-500 dark:hover:text-[#ff6600]"
                 >
                   <span aria-hidden="true">▲</span>
