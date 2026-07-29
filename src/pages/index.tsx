@@ -4,6 +4,7 @@ import { GetStaticProps } from "next";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import { Meta } from "layout/Meta";
+import { fetchHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
 import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
@@ -129,8 +130,18 @@ const Index = (props: IndexProps) => {
 };
 
 export const getStaticProps: GetStaticProps<IndexProps> = async () => {
-  const posts = getAllPosts(["title", "date", "slug"]);
-  const projects = await enrichProjects();
+  const rawPosts = getAllPosts(["title", "date", "slug"]);
+  const [projects, hnSubmissions] = await Promise.all([
+    enrichProjects(),
+    fetchHnSubmissions(),
+  ]);
+
+  const posts = rawPosts.map((post) => {
+    const path = `/${post.year}/${post.month}/${post.day}/${post.titleSlug}`;
+    const story = hnSubmissions.get(hnPathKey(path));
+    if (!story || story.points < HN_MIN_POINTS) return post;
+    return { ...post, hnStoryId: story.storyId, hnPoints: story.points };
+  });
 
   return {
     props: {
