@@ -550,7 +550,7 @@ const Cv = ({ projects }: CvProps) => {
                   ]}
                   dates={`August 2026 – current`}
                   blurb={[
-                    "Joined via Superhuman's acquisition of GPTZero, continuing to build a top-class AI-powered writing experience.",
+                    "Joined via Superhuman's acquisition of GPTZero, building the world's best AI productivity suite.",
                   ]}
                   tags={[
                     "React",
