@@ -10,6 +10,7 @@ import remarkGfm from "remark-gfm";
 
 import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
+import { fetchHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
 import { Main } from "templates/Main";
 
 import BlogImageWrapper from "components/BlogImageWrapper";
@@ -18,6 +19,7 @@ import EmailSubscribe from "components/EmailSubscribe";
 import { ExternalLink } from "components/ExternalLink";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
+import { HnBadge } from "components/HnBadge";
 import { TableOfContentsAside } from "components/TableOfContents";
 import Tweet from "components/Tweet";
 
@@ -46,6 +48,8 @@ type IPostProps = {
   tableOfContents: boolean;
   yearInReview: number | null;
   allYearReviews: YearReviewPost[];
+  hnStoryId: number | null;
+  hnPoints: number | null;
 };
 
 const DisplayPost = (props: IPostProps) => {
@@ -82,6 +86,13 @@ const DisplayPost = (props: IPostProps) => {
           <Container maxWidth={showToc ? undefined : "prose"}>
             <div className="flex items-end gap-4 mb-1">
               <BlogDate date={props.date} />
+              {props.hnStoryId !== null && props.hnPoints !== null && (
+                <HnBadge
+                  storyId={props.hnStoryId}
+                  points={props.hnPoints}
+                  variant="pill"
+                />
+              )}
               <div data-herenow></div>
             </div>
             <h1>{props.title}</h1>
@@ -201,6 +212,13 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
 }) => {
   const { year, month, day, titleSlug } = params!;
   const slug = getPostSlug({ year, month, day, titleSlug });
+
+  const hnSubmissions = await fetchHnSubmissions();
+  const hnStory = hnSubmissions.get(
+    hnPathKey(`/${year}/${month}/${day}/${titleSlug}`),
+  );
+  const hasHn = !!hnStory && hnStory.points >= HN_MIN_POINTS;
+
   const post = getPostBySlug(slug, [
     "title",
     "description",
@@ -237,6 +255,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
         post.tableOfContents === true || post.tableOfContents === "true",
       yearInReview,
       allYearReviews,
+      hnStoryId: hasHn ? hnStory!.storyId : null,
+      hnPoints: hasHn ? hnStory!.points : null,
     },
   };
 };
