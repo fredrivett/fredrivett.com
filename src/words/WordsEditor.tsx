@@ -190,12 +190,12 @@ const WordsEditor = () => {
     return (
       <div className="space-y-4">
         <p className="text-lg">
-          Pushed. Live in ~60s at{" "}
+          pushed. live in ~60s at{" "}
           <code className="text-sm">/words/{success.slug}</code>.
         </p>
         <p className="text-sm opacity-70">
           <a href={success.commitUrl} target="_blank" rel="noreferrer">
-            View commit on GitHub →
+            view commit on GitHub →
           </a>
         </p>
         <div className="flex gap-2">
@@ -208,14 +208,14 @@ const WordsEditor = () => {
             }}
             className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded"
           >
-            Write another
+            write another
           </button>
           <button
             type="button"
             onClick={() => router.push("/words")}
             className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded"
           >
-            Back to /words
+            back to /words
           </button>
         </div>
       </div>
@@ -226,7 +226,7 @@ const WordsEditor = () => {
     <form onSubmit={onSubmit} className="space-y-4">
       <input
         type="text"
-        placeholder="Title (optional)"
+        placeholder="title (optional)"
         value={draft.title}
         onChange={(e) => setDraft((d) => ({ ...d, title: e.target.value }))}
         className={cn(
@@ -243,7 +243,7 @@ const WordsEditor = () => {
           value={draft.body}
           onChange={(e) => onBodyChange(e.target.value)}
           onKeyDown={onKeyDown}
-          placeholder={`Write at least ${WORDS_GOAL} words…`}
+          placeholder={`write at least ${WORDS_GOAL} words…`}
           className={cn(
             "w-full px-3 py-3 text-base leading-relaxed font-mono",
             "bg-transparent border border-gray-200 dark:border-gray-800",
@@ -277,7 +277,7 @@ const WordsEditor = () => {
                 }))
               }
             />
-            <span>Private</span>
+            <span>private</span>
           </label>
         </div>
 
@@ -290,7 +290,7 @@ const WordsEditor = () => {
             "disabled:opacity-40 disabled:cursor-not-allowed",
           )}
         >
-          {submitting ? "Publishing…" : "Publish"}
+          {submitting ? "publishing…" : "publish"}
         </button>
       </div>
 

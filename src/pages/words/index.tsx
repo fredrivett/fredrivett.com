@@ -35,11 +35,11 @@ const WordsIndex = ({ entries, stats, authed }: Props) => (
       <div className="mb-4">
         <FredHead title="words" />
         <p className="opacity-50 mb-8">
-          Daily writing — at least {WORDS_GOAL} words a day, most days.
+          daily writing — at least {WORDS_GOAL} words a day, most days.
           {authed && (
             <>
               {" "}
-              <Link href="/words/new">Write a new entry →</Link>
+              <Link href="/words/new">write a new entry →</Link>
             </>
           )}
         </p>
@@ -57,7 +57,7 @@ const WordsIndex = ({ entries, stats, authed }: Props) => (
         <hr />
 
         {entries.length === 0 ? (
-          <p className="opacity-60 mt-8">No entries yet.</p>
+          <p className="opacity-60 mt-8">no entries yet.</p>
         ) : (
           <ul className="list-none pl-0 mt-6">
             {entries.map((e) => {
@@ -67,7 +67,7 @@ const WordsIndex = ({ entries, stats, authed }: Props) => (
                 ? format(new Date(`${e.date}T00:00:00Z`), "EEE d MMM yyyy")
                 : "";
               const titleNode = isHidden ? (
-                <span className="opacity-60">Private entry</span>
+                <span className="opacity-60">private entry</span>
               ) : (
                 <Link href={`/words/${e.slug}`}>{e.title || dateLabel}</Link>
               );

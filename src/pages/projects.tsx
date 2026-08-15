@@ -47,7 +47,7 @@ const Projects = ({ projects, heatmap }: ProjectsProps) => {
             />
           </div>
           <p className="opacity-70 text-sm mb-4">
-            Everything I&rsquo;ve built, shipped or explored. Last-update pulled
+            everything i&rsquo;ve built, shipped or explored. last-update pulled
             from GitHub automatically.
           </p>
           <CommitsHeatmap data={heatmap} />

@@ -539,16 +539,44 @@ const Cv = ({ projects }: CvProps) => {
                 </HeadingLink>
 
                 <CvRole
+                  title="Software Engineer"
+                  company="Superhuman"
+                  companyLogoPath="superhuman.png"
+                  links={[
+                    {
+                      url: "https://superhuman.com",
+                      text: "Homepage",
+                    },
+                  ]}
+                  dates={`August 2026 – current`}
+                  blurb={[
+                    "Joined via Superhuman's acquisition of GPTZero, building the world's best AI productivity suite.",
+                  ]}
+                  tags={[
+                    "React",
+                    "TypeScript",
+                    "NextJS",
+                    "Tiptap",
+                    "Prisma",
+                    "Supabase",
+                    "Tailwind",
+                    "Jotai",
+                    "Tanstack Query",
+                    "Zod",
+                  ]}
+                />
+
+                <CvRole
                   title="Senior Product Engineer"
                   company="GPTZero"
                   companyLogoPath="gptzero.png"
                   links={[
                     {
                       url: "https://gptzero.me",
-                      text: "GPTZero homepage",
+                      text: "Homepage",
                     },
                   ]}
-                  dates={`January 2026 – current`}
+                  dates={`January 2026 – August 2026`}
                   blurb={[
                     "Migrating the Quill editor to Tiptap (built on ProseMirror), building out the in-app editor into a top-class writing experience with deep AI analysis baked in.",
                   ]}
@@ -573,7 +601,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://nolana.com",
-                      text: "Nolana homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`October 2025 – November 2025 • 5 weeks`}
@@ -599,7 +627,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://lex.page",
-                      text: "Lex homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`November 2023 – September 2025 • 1 yr 10 mos`}
@@ -626,7 +654,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://www.blackrock.com/corporate/ai",
-                      text: "AI Labs homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`December 2022 – April 2024 • 1 yr 5 mos`}

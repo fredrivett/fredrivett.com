@@ -17,11 +17,11 @@ interface EmailSubscribeProps {
 
 const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
   className = "",
-  placeholder = "Email",
-  buttonText = "Subscribe",
-  successMessage = "Thanks! Please check your inbox to confirm your email address.",
-  title = "Stay in touch?",
-  description = "Should you want to stay up to date with my posts, pop your email in below:",
+  placeholder = "email",
+  buttonText = "subscribe",
+  successMessage = "thanks! please check your inbox to confirm your email address.",
+  title = "stay in touch?",
+  description = "should you want to stay up to date with my posts, pop your email in below:",
 }) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
@@ -34,7 +34,7 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
 
     if (!email || !email.includes("@")) {
       setStatus("error");
-      setErrorMessage("Please enter a valid email address");
+      setErrorMessage("please enter a valid email address");
       return;
     }
 
@@ -57,12 +57,12 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
         const data = await response.json();
         setStatus("error");
         setErrorMessage(
-          data.error || "Something went wrong. Please try again.",
+          data.error || "something went wrong. please try again.",
         );
       }
     } catch (error) {
       setStatus("error");
-      setErrorMessage("Network error. Please try again.");
+      setErrorMessage("network error. please try again.");
     }
   };
 
@@ -104,7 +104,7 @@ const EmailSubscribe: React.FC<EmailSubscribeProps> = ({
               className="flex-1 px-3 py-2 bg-transparent border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950 placeholder:text-gray-600 dark:placeholder:text-gray-600 focus:outline-none focus:border-gray-400 dark:focus:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm min-w-0"
             />
             <Button type="submit" disabled={status === "loading" || !email}>
-              {status === "loading" ? "Subscribing..." : buttonText}
+              {status === "loading" ? "subscribing..." : buttonText}
             </Button>
           </div>
           {status === "error" && (

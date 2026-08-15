@@ -82,9 +82,9 @@ const ThemeToggle = () => {
   };
 
   const getTooltipContent = () => {
-    if (theme === "light") return "Light";
-    if (theme === "dark") return "Dark";
-    return "Auto";
+    if (theme === "light") return "light";
+    if (theme === "dark") return "dark";
+    return "auto";
   };
 
   return (

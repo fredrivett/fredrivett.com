@@ -45,7 +45,7 @@ const WordPage = (props: Props) => {
     >
       <Container maxWidth="prose">
         <p className="mb-2">
-          <Link href="/words">← Words</Link>
+          <Link href="/words">← words</Link>
         </p>
         <div className="text-sm opacity-60 mb-1">
           {dateLabel} · {props.time} · {props.wordCount} words
