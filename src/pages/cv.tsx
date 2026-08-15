@@ -16,12 +16,12 @@ import { Meta } from "layout/Meta";
 import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
+import ArchivedToggle from "components/ArchivedToggle";
 import Container from "components/Container";
 import { CvRole } from "components/CvRole";
 import FredHead from "components/FredHead";
 import { HeadingIdProvider } from "components/heading-id-context";
 import { HeadingLink } from "components/HeadingLink";
-import ProjectsFilterMenu from "components/ProjectsFilterMenu";
 import ProjectsList from "components/ProjectsList";
 import SiteCounter from "components/SiteCounter";
 import Tag from "components/Tag";
@@ -67,7 +67,8 @@ const getGeneratedAt = () => {
 const Cv = ({ projects }: CvProps) => {
   const generatedAt = getGeneratedAt();
   const pdfDownloadUrl = "/cv/fred-rivett-cv.pdf";
-  const { visibleStates, toggleState, filtered } = useProjectsFilter(projects);
+  const { showArchived, setShowArchived, archivedCount, filtered } =
+    useProjectsFilter(projects);
 
   return (
     <>
@@ -801,9 +802,10 @@ const Cv = ({ projects }: CvProps) => {
                     />
                     Side projects
                   </HeadingLink>
-                  <ProjectsFilterMenu
-                    visibleStates={visibleStates}
-                    onToggle={toggleState}
+                  <ArchivedToggle
+                    showArchived={showArchived}
+                    archivedCount={archivedCount}
+                    onToggle={setShowArchived}
                   />
                 </div>
                 <p>

@@ -11,10 +11,10 @@ import {
 } from "lib/projects";
 import { Main } from "templates/Main";
 
+import ArchivedToggle from "components/ArchivedToggle";
 import CommitsHeatmap from "components/CommitsHeatmap";
 import Container from "components/Container";
 import FredHead from "components/FredHead";
-import ProjectsFilterMenu from "components/ProjectsFilterMenu";
 import ProjectsList from "components/ProjectsList";
 import { useProjectsFilter } from "components/useProjectsFilter";
 
@@ -24,7 +24,8 @@ interface ProjectsProps {
 }
 
 const Projects = ({ projects, heatmap }: ProjectsProps) => {
-  const { visibleStates, toggleState, filtered } = useProjectsFilter(projects);
+  const { showArchived, setShowArchived, archivedCount, filtered } =
+    useProjectsFilter(projects);
 
   return (
     <Main
@@ -39,9 +40,10 @@ const Projects = ({ projects, heatmap }: ProjectsProps) => {
         <div className="mb-4">
           <div className="mb-4 flex items-center justify-between gap-4">
             <FredHead title="projects" />
-            <ProjectsFilterMenu
-              visibleStates={visibleStates}
-              onToggle={toggleState}
+            <ArchivedToggle
+              showArchived={showArchived}
+              archivedCount={archivedCount}
+              onToggle={setShowArchived}
             />
           </div>
           <p className="opacity-70 text-sm mb-4">

@@ -8,9 +8,9 @@ import { fetchHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
 import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
+import ArchivedToggle from "components/ArchivedToggle";
 import Container from "components/Container";
 import EmailSubscribe from "components/EmailSubscribe";
-import ProjectsFilterMenu from "components/ProjectsFilterMenu";
 import ProjectsList from "components/ProjectsList";
 import PseudoIcon from "components/PseudoIcon";
 import SiteCounter from "components/SiteCounter";
@@ -24,9 +24,8 @@ type IndexProps = IBlogGalleryProps & {
 };
 
 const Index = (props: IndexProps) => {
-  const { visibleStates, toggleState, filtered } = useProjectsFilter(
-    props.projects,
-  );
+  const { showArchived, setShowArchived, archivedCount, filtered } =
+    useProjectsFilter(props.projects);
 
   return (
     <Main meta={<Meta title="Hey there" description={AppConfig.description} />}>
@@ -113,9 +112,10 @@ const Index = (props: IndexProps) => {
           <div className="lg:w-2/5">
             <div className="mb-4 flex items-center justify-between gap-4">
               <h2 className="fs-2 m-0">Projects</h2>
-              <ProjectsFilterMenu
-                visibleStates={visibleStates}
-                onToggle={toggleState}
+              <ArchivedToggle
+                showArchived={showArchived}
+                archivedCount={archivedCount}
+                onToggle={setShowArchived}
               />
             </div>
             <ProjectsList projects={filtered} />
