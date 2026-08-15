@@ -12,6 +12,13 @@ export const PROJECT_STATES = [
 export const ProjectStateSchema = z.enum(PROJECT_STATES);
 export type ProjectState = z.infer<typeof ProjectStateSchema>;
 
+// "Archived" states — sold, explored or killed. These are hidden from the
+// projects list by default and revealed via the archived toggle.
+const ARCHIVED_STATES = ["sold", "explored", "killed"] as const;
+const archivedStateSet = new Set<ProjectState>(ARCHIVED_STATES);
+export const isArchivedState = (state: ProjectState) =>
+  archivedStateSet.has(state);
+
 export const ProjectSchema = z.object({
   name: z.string().min(1),
   tagline: z.string().min(1),
@@ -71,7 +78,7 @@ export const projects: Project[] = [
   {
     name: "here/now",
     tagline: "A minimal, self-hosted visitor tracking API",
-    state: "idle",
+    state: "live",
     repo: "here-now",
     url: "https://www.herenow.fyi",
     started: "2025-09",
