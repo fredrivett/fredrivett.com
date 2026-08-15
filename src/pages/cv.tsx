@@ -573,7 +573,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://gptzero.me",
-                      text: "GPTZero homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`January 2026 – August 2026`}
@@ -601,7 +601,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://nolana.com",
-                      text: "Nolana homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`October 2025 – November 2025 • 5 weeks`}
@@ -627,7 +627,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://lex.page",
-                      text: "Lex homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`November 2023 – September 2025 • 1 yr 10 mos`}
@@ -654,7 +654,7 @@ const Cv = ({ projects }: CvProps) => {
                   links={[
                     {
                       url: "https://www.blackrock.com/corporate/ai",
-                      text: "AI Labs homepage",
+                      text: "Homepage",
                     },
                   ]}
                   dates={`December 2022 – April 2024 • 1 yr 5 mos`}
