@@ -43,7 +43,7 @@ const Index = (props: IndexProps) => {
               target="_blank"
             >
               <img
-                alt="Photo of me (Fred)"
+                alt=""
                 src="/assets/images/fredrivett.jpg"
                 className="inline-block w-6 h-6 rounded-full"
               />
