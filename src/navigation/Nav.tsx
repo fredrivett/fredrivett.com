@@ -85,7 +85,7 @@ const Nav = () => {
       )}
     >
       <div className="flex justify-between">
-        <NavLink href="/" className="fs-2">
+        <NavLink href="/" className="fs-2 font-header italic tracking-tighter">
           fr
         </NavLink>
         <div className="flex items-center">
