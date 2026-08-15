@@ -15,30 +15,30 @@ const Now = () => (
       <div className="mb-4">
         <FredHead title="now" />
         <h1 className="fs-0 mb-1 leading-none">
-          What I&apos;m up to right now
+          what i&apos;m up to right now
         </h1>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2026-04-30"), "do MMMM yyyy")}</em>
+          <em>updated: {format(new Date("2026-04-30"), "do MMMM yyyy")}</em>
         </p>
 
         <hr />
 
-        <h3 className="mb-2">Life</h3>
+        <h3 className="mb-2">life</h3>
         <p>
-          My wife, Lorna, and I got married in late 2023. Our first kid is due
+          my wife, Lorna, and i got married in late 2023. our first kid is due
           this summer.
         </p>
 
-        <h3 className="mb-2">Where</h3>
+        <h3 className="mb-2">where</h3>
         <p>
-          We recently travelled the world for 8 months whilst working remotely,
+          we recently travelled the world for 8 months whilst working remotely,
           visiting over a dozen countries across Africa, Asia, Australasia and
-          South America. We arrived back in our flat in London in April 2025.
+          South America. we arrived back in our flat in London in April 2025.
         </p>
 
-        <h3 className="mb-2">Work</h3>
+        <h3 className="mb-2">work</h3>
         <p>
-          Senior Product Engineer at{" "}
+          senior product engineer at{" "}
           <a
             href="https://gptzero.me"
             rel="nofollow noreferrer"
@@ -48,7 +48,7 @@ const Now = () => (
           </a>
           .
           <br />
-          Previously Founding Engineer (and employee #2) at{" "}
+          previously founding engineer (and employee #2) at{" "}
           <a
             href="https://www.lex.page"
             rel="nofollow noreferrer"
@@ -60,11 +60,11 @@ const Now = () => (
         </p>
 
         <h3 id="exploring" className="mb-2">
-          Exploring
+          exploring
         </h3>
         <ul className="list-disc ml-8">
           <li>
-            🏠 Your digital home —{" "}
+            🏠 your digital home —{" "}
             <a
               href="https://www.abode.fyi"
               rel="nofollow noreferrer"
@@ -75,7 +75,7 @@ const Now = () => (
             , a self-organising place for all your digital stuff
           </li>
           <li>
-            🗺️ Exploring your e2e code flows —{" "}
+            🗺️ exploring your e2e code flows —{" "}
             <a
               href="https://www.treck.dev"
               rel="nofollow noreferrer"
@@ -91,7 +91,7 @@ const Now = () => (
 
         <p>
           <small>
-            This is a{" "}
+            this is a{" "}
             <a
               href="https://nownownow.com/about"
               rel="nofollow noreferrer"
@@ -99,8 +99,8 @@ const Now = () => (
             >
               now page
             </a>
-            . It&rsquo;s a snapshot of what life looks like for me right now,
-            for those who are curious. It is updated periodically, but not on
+            . it&rsquo;s a snapshot of what life looks like for me right now,
+            for those who are curious. it is updated periodically, but not on
             any fixed schedule.
           </small>
         </p>

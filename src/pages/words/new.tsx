@@ -18,9 +18,9 @@ const NewWord = () => (
     <Container maxWidth="md">
       <div className="mb-4">
         <p className="mb-2">
-          <Link href="/words">← Words</Link>
+          <Link href="/words">← words</Link>
         </p>
-        <h1 className="fs-1 mb-6">New entry</h1>
+        <h1 className="fs-1 mb-6">new entry</h1>
         <WordsEditor />
       </div>
     </Container>

@@ -22,7 +22,7 @@ const ArchivedToggle: React.FC<Props> = ({
       onClick={() => onToggle(!showArchived)}
       aria-pressed={showArchived}
     >
-      {showArchived ? "Hide" : "Show"} {archivedCount} archived
+      {showArchived ? "hide" : "show"} {archivedCount} archived
     </Button>
   );
 };

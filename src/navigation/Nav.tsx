@@ -86,7 +86,7 @@ const Nav = () => {
     >
       <div className="flex justify-between">
         <NavLink href="/" className="fs-2">
-          FR
+          fr
         </NavLink>
         <div className="flex items-center">
           <ThemeToggle />

@@ -35,13 +35,13 @@ const WordsLogin = () => {
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
-        setError(data?.error || "Login failed");
+        setError(data?.error || "login failed");
         setSubmitting(false);
         return;
       }
       router.replace(next);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Network error");
+      setError(err instanceof Error ? err.message : "network error");
       setSubmitting(false);
     }
   };
@@ -54,13 +54,13 @@ const WordsLogin = () => {
     >
       <Container maxWidth="md">
         <div className="mb-4 max-w-sm">
-          <h1 className="fs-1 mb-6">Sign in</h1>
+          <h1 className="fs-1 mb-6">sign in</h1>
           <form onSubmit={onSubmit} className="space-y-3">
             <input
               type="password"
               autoFocus
               autoComplete="current-password"
-              placeholder="Password"
+              placeholder="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={cn(
@@ -78,7 +78,7 @@ const WordsLogin = () => {
                 "disabled:opacity-40 disabled:cursor-not-allowed",
               )}
             >
-              {submitting ? "Signing in…" : "Sign in"}
+              {submitting ? "signing in…" : "sign in"}
             </button>
             {error && (
               <p className="text-sm text-red-600 dark:text-red-400">{error}</p>

@@ -32,10 +32,10 @@ const Index = (props: IndexProps) => {
       <Container maxWidth="xl">
         <div className="mb-8 max-w-screen-md">
           <h2>
-            <PseudoIcon icon="happy">Hey there</PseudoIcon>
+            <PseudoIcon icon="happy">hey there</PseudoIcon>
           </h2>
           <p>
-            I&rsquo;m{" "}
+            i&rsquo;m{" "}
             <a
               className="inline-flex items-center gap-1.5 align-middle whitespace-nowrap no-underline pl-1 pr-2.5 py-1 rounded-full bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 dark:hover:bg-gray-800 transition"
               href="https://twitter.com/fredrivett"
@@ -47,9 +47,9 @@ const Index = (props: IndexProps) => {
                 src="/assets/images/fredrivett.jpg"
                 className="inline-block w-6 h-6 rounded-full"
               />
-              Fred
+              fred
             </a>{" "}
-            and I like to{" "}
+            and i like to{" "}
             <a
               href="https://www.producthunt.com/@fredrivett"
               rel="nofollow noreferrer"
@@ -57,7 +57,7 @@ const Index = (props: IndexProps) => {
             >
               make stuff
             </a>
-            . I also{" "}
+            . i also{" "}
             <a
               href="https://github.com/fredrivett"
               rel="nofollow noreferrer"
@@ -83,10 +83,10 @@ const Index = (props: IndexProps) => {
             </a>
             .
           </p>
-          <p>Senior [Founding/Product/Design/Fullstack] Engineer.</p>
+          <p>senior [founding/product/design/fullstack] engineer.</p>
           <p className="mb-0">
             <em>
-              now: Senior Product Engineer @{" "}
+              now: senior product engineer @{" "}
               <a
                 href="https://gptzero.me"
                 rel="nofollow noreferrer"
@@ -98,7 +98,7 @@ const Index = (props: IndexProps) => {
           </p>
           <p>
             <em>
-              prev: Founding Engineer @{" "}
+              prev: founding engineer @{" "}
               <a
                 href="https://lex.page"
                 rel="nofollow noreferrer"
@@ -117,7 +117,7 @@ const Index = (props: IndexProps) => {
         <div className="lg:flex lg:gap-12">
           <div className="lg:w-2/5">
             <div className="mb-4 flex items-center justify-between gap-4">
-              <h2 className="fs-2 m-0">Projects</h2>
+              <h2 className="fs-2 m-0">projects</h2>
               <ArchivedToggle
                 showArchived={showArchived}
                 archivedCount={archivedCount}

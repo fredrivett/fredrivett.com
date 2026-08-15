@@ -91,8 +91,8 @@ const DisplayPost = (props: IPostProps) => {
               <div className="text-gray-600 dark:text-gray-400 mb-8">
                 <p className="mb-2">
                   {props.allYearReviews[0]?.year === props.yearInReview
-                    ? "This is the latest in a series of year in review posts:"
-                    : "This post is part of a series of year in review posts:"}
+                    ? "this is the latest in a series of year in review posts:"
+                    : "this post is part of a series of year in review posts:"}
                 </p>
                 <ul className="list-disc pl-5 mb-0">
                   {props.allYearReviews.map((review) =>
@@ -147,7 +147,7 @@ const DisplayPost = (props: IPostProps) => {
 
             <div className="text-gray-600 dark:text-gray-500">
               <p>
-                If you liked this post or have any thoughts, feel free to ping
+                if you liked this post or have any thoughts, feel free to ping
                 me on twitter:
               </p>
               <p>

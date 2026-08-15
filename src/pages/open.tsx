@@ -43,35 +43,35 @@ const Open: FunctionComponent<Props> = ({ projectsWithTimeEntries }) => (
             <FredHead title="open" />
           </div>
           <p>
-            👋🏻 Hey, I&apos;m{" "}
+            👋🏻 hey, i&apos;m{" "}
             <a
               href="https://twitter.com/fredrivett"
               rel="nofollow noreferrer"
               target="_blank"
             >
-              Fred
+              fred
             </a>
-            , and welcome to my /open page, where I share info on the side
-            projects I&apos;m working on.
+            , and welcome to my /open page, where i share info on the side
+            projects i&apos;m working on.
           </p>
           <p>
-            🚧 This page is a WIP, so please bare with me whilst it evolves.
+            🚧 this page is a WIP, so please bare with me whilst it evolves.
           </p>
           <p>
-            🤔 Thoughts on what I should add?{" "}
+            🤔 thoughts on what i should add?{" "}
             <a
               href="https://twitter.com/fredrivett"
               rel="nofollow noreferrer"
               target="_blank"
             >
-              Let me know
+              let me know
             </a>
             .
           </p>
         </div>
         <hr />
         <h2>
-          Side projects{" "}
+          side projects{" "}
           <span className="text-gray-600 dark:text-gray-700 fs-4">
             (time tracked this year)
           </span>

@@ -31,7 +31,7 @@ const ProjectsList: React.FC<Props> = ({ projects }) => {
   if (rows.length === 0) {
     return (
       <p className="py-6 text-center opacity-60 italic">
-        No projects match the current filter.
+        no projects match the current filter.
       </p>
     );
   }
@@ -77,7 +77,7 @@ const ProjectsList: React.FC<Props> = ({ projects }) => {
                 {STATE_LABEL[p.state]}
               </span>
             </div>
-            <span className="text-sm opacity-70">{p.tagline}</span>
+            <span className="text-sm opacity-70 lowercase">{p.tagline}</span>
             {(hasStars || hasVotes || meta.length > 0) && (
               <span className="text-xs opacity-50 mt-0.5 tabular-nums">
                 {hasStars && (

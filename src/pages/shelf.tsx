@@ -155,27 +155,27 @@ const Shelf = () => (
     <Container maxWidth="md">
       <div className="mb-8 md:mb-12 lg:mb-16">
         <FredHead title="shelf" after={<SiteCounter />} />
-        <h1 className="fs-0 mb-1 leading-none">My shelf</h1>
+        <h1 className="fs-0 mb-1 leading-none">my shelf</h1>
         <p className="mb-4">
-          If I could only have a few things to regularly return to and lend to
-          friends, these would be on it. Some of the threads of my tapestry.
+          if i could only have a few things to regularly return to and lend to
+          friends, these would be on it. some of the threads of my tapestry.
         </p>
         <p className="opacity-50">
-          <em>Updated: {format(new Date("2025-09-09"), "do MMMM yyyy")}</em>
+          <em>updated: {format(new Date("2025-09-09"), "do MMMM yyyy")}</em>
         </p>
         <p className="vertical-center bg-blue-100 dark:bg-blue-900/20 rounded-md px-4 py-3 text-blue-600 dark:text-blue-400 text-sm inline-block">
           <LibrarySquare size={18} className="inline-flex -mt-0.5 opacity-80" />{" "}
           <em>
-            &mdash; how many copies are on my shelf (how highly I recommend it,
+            &mdash; how many copies are on my shelf (how highly i recommend it,
             ~michelin stars)
           </em>
         </p>
         <hr className="my-2" />
         <p className="text-sm opacity-75 mt-4">
           <small>
-            This is a <Link href="/shelf-page">shelf page</Link>. It&rsquo;s a
+            this is a <Link href="/shelf-page">shelf page</Link>. it&rsquo;s a
             curated collection of books, articles, and other media that have
-            shaped my thinking or that I highly recommend.
+            shaped my thinking or that i highly recommend.
           </small>
         </p>
       </div>
@@ -185,7 +185,7 @@ const Shelf = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-10 lg:gap-12/20">
         {Object.entries(sections).map(([key, section]) => (
           <div key={key}>
-            <h2 className="flex items-center gap-2 text-lg font-bold mb-4">
+            <h2 className="flex items-center gap-2 text-lg font-bold mb-4 lowercase">
               <span className="text-2xl">{section.emoji}</span>
               {section.title}
             </h2>
@@ -258,7 +258,7 @@ const Shelf = () => (
       <Container maxWidth="md">
         <hr className="my-8 md:mt-16 lg:mt-24" />
         <p className="text-sm opacity-75">
-          This is a curated list that I update from time to time. If you have
+          this is a curated list that i update from time to time. if you have
           recommendations,{" "}
           <a href="mailto:fred@fredrivett.com?subject=Shelf%20recommendation">
             drop me a line
