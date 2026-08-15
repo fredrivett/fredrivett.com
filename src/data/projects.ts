@@ -14,7 +14,7 @@ export type ProjectState = z.infer<typeof ProjectStateSchema>;
 
 // "Archived" states — sold, explored or killed. These are hidden from the
 // projects list by default and revealed via the archived toggle.
-export const ARCHIVED_STATES = ["sold", "explored", "killed"] as const;
+const ARCHIVED_STATES = ["sold", "explored", "killed"] as const;
 const archivedStateSet = new Set<ProjectState>(ARCHIVED_STATES);
 export const isArchivedState = (state: ProjectState) =>
   archivedStateSet.has(state);
