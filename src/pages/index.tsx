@@ -37,7 +37,7 @@ const Index = (props: IndexProps) => {
           <p>
             i&rsquo;m{" "}
             <a
-              className="inline-flex items-center gap-1.5 align-middle whitespace-nowrap no-underline pl-1 pr-2.5 py-1 rounded-full bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 dark:hover:bg-gray-800 transition"
+              className="inline-flex items-center gap-1.5 align-middle whitespace-nowrap no-underline tracking-tight pl-1 pr-2.5 py-1 rounded-full bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 dark:hover:bg-gray-800 transition"
               href="https://twitter.com/fredrivett"
               rel="nofollow noreferrer"
               target="_blank"
