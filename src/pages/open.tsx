@@ -121,7 +121,14 @@ export const getServerSideProps = async (): Promise<{ props: Props }> => {
     },
   ] as const;
 
-  const timeEntries: TimeEntry[] = await toggleApi("me/time_entries", "GET");
+  const response = await toggleApi("me/time_entries", "GET");
+  // Toggl returns an error string/object (not an array) if the request is
+  // rejected (e.g. start_date outside the allowed window), so guard against a
+  // non-array response to avoid crashing the page.
+  const timeEntries: TimeEntry[] = Array.isArray(response) ? response : [];
+  if (!Array.isArray(response)) {
+    console.error("Unexpected Toggl time_entries response:", response);
+  }
 
   const projectsWithTimeEntries = projects.map((project) => {
     return {
