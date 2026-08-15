@@ -38,13 +38,13 @@ const Now = () => (
 
         <h3 className="mb-2">work</h3>
         <p>
-          senior product engineer at{" "}
+          software engineer at{" "}
           <a
-            href="https://gptzero.me"
+            href="https://superhuman.com"
             rel="nofollow noreferrer"
             target="_blank"
           >
-            GPTZero
+            Superhuman
           </a>
           .
           <br />

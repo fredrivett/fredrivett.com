@@ -86,13 +86,13 @@ const Index = (props: IndexProps) => {
           <p>senior [founding/product/design/fullstack] engineer.</p>
           <p className="mb-0">
             <em>
-              now: senior product engineer @{" "}
+              now: software engineer @{" "}
               <a
-                href="https://gptzero.me"
+                href="https://superhuman.com"
                 rel="nofollow noreferrer"
                 target="_blank"
               >
-                GPTZero
+                Superhuman
               </a>
             </em>
           </p>

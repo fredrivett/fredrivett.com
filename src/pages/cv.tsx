@@ -539,6 +539,34 @@ const Cv = ({ projects }: CvProps) => {
                 </HeadingLink>
 
                 <CvRole
+                  title="Software Engineer"
+                  company="Superhuman"
+                  companyLogoPath="superhuman.png"
+                  links={[
+                    {
+                      url: "https://superhuman.com",
+                      text: "Homepage",
+                    },
+                  ]}
+                  dates={`August 2026 – current`}
+                  blurb={[
+                    "Joined via Superhuman's acquisition of GPTZero, continuing to build a top-class AI-powered writing experience.",
+                  ]}
+                  tags={[
+                    "React",
+                    "TypeScript",
+                    "NextJS",
+                    "Tiptap",
+                    "Prisma",
+                    "Supabase",
+                    "Tailwind",
+                    "Jotai",
+                    "Tanstack Query",
+                    "Zod",
+                  ]}
+                />
+
+                <CvRole
                   title="Senior Product Engineer"
                   company="GPTZero"
                   companyLogoPath="gptzero.png"
@@ -548,7 +576,7 @@ const Cv = ({ projects }: CvProps) => {
                       text: "GPTZero homepage",
                     },
                   ]}
-                  dates={`January 2026 – current`}
+                  dates={`January 2026 – August 2026`}
                   blurb={[
                     "Migrating the Quill editor to Tiptap (built on ProseMirror), building out the in-app editor into a top-class writing experience with deep AI analysis baked in.",
                   ]}
