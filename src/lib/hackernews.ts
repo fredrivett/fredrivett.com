@@ -95,19 +95,20 @@ export async function fetchHnSubmissions(): Promise<Map<string, HnStory>> {
   return byPath;
 }
 
-// Cache the whole-domain submission map so a single build/ISR cycle makes one
-// Algolia call regardless of how many pages render (getStaticProps runs in one
-// process). The TTL matches the pages' `revalidate` so ISR still picks up fresh
-// points on the next cycle. fetchHnSubmissions never rejects, so caching the
-// in-flight promise safely dedupes concurrent callers.
-const HN_CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
-
-let hnCache: { at: number; map: Promise<Map<string, HnStory>> } | null = null;
+// Dedupe concurrent callers onto a single in-flight request: during `next
+// build` the many post pages render together and would otherwise each hit
+// Algolia. We keep only the in-flight promise and clear it once it settles,
+// rather than a long-lived module cache — that keeps freshness owned by the
+// pages' `revalidate` (no stale map lingering across ISR cycles on a warm
+// instance) and never pins a failed fetch (fetchHnSubmissions fails soft to an
+// empty map, which we don't want to serve for a whole hour).
+let hnInFlight: Promise<Map<string, HnStory>> | null = null;
 
 export function getHnSubmissions(): Promise<Map<string, HnStory>> {
-  const now = Date.now();
-  if (!hnCache || now - hnCache.at > HN_CACHE_TTL_MS) {
-    hnCache = { at: now, map: fetchHnSubmissions() };
+  if (!hnInFlight) {
+    hnInFlight = fetchHnSubmissions().finally(() => {
+      hnInFlight = null;
+    });
   }
-  return hnCache.map;
+  return hnInFlight;
 }
