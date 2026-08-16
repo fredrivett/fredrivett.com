@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 
 import { BlogGallery, IBlogGalleryProps } from "blog/BlogGallery";
 import { Meta } from "layout/Meta";
-import { fetchHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
+import { getHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
 import { enrichProjects, type EnrichedProject } from "lib/projects";
 import { Main } from "templates/Main";
 
@@ -139,7 +139,7 @@ export const getStaticProps: GetStaticProps<IndexProps> = async () => {
   const rawPosts = getAllPosts(["title", "date", "slug"]);
   const [projects, hnSubmissions] = await Promise.all([
     enrichProjects(),
-    fetchHnSubmissions(),
+    getHnSubmissions(),
   ]);
 
   const posts = rawPosts.map((post) => {

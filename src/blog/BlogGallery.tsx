@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 
 import { BlogDate } from "blog/BlogDate";
-import { HN_ITEM_URL } from "lib/hackernews";
 
+import { HnBadge } from "components/HnBadge";
 import PseudoIcon from "components/PseudoIcon";
 
 import { PostItemsWithHeadings } from "utils/Content";
@@ -37,17 +37,11 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                 dangerouslySetInnerHTML={{ __html: post.title as string }}
               />
               {hnStoryId !== undefined && hnPoints !== undefined && (
-                <a
-                  href={`${HN_ITEM_URL}${hnStoryId}`}
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                  title={`${hnPoints} points on Hacker News`}
-                  aria-label={`${hnPoints} points on Hacker News (opens in new tab)`}
-                  className="no-underline ml-2 inline-flex items-center gap-0.5 align-middle text-sm font-mono text-gray-400 hover:text-[#ff6600] dark:text-gray-500 dark:hover:text-[#ff6600]"
-                >
-                  <span aria-hidden="true">▲</span>
-                  {hnPoints}
-                </a>
+                <HnBadge
+                  storyId={hnStoryId}
+                  points={hnPoints}
+                  className="ml-2"
+                />
               )}
               {isMostPopular && (
                 <span

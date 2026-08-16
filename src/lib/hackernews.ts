@@ -94,3 +94,21 @@ export async function fetchHnSubmissions(): Promise<Map<string, HnStory>> {
 
   return byPath;
 }
+
+// Dedupe concurrent callers onto a single in-flight request: during `next
+// build` the many post pages render together and would otherwise each hit
+// Algolia. We keep only the in-flight promise and clear it once it settles,
+// rather than a long-lived module cache — that keeps freshness owned by the
+// pages' `revalidate` (no stale map lingering across ISR cycles on a warm
+// instance) and never pins a failed fetch (fetchHnSubmissions fails soft to an
+// empty map, which we don't want to serve for a whole hour).
+let hnInFlight: Promise<Map<string, HnStory>> | null = null;
+
+export function getHnSubmissions(): Promise<Map<string, HnStory>> {
+  if (!hnInFlight) {
+    hnInFlight = fetchHnSubmissions().finally(() => {
+      hnInFlight = null;
+    });
+  }
+  return hnInFlight;
+}
