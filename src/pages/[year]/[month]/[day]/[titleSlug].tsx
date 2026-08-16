@@ -10,7 +10,7 @@ import remarkGfm from "remark-gfm";
 
 import { BlogDate } from "blog/BlogDate";
 import { Meta } from "layout/Meta";
-import { fetchHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
+import { getHnSubmissions, HN_MIN_POINTS, hnPathKey } from "lib/hackernews";
 import { Main } from "templates/Main";
 
 import BlogImageWrapper from "components/BlogImageWrapper";
@@ -213,7 +213,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
   const { year, month, day, titleSlug } = params!;
   const slug = getPostSlug({ year, month, day, titleSlug });
 
-  const hnSubmissions = await fetchHnSubmissions();
+  const hnSubmissions = await getHnSubmissions();
   const hnStory = hnSubmissions.get(
     hnPathKey(`/${year}/${month}/${day}/${titleSlug}`),
   );
@@ -258,6 +258,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       hnStoryId: hasHn ? hnStory!.storyId : null,
       hnPoints: hasHn ? hnStory!.points : null,
     },
+    revalidate: 3600,
   };
 };
 
