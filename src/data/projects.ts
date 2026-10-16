@@ -134,7 +134,7 @@ export const projects: Project[] = [
   {
     name: "LearningToLaunch",
     tagline: "Short e-book on how to launch your first side project",
-    state: "killed",
+    state: "idle",
     url: "https://www.producthunt.com/products/learning-to-launch",
     started: "2016-03",
     phVotes: 55,
