@@ -6,7 +6,7 @@ import type { EnrichedProject } from "lib/projects";
 // Shared archived-filter for the projects list. Lets each page place the
 // <ArchivedToggle> in its heading row while keeping the list itself a pure
 // presentational component fed the already-filtered projects. Archived
-// projects (sold / explored / killed) are hidden by default.
+// projects (explored / killed) are hidden by default.
 export function useProjectsFilter(projects: EnrichedProject[]) {
   const [showArchived, setShowArchived] = useState(false);
 
