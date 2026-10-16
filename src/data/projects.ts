@@ -12,9 +12,9 @@ export const PROJECT_STATES = [
 export const ProjectStateSchema = z.enum(PROJECT_STATES);
 export type ProjectState = z.infer<typeof ProjectStateSchema>;
 
-// "Archived" states — sold, explored or killed. These are hidden from the
+// "Archived" states — explored or killed. These are hidden from the
 // projects list by default and revealed via the archived toggle.
-const ARCHIVED_STATES = ["sold", "explored", "killed"] as const;
+const ARCHIVED_STATES = ["explored", "killed"] as const;
 const archivedStateSet = new Set<ProjectState>(ARCHIVED_STATES);
 export const isArchivedState = (state: ProjectState) =>
   archivedStateSet.has(state);
@@ -134,7 +134,7 @@ export const projects: Project[] = [
   {
     name: "LearningToLaunch",
     tagline: "Short e-book on how to launch your first side project",
-    state: "killed",
+    state: "idle",
     url: "https://www.producthunt.com/products/learning-to-launch",
     started: "2016-03",
     phVotes: 55,
